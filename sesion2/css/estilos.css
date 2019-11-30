@@ -1,0 +1,50 @@
+*, 
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+}
+
+h1{
+    text-align: center;
+    background: red !important;
+}
+
+img{
+    /* display: block; */
+    text-align: center;
+}
+
+.col{
+    width: 100%;
+}
+
+section{
+    display: inline-block;
+    width: 50%;
+    height: 300px;
+}
+
+.seccion1{
+    background: red;
+}
+.seccion2{
+    background: yellow;
+}
+
+h1{
+    background: green;
+}
+
+article p{
+    background: goldenrod;
+}
+
+img, div{
+    display: block;
+}
