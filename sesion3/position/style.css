@@ -1,0 +1,36 @@
+.box{
+    /* width: 200px;
+    height: 200px; */
+    background-color: tomato;
+    display: inline-block;
+}
+
+.move{
+    background: violet;
+    position: relative;
+    left: 200px;
+}
+.poster{
+    background-image: url("poster.jpeg");
+    width: 329px;
+    height: 488px;
+    position: relative;
+}
+.poster::after{
+    content: 'Star Wars';
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -200%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, .5);
+    transition: all .3s;
+}
+
+.poster:hover::after{
+    top: 0;
+}
