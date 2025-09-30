@@ -1,0 +1,147 @@
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-size: 16px;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.menu{
+    background: steelblue;
+}
+
+.menu-container{
+    padding: .8rem 1.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item{
+    list-style: none;/*quita la viñeta*/
+}
+
+.link{
+    text-decoration: none;/*quita el subrayado*/
+    color: white;
+    padding: .8rem;
+    text-transform: uppercase;
+}
+
+.link:hover{
+    background: yellowgreen;
+    color: black;
+}
+
+.banner{
+    background-image: url("../img/banner.png");
+    height: 560px;
+    background-position: center;
+    background-size: contain;
+}
+
+.section-title{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.2rem 0;
+    color:steelblue;
+    font-size: 2.1rem;
+    text-shadow:3px 3px 5px skyblue;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    border: 1px solid skyblue;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.container-imgs{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.foto-proyecto{
+    width: 28%;
+    border-radius: 50%;
+}
+
+.container-button{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.button{
+    background-color: orangered;
+    color: white;
+    padding: .8rem 1.3rem;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 3px 3px 5px gray;
+    text-transform: uppercase;
+}
+
+.container-about{
+    display: flex;
+    height: 460px;
+}
+
+.container-about .about-text{
+    width: 50%;
+    padding: 1rem;
+}
+.container-about .about-container-img{
+    width: 50%;
+    padding: 1rem;
+}
+
+.about-container-img{
+    display: flex;
+    justify-content: center;  
+    align-content: center;
+}
+.about-img{
+    width: 75%;
+}
+
+.form{
+    padding: 1.2rem;
+}
+
+.label-container{
+    margin-bottom: .5rem;
+    display: flex;
+}
+
+.form label{
+    font-size: 1.2rem;
+    color: steelblue;
+    width: 30%;
+}
+
+.form input{
+    border-radius: 4px;
+    border-color: steelblue;
+    font-size: 1.2rem;
+    padding: .5rem 0;
+    flex-grow: 1;
+    border-style: solid;
+}
+
+.footer{
+    height: 200px;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    flex-direction: column;
+}
+
+.footer p{
+    padding: 1rem;
+}

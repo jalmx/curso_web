@@ -1,0 +1,57 @@
+/* Cargo mi fuente */
+@font-face{
+    font-family: "Alatsi";
+    src: url("../fonts/Alatsi.ttf") format("ttf");
+}
+/*selector universal, seleccionará todos los elementos*/
+*{
+    font-family: sans-serif; /*el tipo de fuente del texto*/
+    text-transform: capitalize;
+}
+
+body{
+    max-width: 1200px;
+}
+
+h1{
+    font-weight: normal; /*peso de la letra */
+    word-spacing: 10px; /*el espaciado entre palabras*/
+    background-color: teal;
+    text-shadow: 4px 8px gray;
+    font-family: "Alatsi";
+}
+
+h1:hover{
+    background-color: skyblue;
+    color: black;
+    font-size: 5rem;
+    text-shadow: 3px 3px red;
+    border: 3px dotted greenyellow;
+}
+
+p{
+    background-color: black;/*color de fondo*/
+    color: white; /*color de la letra*/
+    font-weight: bold; /*pesa de la letra, negrita*/
+    letter-spacing: 2px; /*espaciado entre letras*/
+    font-family: 'Baskervville', serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.link{
+    text-decoration: none;
+    background: #cac0eb;
+    color: rgb(10, 50, 250);
+    padding: 4px;
+}
+
+div{
+    width: 50%;
+}
+
+img{
+    width: 20%;
+}
+
+/* superpassword */

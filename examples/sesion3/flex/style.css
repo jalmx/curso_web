@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.banner{
+    background-color: red;
+    height: 20%;
+}
+
+.main{
+    background-color: skyblue;
+    height: 70%;
+    display: flex;
+}
+
+.col1, .col2, .col3{
+    border-style: dotted;
+    width: 33.33%;
+}
+
+.col1{
+    background: tomato;
+}
+
+.col2{
+background: lightgreen;
+}
+
+.col3{
+    background: orange;
+}
+
+.footer{
+    background-color: gray;
+    height:10%;
+}
