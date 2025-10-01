@@ -1,12 +1,11 @@
-# HTML5
+# HTML
 
 ## Qué es HTML?
 
 - Lenguaje de Marcado o Etiquetado
+- HyperText Markup Language (H T M L)
 - Estructurado
 - Semántico
-
-## HyperText Markup Language (H T M L)
 
 ![img](img/Curso%20HTML5_v2_0.png)
 
