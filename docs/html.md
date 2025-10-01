@@ -34,11 +34,12 @@ Le dice al navegador la estructura de los elementos, su jerarquía  y organizaci
 
 ## Editores de Código
 
-### Visual Studio Code
+|Nombre|Img|
+|-|-|
+|[Visual Studio Code](https://code.visualstudio.com/)|![img](img/Curso%20HTML5_v2_6.png)|
+|[Sublime text](https://www.sublimetext.com/)|![img](https://www.sublimetext.com/screenshots/3.0/linux@2x.png)|
 
-![img](img/Curso%20HTML5_v2_6.png)
-
-### Extensiones
+### Extensiones de VS Code
 
 |Nombre|Img|
 |-|-|
@@ -60,8 +61,6 @@ Le dice al navegador la estructura de los elementos, su jerarquía  y organizaci
 
 ### La última evolución de html
 
-<https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5>
-
 - **Semantics:**  allowing you to describe more precisely what your content is.
 - **Connectivity:**  allowing you to communicate with the server in new and innovative ways.
 - **Offline and storage:**  allowing webpages to store data on the client\-side locally and operate offline more efficiently.
@@ -71,11 +70,13 @@ Le dice al navegador la estructura de los elementos, su jerarquía  y organizaci
 - **Device access:**  allowing for the usage of various input and output devices.
 - **Styling:**  letting authors write more sophisticated themes.
 
+<https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5>
+
 ## Estructura de una etiqueta HTML (Sintaxis)
 
 ![sintaxis](img/Sintaxis.png)
 
-### Con cierre
+## Con cierre
 
 ![sintaxis](img/Sintaxis_2.png)
 
@@ -103,17 +104,15 @@ Le dice al navegador la estructura de los elementos, su jerarquía  y organizaci
 - Interactividad
 - Web components
 
-*[https://developer.mozilla.org/en\-US/docs/web/html/Elemen](https://developer.mozilla.org/en-US/docs/web/html/Element)*  *t*
+[https://developer.mozilla.org/en\-US/docs/web/html/Elemen](https://developer.mozilla.org/en-US/docs/web/html/Element)
 
 ## Etiquetas
 
-*[W3S](https://www.w3schools.com/TAGs/)*
-
-*[Mozilla](https://developer.mozilla.org/en-US/docs/web/html/Element)*
-
-*[Extra](https://websitesetup.org/wp-content/uploads/2014/09/html5-cheat-sheet.png)*
-
 ![img](img/Curso%20HTML5_v2_15.png)
+
+- [W3S](https://www.w3schools.com/TAGs/)
+- [Mozilla](https://developer.mozilla.org/en-US/docs/web/html/Element)
+- [Extra](https://websitesetup.org/wp-content/uploads/2014/09/html5-cheat-sheet.png)
 
 ### Etiquetas de sección
 
@@ -161,9 +160,7 @@ Le dice al navegador la estructura de los elementos, su jerarquía  y organizaci
 <hr>: Separador
 ```
 
-#### Más etiquetas
-
-#### Párrafo
+### Párrafo
 
 Esta etiqueta es de las más usadas, para la creación de párrafos.
 
@@ -171,9 +168,8 @@ Esta etiqueta es de las más usadas, para la creación de párrafos.
 <p> . . . </p>
 ```
 
-*[W3s](https://www.w3schools.com/tags/tag_p.asp)*
-
-*[Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p)*
+- [W3s](https://www.w3schools.com/tags/tag_p.asp)
+- [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p)
 
 ### Enlaces - Hipervínculos
 
@@ -210,8 +206,8 @@ Estructura completa
 </ul>
 ```
 
-*[w3s](https://www.w3schools.com/HTML/html_lists.asp)*
-*[mozilla](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_lists)*
+- [w3s](https://www.w3schools.com/HTML/html_lists.asp)
+- [mozilla](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_lists)
 
 ### Imágenes embebidas
 
@@ -226,34 +222,37 @@ Requiere 2 atributos:
 <img src="url" alt="descripción">
 ```
 
-*[w3s](https://www.w3schools.com/TAgs/tag_img.asp)*
-*[mozilla](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)*
+- [w3s](https://www.w3schools.com/TAgs/tag_img.asp)
+- [mozilla](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
 
-### Formatos de imágenes
+#### Formatos de imágenes
 
 Hay diversos formatos de imágenes, estos son los soportados por el navegador:
 
-jpg, jpeg, gif, png, **svg** , webp
+- jpg
+- jpeg
+- gif
+- png
+- **svg**
+- webp
 
-*[Google Developer](https://developers.google.com/web/fundamentals/design-and-ux/responsive/images)*
-*[Google developer](https://developers.google.com/speed/webp/)*
-*[Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)*
+- [Google Developer](https://developers.google.com/web/fundamentals/design-and-ux/responsive/images)
+- [Google developer](https://developers.google.com/speed/webp/)
+- [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)
 
-### Recursos para imágenes
+#### Recursos para imágenes
 
-*[http://lorempixel.com/](http://lorempixel.com/)*
-*[https://unsplash.com/](https://unsplash.com/)*
-*[https://www.pexels.com/](https://www.pexels.com/)*
-*[https://pixabay.com/](https://pixabay.com/)*
-*[https://www.pinterest.es/pin/345862446376094908/?lp=true](https://www.pinterest.es/pin/345862446376094908/?lp=true)*
+- [http://lorempixel.com/](http://lorempixel.com/)
+- [https://unsplash.com/](https://unsplash.com/)
+- [https://www.pexels.com/](https://www.pexels.com/)
+- [https://pixabay.com/](https://pixabay.com/)
+- [https://www.pinterest.es/pin/345862446376094908/](https://www.pinterest.es/pin/345862446376094908/?lp=true)
 
 ### Elementos de bloque y de línea
 
 ![img](img/Curso%20HTML5_v2_17.png)
 
-div <-> span
-
-<!-- TODO: cambiar imagen para mostrar div y span -->
+![div <-> span](img/div-span.jpeg)
 
 ### Atributos globales
 
@@ -281,21 +280,20 @@ div <-> span
 <p data-*=“value”>...</p>
 ```
 
-*[Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)*
-
-*[w3c](https://www.w3schools.com/tags/ref_standardattributes.asp)*
+- [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
+- [w3c](https://www.w3schools.com/tags/ref_standardattributes.asp)
 
 ### Etiqueta `<head>`
 
-Es un contenedor de  **metadata**  y va entre la etiqueta  *\<html>*  y  *\<body>.*
+Es un contenedor de  ***metadata***  y va entre la etiqueta  `<html>` y  `<body>`
+Los metadatos son datos sobre el documento (página).
 
-Los metadatos son datos sobre el documento (página).  *Los metadatos no se muestran.*
+> Los metadatos no se muestran.
 
-Se define normalmente el título, la codificación, estilos, scripts, etc.
+*Se define normalmente el título, la codificación, estilos, scripts, etc.*
 
-*[W3s](https://www.w3schools.com/tags/tag_head.asp)*
-
-*[Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head)*
+- [W3s](https://www.w3schools.com/tags/tag_head.asp)
+- [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head)
 
 ### Etiqueta `meta`
 
@@ -313,9 +311,8 @@ Es una etiqueta que contiene metadatos; es decir, es información adicional que 
 <meta name=“description” content=“Es un sitio web...”/>
 ```
 
-*[W3s](https://www.w3schools.com/tags/tag_meta.asp)*
-
-*[Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta)*
+- [W3s](https://www.w3schools.com/tags/tag_meta.asp)
+- [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta)
 
 ### Etiqueta title
 
@@ -329,19 +326,17 @@ Todos los documentos html (páginas) deben contener su título el cual indica en
 
 ![img](img/Curso%20HTML5_v2_18.png)
 
-*[W3s](https://www.w3schools.com/tags/tag_title.asp)*
-
-*[Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title)*
+- [W3s](https://www.w3schools.com/tags/tag_title.asp)
+- [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title)
 
 ### Estilos en head enlazados
 
 En  *head*  pueden ir los estilos de forma embebida o enlazada.
+**Enlaza estilos externos.**
 
 ```html
 <link rel=“stylesheet” href=“url” media=“print” type=“text/css” >:
 ```
-
-**Enlaza estilos externos**
 
 *[Más información](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style)*
 
@@ -352,7 +347,7 @@ Los estilos embebidos se pueden colocar dentro de la etiqueta  **head**  o  **bo
 ```html
 <style>
 
-// Estilos
+    // Estilos aquí
 
 </style>
 ```
@@ -361,8 +356,7 @@ Los estilos embebidos se pueden colocar dentro de la etiqueta  **head**  o  **bo
 
 Queremos enlazar archivos o algún recurso externo que necesitamos en nuestro HTML, usamos la etiqueta `link`.
 
-**Elementos externos:
-**
+**Elementos externos:**
 
 - Iconos
 - Hojas de estilo
@@ -382,7 +376,7 @@ Queremos enlazar archivos o algún recurso externo que necesitamos en nuestro HT
 <link rel="preload" href="myFont.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
 ```
 
-*[Más información](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link)*
+[Más información](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link)
 
 ### Etiqueta `script`
 
@@ -406,7 +400,7 @@ Queremos enlazar archivos o algún recurso externo que necesitamos en nuestro HT
 </script>
 ```
 
-*[Más información](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script)*
+[Más información](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/script)
 
 ### Atributo role ARIAS
 
@@ -433,24 +427,19 @@ Define con una palabra descriptiva, cuál es la función de la sección para per
 
 **Relativas**
 
-```bash
-/ -> Raíz del servidor o del sitio principal
+```python
+/ -> Raíz del servidor (root) o del sitio principal
 
 ./ -> A partir de mi ubicación
 
-\[nada\] -> A partir de mi ubicación
+[nada] -> A partir de mi ubicación
 ```
 
 ### Arquitectura de proyecto
 
-- **css o styles**  -> Estilos
-- **img**  -> imágenes, fotos
-- **js**  o  **javascript** -> archivos javascript
-- **audio**  -> audios
-- assets -> todo el contenido multimedia
-- Favicon -> todos los iconos del sitio
-
-![img](img/Curso%20HTML5_v2_19.png)
+|Elementos|Ejemplo|
+|-|-|
+| **css o styles**  -> Estilos <br> **img**  -> imágenes, fotos <br> **js**  o  **javascript** -> archivos javascript <br> **audio**  -> audios <br> assets -> todo el contenido multimedia <br> favicon -> todos los iconos del sitio|![img](img/Curso%20HTML5_v2_19.png)
 
 ## Single page vs Multi pages
 
@@ -464,10 +453,10 @@ Define con una palabra descriptiva, cuál es la función de la sección para per
 - `download`  <span style="color:#333333">=</span>  *“archivo.extension”*
 - `href`  <span style="color:#333333">=</span>  *“teléfono | correo”*
 
-- *[mailto:correo@dominio.org](mailto:correo@dominio.org)*
-- *tel:\+491570156*
+- `mailto:`: Enviar un correo de forma directa. `mailto:correo@dominio.org`
+- `tel:`: Llamar con solo click. `tel:+491570156`
 
-*[https://developer.mozilla.org/en\-US/docs/Web/HTML/Element/a](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a)*  ____
+[https://developer.mozilla.org/en\-US/docs/Web/HTML/Element/a](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a)
 
 ### Single pages
 
@@ -549,8 +538,8 @@ Representa contenido de sí mismo. Una descripción es opcional (figcaption). To
 
 Una entidad HTML es un conjunto de caracteres ("string") que comienza con un ampersand (`&`) y termina con un punto y coma (`;`) . Las entidades son utilizadas frecuentemente para imprimir en pantalla caracteres reservados (aquellos que serían interpretados como HTML por el navegador) o invisibles (cómo tabulaciones). También pueden usarse para representar caracteres que no existan en algunos teclados, por ejemplo caracterés con tilde o diéresis.
 
-![entidades](img/entidades_1.png)
-![entidades](img/entidades_2.png)
+![entidades](img/entidades_1.png#only-light)
+![entidades](img/entidades_2.png#only-dark)
 
 - [https://unicode\-table.com/es/html\-entities/](https://unicode-table.com/es/html-entities/)
 - [https://www.mclibre.org/consultar/htmlcss/html/html\-unicode\-simbolos.html](https://www.mclibre.org/consultar/htmlcss/html/html-unicode-simbolos.html)*
@@ -620,9 +609,7 @@ Estos atributos no siempre aplican a todo tipo de  *input* . Algunos atributos m
 - *autofocus*
 - *checked*
 
-### Más para formularios
-
-Otros elementos muy utilizados dentro de un formulario son las etiquetas y áreas de texto.
+#### Label (Etiquetas) & Area de Texto (textarea)
 
 ```html
 <label for=“id_element”>Etiqueta</label>
@@ -637,7 +624,7 @@ Otros elementos muy utilizados dentro de un formulario son las etiquetas y área
 - [Label](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)
 - [textarea](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)
 
-### Barras de progreso
+#### Barras de progreso
 
 Cuando queremos colocar una barra de progreso podemos usar, se recomienda más usar un  *input*  tipo rango ( *range* ).
 
@@ -655,7 +642,7 @@ Cuando queremos colocar una barra de progreso podemos usar, se recomienda más u
 
 <progress value=“valor” max=“100”>...</progress>
 
-### Más para formularios - Listas
+#### Listas en formularios
 
 Cuando queremos listas tenemos dos opciones, para ambos aplica la etiqueta  *option*  para agregar los valores de la lista, se combinan con un  *input*  por medio su atributo  *list*  y el  *id*  de la lista:
 
@@ -687,7 +674,7 @@ Agregando cosas externas de otro sitio:
 - Formularios externos
 - Pdf
 
-# Fragmentos externos
+#### Fragmentos externos
 
 ```html
 <ifragment src=“url” width=“ancho” height=“alto”>...</ifragment>
@@ -698,10 +685,10 @@ Agregando cosas externas de otro sitio:
 ```
 
 - [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe)
-- [embed](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed)*
+- [embed](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/embed)
 - [object](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/object)
 
-### Media
+#### Media
 
 Contamos con etiquetas específicas para audio y video, teniendo mayor control sobre ellos.
 
@@ -712,7 +699,7 @@ Contamos con etiquetas específicas para audio y video, teniendo mayor control s
 ```
 
 - [video](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video)
-- [audio](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)*
+- [audio](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio)
 
 ### favicon
 
@@ -722,9 +709,8 @@ Todo sitio tiene un icono que lo identifica.
 <link rel=“icon” href=“url/favicon.ico” type=“image/x-icon” size=“16x16”>
 ```
 
-*[W3s](https://www.w3schools.com/tags/att_link_sizes.asp)*
-
-*[Mozilla](https://developer.mozilla.org/en-US/docs/Glossary/Favicon)*
+- [W3s](https://www.w3schools.com/tags/att_link_sizes.asp)
+- [Mozilla](https://developer.mozilla.org/en-US/docs/Glossary/Favicon)
 
 ### Herramientas para generar favicon
 
@@ -734,9 +720,11 @@ Todo sitio tiene un icono que lo identifica.
 
 ### Optimización de imágenes (Locales vs Remotas)
 
+![img](img/tinypng.png)
+
 [https://tinypng.com/](https://tinypng.com/)
 
-# SEO (Search Engine Optimization)
+## SEO (Search Engine Optimization)
 
 Cuando creaste tu sitio web, es probable que lo hayas hecho teniendo en cuenta a tus usuarios, con el objetivo de facilitarles la búsqueda y exploración de tu contenido. Uno de esos usuarios es un motor de búsqueda, que ayuda a otras personas a descubrir tu contenido. ==El SEO (optimización para motores de búsqueda) consiste en ayudar a los motores de búsqueda a comprender tu contenido y a que los usuarios encuentren tu sitio y decidan si deben visitarlo a través de un motor de búsqueda==.
 
@@ -764,7 +752,7 @@ Cuando creaste tu sitio web, es probable que lo hayas hecho teniendo en cuenta a
 - [https://website.grader.com](https://website.grader.com/)
 - [https://validator.w3.org/](https://validator.w3.org/)
 
-# Complemento SEO
+### Complemento SEO
 
 - [robot.txt](https://developers.google.com/search/docs/advanced/robots/intro)
 - [human.txt](http://humanstxt.org/)
@@ -772,9 +760,9 @@ Cuando creaste tu sitio web, es probable que lo hayas hecho teniendo en cuenta a
 
 ### Buenas prácticas de Google
 
-![https://google.github.io/styleguide/htmlcssguide.html](https://google.github.io/styleguide/htmlcssguide.html)
+[https://google.github.io/styleguide/htmlcssguide.html](https://google.github.io/styleguide/htmlcssguide.html)
 
-### Resumen
+## Resumen
 
 - Head
   - Descripción del sitio
@@ -793,7 +781,7 @@ Cuando creaste tu sitio web, es probable que lo hayas hecho teniendo en cuenta a
   - Metadatos (Schema.org)
   - Footer
 
-### Template Languages
+## Template Languages
 
 [Pugjs](https://pugjs.org/api/getting-started.html)
 [Nunjucks](https://mozilla.github.io/nunjucks/)

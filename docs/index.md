@@ -1,4 +1,4 @@
-# Diplomado-taller de desarrollo web desde cero
+# Home
 
 Actualmente una de las tecnologías mas usadas en el mundo es la web, encontramos perfiles, sitios informativos, periódicos, tiendas, una gran variedad de cosas. Tener el dominio de esta tecnología nos da ventajas competitivas.
 

@@ -1,7 +1,7 @@
 site_name: Curso desarrollo Web (HTML, CSS)
 site_description: "Documentación HTML y CSS desde cero"
 site_author: Alejandro Leyva
-site_url: https://www.alejandro-leyva.com/curso_web
+site_url: https://www.alejandro-leyva.com/curso-web
 edit_uri: ""
 
 theme:
@@ -25,7 +25,7 @@ theme:
     - navigation.footer
     - content.code.copy
 
-repo_url: https://github.com/jalmx/curso_web
+repo_url: https://github.com/jalmx/curso-web
 
 markdown_extensions:
   - tables
@@ -58,7 +58,7 @@ extra_javascript:
   - https://unpkg.com/markmap-view@0.2.6/dist/index.min.js
 
 extra:
-  homepage: https://www.alejandro-leyva.com/curso_web
+  homepage: https://www.alejandro-leyva.com/curso-web
   version: 1.0
 
   copyright: "Alejandro Leyva 2025"
