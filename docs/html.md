@@ -236,6 +236,8 @@ Hay diversos formatos de imágenes, estos son los soportados por el navegador:
 - **svg**
 - webp
 
+Recursos:
+
 - [Google Developer](https://developers.google.com/web/fundamentals/design-and-ux/responsive/images)
 - [Google developer](https://developers.google.com/speed/webp/)
 - [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img)
@@ -796,3 +798,7 @@ Cuando creaste tu sitio web, es probable que lo hayas hecho teniendo en cuenta a
 ### HTML vs Pug
 
 ![img](img/Curso%20HTML5_v2_23.png)
+
+### HTML vs Nunjucks
+
+![Nunjucks](img/Nunjucks.png)
