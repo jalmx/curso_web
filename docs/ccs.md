@@ -1,592 +1,576 @@
-# CSS
+---
+title: CSS
+---
 
-![](img/Curso_CSS_v2_0.png)
+# CSS desde cero
 
-# CSS
+CASCADE
+STYLE
+SHEET
 
-__CASCADE__
+==Hoja de Estilo en Cascada: Se irá leyendo de arriba a abajo. La última propiedad siempre gana==
 
-__STYLE__
+## Agregando CSS al HTML
 
-__SHEET__
+En línea:
 
-_Hoja de Estilo en Cascada: Se irá leyendo de arriba a abajo. La última propiedad siempre gana._
+```html
+<elemento style= “estilos”>
+    Texto
+</elemento>
 
-# Agregando CSS
+<style>
+    Estilos
+</style>
 
-<span style="color:#ffffff">En línea:</span>
+```
 
-__<elemento__  <span style="color:#ffffff"> </span>  <span style="color:#ffffff"> __style=__ </span>  <span style="color:#ffffff"> “estilos”</span>  __>__  <span style="color:#ffffff"> </span> Texto <span style="color:#ffffff"> </span>  __\</elemento>__
+## Sintaxis
 
-__\<style>__
+```css
 
-<span style="color:#ffffff">Estilos</span>
+/*Bloque*/
 
-__\</style>__
+selector {
+    propiedad-1 :  valor ;
+    propiedad-2: valor ;
+}
 
-__<link__  <span style="color:#ffffff"> </span>  <span style="color:#ffffff"> __rel=__ </span>  <span style="color:#ffffff">"stylesheet" </span>  <span style="color:#ffffff"> __href__ </span>  <span style="color:#ffffff">="ruta del archivo"</span>  __>__
+```
 
-# Sintaxis
+## Selectores
 
-/\*Bloque\*/
+Selector de:
 
-__s__  __elector \{__
+- Etiqueta (tipo) (HTML)
+- Clases
+- ID
+- Universal ( * ), root (html)
+- Descendiente (padre [espacio] hijo { … } )
+- De atributo
 
-__propiedad\-1 __  __:__    _valor _  __;__  _ _  __;__
+_[http://apps.workflower.fi/vocabs/css/en](http://apps.workflower.fi/vocabs/css/en)_
 
-__	propiedad\-2__  __:__   _valor_   __;__
+## Variables CSS
 
-__\}__
+Es un espacio de memoria donde almacena un valor.
 
-# Selectores
+```css
 
-<span style="color:#ffffff">Selector de :</span>
+--nombre-variable : valor ;
 
-<span style="color:#ffffff">Etiqueta \(tipo\) \(HTML\)</span>
+```
 
-<span style="color:#ffffff">Clases</span>
+```css
 
-<span style="color:#ffffff">ID</span>
+/* ejemplo */
 
-<span style="color:#ffffff">Universal \( \* \)\, root \(html\)</span>
-
-<span style="color:#ffffff">Descendiente \(padre \[espacio\] hijo \{ … \} \)</span>
-
-<span style="color:#ffffff">De atributo</span>
-
-_[http://apps\.workflower\.fi/vocabs/css/en](http://apps.workflower.fi/vocabs/css/en)_  <span style="color:#ffffff"> </span>
-
-# Variables CSS
-
-Es un espacio de memoria donde almacena un valor\.
-
-__\-\-__  __nombre\-variable :__   _valor _  __;__
-
-__\-\-__  __color\-primary : __ red __;__
-
-__\-\-ancho\-maximo:__  720px __;__
-
+--color-primary : red;
+--ancho-maximo: 720px;
 Utilizando la variable:
+background-color: var( --color-primary );
+```
 
-__background\-color: __  __var__  __\(__  _ _  _\-\-color\-primary_  _ _  __\);__
+## Estilo para textos
 
-# Estilo para textos
+- `color`:  da color a la fuente
+- `text-align`: alineación horizontal
+- `text-decoration`: especifica la decoración agregada al texto
+- `text-transform`: controla mayúsculas y minúsculas del texto
+- `letter-spacing`: incrementa o decrementa el espacio entre letras
+- `line-height`: espacio del interlineado
+- `word-spacing`:  separación entre palabras
+- `text-shadow`: sombreado al texto
 
-Color:   _Da color a la fuente_
+## [Texto](https://www.w3schools.com/css/css_text.asp)
 
-Text\-align:  _Alineación horizontal_
+- Color: red | #ff22AC | rgb(255,100,0)  | hsl(240, 100%, 25%);
+  - [https://www.w3schools.com/colors/colors_names.asp](https://www.w3schools.com/colors/colors_names.asp)
+- Text-align : center | left | right | justify;
+- Text-decoration : none | overline | line-through | underline ;
+- Text-transform : uppercase | lowercase | capitalize;
+- Letter-spacing : (+/ - ) px | em | rem;
+- Word-spacing : (+/ - ) px | em | rem;
+- Line-height :  px | em | rem | unidad;
+- Overflow-wrap : normal | break-word ; ->
+- white -space : nowrap | wrap | pre | normal;
+  - [https://www.w3schools.com/cssref/pr_text_white-space.asp](https://www.w3schools.com/cssref/pr_text_white-space.asp)
+- Text-overflow :  clip | ellipsis | initial | inherit ; ->
 
-Text\-decoration: Especifica la decoración agregada al texto
+## Unidades de medida
 
-Text\-transform: Controla mayúsculas y minúsculas del texto
+### Absolutas
 
-Letter\-spacing:  _Incrementa o decrementa el espacio entre letras_
+- Pulgadas (in)
+- Centimetros (cm)
+- Milimetros (mm)
+- Pixels (px)
+- Puntos (pt)
 
-Line\-height: Espacio del interlineado
+[https://developer.mozilla.org/en\-US/docs/Web/CSS/length](https://developer.mozilla.org/en-US/docs/Web/CSS/length)
 
-Word\-spacing:  Separación entre palabras
+### Relativas
 
-Text\-shadow: Sombreado al texto
-
-# Texto
-
-
-
-* __Color__ : _ _  _red | \#ff22AC | rgb\(255\,100\,0\)_  _  | hsl\(240\, 100%\, 25%\)_ ;
-  * _[https://www\.w3schools\.com/colors/colors\_names\.asp](https://www.w3schools.com/colors/colors_names.asp)_  <span style="color:#ffffff"> </span>
-* __Text\-align __  <span style="color:#ffffff">: </span>  _center | left | right | justify_  <span style="color:#ffffff">;</span>
-* __Text\-decoration __  <span style="color:#ffffff">: </span>  _none | overline | line\-through | underline_  <span style="color:#ffffff"> ;</span>
-* __Text\-transform __  <span style="color:#ffffff">: </span>  _uppercase | lowercase | capitalize_  <span style="color:#ffffff">;</span>
-* __Letter\-spacing __ : <span style="color:#ffffff"> </span>  _\(\+/ \- \) px | em | rem_  <span style="color:#ffffff">;</span>
-* __Word\-spacing __  <span style="color:#ffffff">: </span>  _\(\+/ \- \) px | em | rem_  <span style="color:#ffffff">; </span>
-* __Line\-height __  <span style="color:#ffffff">:  </span>  _px | em | rem | unidad_  <span style="color:#ffffff">;</span>
-* __Overflow\-wrap__  <span style="color:#ffffff"> : </span>  _normal | break\-word_  <span style="color:#ffffff"> ; </span>  _[\->](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-wrap)_
-* __white \-space __  <span style="color:#ffffff">: </span>  _nowrap | wrap | pre | normal_  <span style="color:#ffffff">;</span>
-  * _[https://www\.w3schools\.com/cssref/pr\_text\_white\-space\.asp](https://www.w3schools.com/cssref/pr_text_white-space.asp)_  <span style="color:#ffffff"> </span>
-* __Text\-overflow __  <span style="color:#ffffff">:  </span>  _clip | ellipsis | initial | inherit _  <span style="color:#ffffff">; </span>  _[\->](https://www.w3schools.com/cssref/css3_pr_text-overflow.asp)_
-
-
-Pulgadas \(in\)
-
-Centimetros \(cm\)
-
-Milimetros \(mm\)
-
-Pixels \(px\)
-
-Puntos \(pt\)
-
-# Unidades de medidas
-
-# Absolutas
-
-_[https://developer\.mozilla\.org/en\-US/docs/Web/CSS/length](https://developer.mozilla.org/en-US/docs/Web/CSS/length)_
-
-Contenedor \(%\)
+- Contenedor (%)
 
 Tipografía
 
-em \(Contenedor\)
-
-rem \(Root \-> html \-> body\)
+- em (Contenedor)
+- rem (Root \-> html \-> body)
 
 Viewport
 
-Ancho ventana\(vw\)
+- Ancho ventana(vw)
+- Alto ventana (vh)
 
-Alto ventana \(vh\)
+[https://developer.mozilla.org/en\-US/docs/Learn/CSS/Introduction\_to\_CSS/Values\_and\_units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units)
 
-# Unidades de medidas
+## [Fonts](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals )
 
-# Relativas
+- Font-family : Define la fuente tipográfica que será aplicada al texto.
+- Font-size : Define el tamaño de la fuente
+- Font-style : Formato de la fuente
+- Font-weight : Le da el peso a la fuente (que tan bold será)
 
-_[https://developer\.mozilla\.org/en\-US/docs/Learn/CSS/Introduction\_to\_CSS/Values\_and\_units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units)_  <span style="color:#ffffff"> </span>
+Propiedades que pueden tener
 
-# Fonts
-
-Font\-family :  _Define la fuente _  _tipográfica_  _ que será aplicada al texto\._
-
-Font\-size :  _Define el tamaño de la fuente _
-
-Font\-style :  _Formato de la fuente _
-
-Font\-weight :  _Le da el peso a la fuente \(que tan bold será\)_
-
-__Font\-family __ :  _web fonts_ ;
-
-__Font\-size__  <span style="color:#ffffff"> :  </span>  _px | em | rem_  <span style="color:#ffffff">;</span>
-
-__Font\-style __ :  _normal | italic_  ;
-
-__Font\-weight__  :  _normal | bold | lighter | bolder | 100\-900 _ ;
-
-_[@font\-face](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)_
+- `font-family` : web fonts;
+- `font-size` :  px | em | rem;
+- `font-style` : normal | italic ;
+- `font-weight` : normal | bold | lighter | bolder | 100-900;
+- [@font\-face](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)
 
 Recursos:
 
-_[https://fonts\.google\.com](https://fonts.google.com)_  <span style="color:#ffffff">   </span>
+[https://fonts.google.com](https://fonts.google.com)
 
-# Estilos por defecto
+## Estilos por defecto
 
-![](img/Curso_CSS_v2_1.png)
+El navegador contiene sus propios estilos por defecto en todos los elementos del HTML.
 
-El navegador contiene sus propios estilos por defecto en todos los elementos del HTML\.
+![estilo defecto](img/Curso_CSS_v2_1.png)
 
-_[Normalize](https://necolas.github.io/normalize.css/)_
+[Normalize](https://necolas.github.io/normalize.css/)
 
-# Selectores
+## Selectores
 
-# Selector de Tipo
+### Selector de Tipo
 
-Selector de tipo  \(etiqueta HTML\)\, NO los uses a menos que sea el estilo base o de tema\.
+Selector de tipo (etiqueta HTML), NO los uses a menos que sea el estilo base o de tema.
 
-_body_ \{
+```css
 
-\}
+body{
+    /* estilos aplicados a body */
+}
 
-_h1_  \{
+h1 {
+    /* estilos aplicados a todos los h1 */
+}
 
-\}
+p {
+    /* estilos aplicados a todos los p */
+}
 
-_p_  \{
+```
 
-\}
+### Selector de ID
 
-# Selector de ID
+> NO los uses.
 
-_NO los uses\._
+```html
+<!-- HTML File -->
 
-__<h1 __  _id_  _= “title”_ > Titulo del sitio  __\</h1>__
+<h1 id= “title”> Titulo del sitio </h1>
 
-_\#title_  _ _  __\{ __ /\* referencia al pdf\*/
+```
 
-__color__ : red;
+```css
+/* Estilos aplicado a las etiqueta con el ID #title */
+#title {
+ color: red;
+}
 
-__\}__
+```
 
-# Selector de Clase
+### Selector de Clase
 
-Siempre debes usar clases para tus estilos\.
+Siempre debes usar clases para tus estilos.
 
-__<h1 __  _class _  _= “title”_ > Titulo del sitio  __\</h1>__
+```html
+  <h1 class = “title”> Titulo del sitio </h1>
+```
 
-_\.title_  _ _  __\{__
+```css
+.title {
+   text-align: center;
+}
 
-__text\-align__ : center;
+```
 
-__\}__
+## Especificidad (Specificity)
 
-# Especificidad (Specificity)
+- Inline = 1000
+- ID = 100
+- Class = 10
+- Type = 1
+- `!important`: /_Nunca lo uses a menos que sea de vida o muerte_/ Su valor es infinito
 
-__Inline__  = 1000
+[https://www.w3schools.com/css/css\_specificity.asp](https://www.w3schools.com/css/css_specificity.asp)
 
-__ID__  = 100
+[https://developer.mozilla.org/en\-US/docs/Web/CSS/Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
 
-__Class__  = 10
+### [Selectores compuestos](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors#Combinators)
 
-__Type__  = 1
+Están formados por más de una palabra.
 
-_\!important_   /\*Nunca lo uses a menos que sea de vida o muerte\*/ Su valor es infinito
+- Descendientes (_Espacio entre selectores_)
 
-_[https://www\.w3schools\.com/css/css\_specificity\.asp](https://www.w3schools.com/css/css_specificity.asp)_  <span style="color:#ffffff"> </span>
+```css
+ancestro descendientes {
+  /* Estilos*/
+}
+```
 
-_[https://developer\.mozilla\.org/en\-US/docs/Web/CSS/Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)_  <span style="color:#ffffff"> </span>
+Hijo directo ( > )
 
-# Selectores compuestos
+```css
+padre > hijo {
+  /* Estilos*/
+}
+```
 
-Están formados por más de una palabra\.
+Hermano siguiente (adyacente) (  _\+_ )
 
-Descendientes \( _Espacio entre selectores_ \)
-
-__ancestro__   _descendientes_  \{  /\* Estilos\*/
-
-\}
-
-Hijo directo \( > \)
-
-__padre__   _>_   _hijo_  \{  /\* Estilos\*/
-
-\}
-
-Hermano siguiente \(adyacente\) \(  _\+ _ \)
-
-__elemento__  __ __  _\+_  __ __   _hermano\-siguiente_  \{  /\* Estilos\*/
-
-\}
-
-Hermanos siguientes   \( ~ \) \(Todos los siguientes\)
-
-__elemento__   _~_   _hermanos\-siguientes_  \{  /\* Estilos\*/
-
-\}
-
-Selector compuesto \(sin espacios\) \[tenga ambos selectores\]
-
-__selector__  _selector_  \{  /\* Estilos\*/
-
-\}
-
-Selectores agrupados \(  __\,__  \) \[separados por comas\]
-
-__selector\, __  _selector\, \.\,\.\._  \{  /\* Estilos\*/
-
-\}
-
-# Selectores de atributo
-
-_Sintaxis:_
-
-_selectorTipo_  _\[attribute\]_   __\{__  /\* Estilos \*/
-
-__\}__
-
-_a_  _\[href \] _ \{
-
-__text\-decoration: none;__
-
-\}
-
-_[https://developer\.mozilla\.org/en\-US/docs/Learn/CSS/Introduction\_to\_CSS/Attribute\_selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Attribute_selectors)_
-
-_[https://developer\.mozilla\.org/en\-US/docs/Web/CSS/Attribute\_selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)_  <span style="color:#ffffff"> </span>
-
-
-
-* Comienza con \(^\)
-  * _\[title_  _^_  _=“palabra”_  _\] _ \{ … \}
-* Termina con \($\)
-  * _\[_  _src_  _$_  _=“_  _\.jpg_  _”\] _ \{ … \}
-* Contiene \( \* \)
-  * _\[_  _href_  _\*_  _=“\._  _pdf_  _”\] _ \{ … \}
-* Comienza especificamente con \(|\)
-  * _\[class_  _|_  _=“menu”\] _ \{ … \}
-* Contiene especificamente la palabra \(~\)
-  * _\[id_  _~_  _=“header”\] _ \{ … \}
-* Ignora mayúsculas y minúsculas \(i o I \)  _\[src=“imagen” i \] _ \{ … \}
-* _[https://www\.w3schools\.com/css/css\_attribute\_selectors\.asp](https://www.w3schools.com/css/css_attribute_selectors.asp)_  <span style="color:#ffffff"> </span>
-
-
-# Pseudo clases
-
-# Pseudo-clases ( : )
-
-Son selectores dinámicos\, responden a ciertas eventos que suceden con el elemento\.
+```css
+elemento +  hermano-siguiente {
+  /* Estilos*/
+}
+```
+
+Hermanos siguientes   ( ~ ) (Todos los siguientes)
+
+```css
+elemento ~ hermanos-siguientes {
+  /* Estilos*/
+}
+```
+
+Selector compuesto (sin espacios) [tenga ambos selectores]
+
+```css
+selectorselector {
+  /* Estilos*/
+}
+```
+
+Selectores agrupados ( , ) [separados por comas]
+
+```css
+selector, selector, .,.. {
+  /* Estilos*/
+}
+```
+
+### Selectores de atributo
+
+**Sintaxis:**
+
+```css
+selectorTipo[attribute] {
+    /* Estilos */
+}
+
+a[href] {
+  text-decoration: none;
+}
+
+```
+
+- Comienza con (^)
+  - `[title^=“palabra”] { … }`
+- Termina con ($)
+  - `[src$=".jpg"] { … }`
+- Contiene ( * )
+  - `[href*=".pdf"] { … }`
+- Comienza especificamente con (|)
+  - `[class|=“menu”] { … }`
+- Contiene especificamente la palabra (~)
+  - `[id~=“header”] { … }`
+- Ignora mayúsculas y minúsculas (i o I )
+  - `[src=“imagen” i ] { … }`
+
+Mas información
+
+- [https://developer.mozilla.org/en\-US/docs/Learn/CSS/Introduction\_to\_CSS/Attribute\_selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Attribute_selectors)
+- [https://developer.mozilla.org/en\-US/docs/Web/CSS/Attribute\_selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
+- [https://www.w3schools.com/css/css\_attribute\_selectors.asp](https://www.w3schools.com/css/css_attribute_selectors.asp)
+
+### Pseudo-clases ( `:` )
+
+Son selectores dinámicos, responden a ciertas eventos que suceden con el elemento.
 
 Sintaxis:
 
-__selector__  _:_  _pseudo\-class_   __\{__  /\* Estilos \*/
+```css
+selector : pseudo-class {
 
-__\}__
+  /Estilos/
 
-_:_  _pseudo\-class_ \{ … \}  /\*se aplica a cualquier elemento\*/
+}
 
-_[https://developer\.mozilla\.org/en\-US/docs/Learn/CSS/Introduction\_to\_CSS/Pseudo\-classes\_and\_pseudo\-elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Pseudo-classes_and_pseudo-elements)_  <span style="color:#ffffff"> </span>
+: pseudo-class { … } /*se aplica a todos los elementos*/
 
-_[https://www\.w3schools\.com/css/css\_pseudo\_classes\.asp](https://www.w3schools.com/css/css_pseudo_classes.asp)_  <span style="color:#ffffff"> </span>
+```
 
+- [https://developer.mozilla.org/en\-US/docs/Learn/CSS/Introduction\_to\_CSS/Pseudo\-classes\_and\_pseudo\-elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Pseudo-classes_and_pseudo-elements)
+- [https://www.w3schools.com/css/css\_pseudo\_classes.asp](https://www.w3schools.com/css/css_pseudo_classes.asp)
 
+### Tipos de Pseudo-clases
 
-* :hover \->  _Se activa al pasar el puntero sobre el elemento_
-* :active \->  _Cuando se da click sobre el elemento_
-* :link \->  _Link sin visitar aún_
-* :visited \->  _Cuando ya ha sido visitado el enlace_
-* :target \->  _Cuando mandan a llamar al elemento_
-* :not\( __selector__ \) \-> Selecciona los elementos que NO coinciden con el selector\.
-  * _[https://www\.w3schools\.com/cssref/sel\_not\.asp](https://www.w3schools.com/cssref/sel_not.asp)_
-  * _[https://developer\.mozilla\.org/en\-US/docs/Web/CSS/:not](https://developer.mozilla.org/en-US/docs/Web/CSS/:not)_
+- `:hover`:  _Se activa al pasar el puntero sobre el elemento_
+- `:active`:  _Cuando se da click sobre el elemento_
+- `:link`:  _Link sin visitar aún_
+- `:visited`:  _Cuando ya ha sido visitado el enlace_
+- `:target`:  _Cuando mandan a llamar al elemento_
+- `:not( *selector* )`: Selecciona los elementos que NO coinciden con el selector.
+  - [https://www.w3schools.com/cssref/sel\_not.asp](https://www.w3schools.com/cssref/sel_not.asp)
+  - [https://developer.mozilla.org/en\-US/docs/Web/CSS/:not](https://developer.mozilla.org/en-US/docs/Web/CSS/:not)
+- `:empty`: _Te indica un elemento que está vacío, es decir, que no tiene hijos o texto_
+- `:checked`:  _Si se activo la propiedad checked (radio, checkbox, select)_
+- `:focus`:  _Se activa cuando tiene el focu el input_
+- `:enabled`:  _Se ejecuta cuando el input está disponible_
+- `:disabled`:  _Se ejecuta cuando el input está deshabilitado_
+- `:required`:  _Se activa cuando el input es requerido, pero no opcional_
+- `:optional`:  _Cualquier input, select o textarea que no tenga_  _required_
 
+### Pseudo-clases (child )
 
-:empty \-> _ Te indica un elemento que está vacío\, es decir\, que no tiene hijos o texto_
+- `:first-of-type`: Encuentra el primer tipo de elemento
+- `:last-of-type`: Encuentra al último tipo de elemento
+- `:nth-of-type(n)`: Encuentra al _tipo de elemento_ “n” [odd, even, x,...]
+- `:nth-last-of-tupe(n)`: Es igual a nth-of-type, solo que la cuenta comienza del final al principio
 
-:checked \->  _Si se activo la propiedad checked \(radio\, checkbox\, select\)_
+## Modelo de Caja
 
-:focus \->  _Se activa cuando tiene el focu el input_
+![caja](img/Curso_CSS_v2_2.png)
 
-:enabled \->  _Se ejecuta cuando el input está disponible_
+## Elements
 
-:disabled \->  _Se ejecuta cuando el input está deshabilitado_
+### Block vs Inline
 
-:required \->  _Se activa cuando el input es requerido\, pero no opcional_
+### Margin
 
-:optional \->  _Cualquier input\, select o textarea que no tenga _  _required_
+```css
+margin-top:  px | em | rem | % | auto;
+margin-bottom:  px | em | rem | % | auto;
+margin-left:  px | em | rem | % | auto;
+margin-right:  px | em | rem | % | auto;
+margin: margin-top margin-right margin-bottom margin-left;
+margin: (margin-top  & margin-bottom) (margin-right & margin-left);
+margin: (margin-top & margin-right & margin-bottom & margin-left); *todos*
+```
 
-# Pseudo-clases (child )
+### [Colapsado de márgenes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing)
 
-:first\-of\-type \-> _ Encuentra el primer tipo de elemento_
+### Padding
 
-:last\-of\-type \->  _Encuentra al último _  _tipo de elemento_
+```css
+padding-top: px | em | rem | % ;
+padding-right: px | em | rem | % ;
+padding-bottom: px | em | rem | % ;
+padding-left: px | em | rem | % ;
+padding: padding-top padding-right padding-bottom padding-left;
+padding: (padding-top & padding-bottom)  (padding-right  & padding-left) ;
+padding: (padding-top & padding-right & padding-bottom & padding-left) ;
+```
 
-:nth\-of\-type\(n\) \->  _Encuentra al _  _tipo de elemento_  _  “n” \[odd\, even\, X\,\.\.\.\]_
+### [Border-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius)
 
-:nth\-last\-of\-tupe\(n\) \->  _Es igual a nth\-of\-type\, solo que la cuenta comienza del final al principio_
+### [Ancho y Alto](https://developer.mozilla.org/en-US/docs/Web/CSS/width)
 
-# Modelo de Caja
+```css
+width: px | em | rem | % | view | auto;
 
-![](img/Curso_CSS_v2_2.png)
+height: px | em | rem | % | view | auto;
 
-# Elements
-Block vs Inline
+max-width: px | em | rem | % | view | auto;
 
-# Margin
+min-width: px | em | rem | % | view | auto;
 
-Margin\-top:  _px | em | rem | % | auto_  <span style="color:#ffffff">;</span>
+max-height: px | em | rem | % | view | auto;
 
-Margin\-bottom:  _px | em | rem | % | auto_  <span style="color:#ffffff">;</span>
+min-height: px | em | rem | % | view | auto;
+```
 
-Margin\-left:  _px | em | rem | % | auto_  <span style="color:#ffffff">;</span>
+### [Borde](https://developer.mozilla.org/en-US/docs/Web/CSS/border)
 
-Margin\-right:  _px | em | rem | % | auto_  <span style="color:#ffffff">;</span>
+```css
+Border-width: px | em | rem | thin | medium | thick;
 
-Margin: margin\-top margin\-right margin\-bottom margin\-left;
+Border-style: none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset ;
 
-Margin: \(margin\-top  & margin\-bottom\) \(margin\-right & margin\-left\);
+Border-color:  <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hex-color> | <named-color> ;
 
-Margin: \(margin\-top & margin\-right & margin\-bottom & margin\-left\); /\*todos\*/
+Border: <br-width> || <br-style> || <color> ; /*shorthand*/
+```
 
-# Colapsado de márgenes
+### [Box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
 
-# Padding
+### Background
 
-<span style="color:#ffffff">Padding\-top: </span>  _px | em | rem | % _ ;
+- [Color](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
+- [Imagen](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image)
+- [Tamaño](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size)
+- [Repetir](https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat)
+- [Posición](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position)
+- [Origen](https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin)
+- [Shorthand](https://developer.mozilla.org/en-US/docs/Web/CSS/background)
 
-<span style="color:#ffffff">Padding\-right: </span>  _px | em | rem | % _ ;
+### Pseudo-elementos
 
-<span style="color:#ffffff">Padding\-bottom: </span>  _px | em | rem | % _ ;
+[::before](https://developer.mozilla.org/en-US/docs/Web/CSS/::before) / [::after](https://developer.mozilla.org/en-US/docs/Web/CSS/::after)
 
-<span style="color:#ffffff"> Padding\-left: </span>  _px | em | rem | % _ ;
+## [Cursor](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor)
 
-<span style="color:#ffffff">Padding: padding\-top padding\-right padding\-bottom padding\-left;</span>
+## Colores
 
-<span style="color:#ffffff">Padding: </span>  <span style="color:#ffffff"> _\(padding\-top & padding\-bottom\)  \(padding\-right  & padding\-left\)_ </span>  <span style="color:#ffffff"> ;</span>
+- [Colores](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
+      - [RGB , RGBA \-> Valores 0 \- 255](https://developer.mozilla.org/enUS/docs/Web/CSS/color)
+      - [HSL, HSLA](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
+      - [Keyword](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
+      - [Hex (RGB) \-> \#000000 \- \#ffffff](https://developer.mozilla.org/enUS/docs/Web/CSS/color)
+- [Opacidad](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
+- [Filter](https://developer.mozilla.org/en-US/docs/Web/CSS/filter)
 
-<span style="color:#ffffff">Padding: </span>  <span style="color:#ffffff"> _\(padding\-top & padding\-right & padding\-bottom & padding\-left\)_ </span>  <span style="color:#ffffff"> ;</span>
+## [POSITION](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
 
-# Border-radius
+- Static
+- Relative
+- Absolute
+- Fixed
+- Sticky
 
-# Ancho y Alto
+### Context
 
-Width:  _px | em | rem | % | view | auto_  <span style="color:#ffffff">;</span>
+- Top
+- Left
+- Right
+- Bottom
 
-Height:  _px | em | rem | % | view | auto_ ;
+### [z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)
 
-Max\-width:  _px | em | rem | % | view | auto_ ;
+## Text Shadow
 
-Min\-width:  _px | em | rem | % | view | auto_ ;
+<https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow>
+<https://www.w3schools.com/cssref/css3_pr_text-shadow.asp>
 
-Max\-height:  _px | em | rem | % | view | auto_ ;
+## Transform
 
-Min\-height:  _px | em | rem | % | view | auto_ ;
+- Translate
+- Scale
+- Rotate
 
-# Borde
+## [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
 
-Border\-width:  _px | em | rem | thin | medium | thick_ ;
+Necesita de una caja contenedora con sus respectivos hijos.
 
-Border\-style:  _none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset_  ;
+Si no tiene hijos; es decir, otra caja, pero tiene texto, el texto es su hijo.
 
-Border\-color:   _\<rgb\(\)> | \<rgba\(\)> | \<hsl\(\)> | \<hsla\(\)> | \<hex\-color> | \<named\-color>_  ;
+- [https://developer.mozilla.org/en\-US/docs/Learn/CSS/CSS\_layout/Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
+- [https://www.w3.org/TR/css\-flexbox\-1/](https://www.w3.org/TR/css-flexbox-1/)
 
-Border: _ \<br\-width> || \<br\-style> || \<color>_  ; /\*\*shorthand/
+```css
 
-# Box-sizing
+display: flex | inline-flex;
 
-# Background
+```
 
-_[Color](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)_
+## Flexbox - Row
 
-_[Imagen](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image)_
+![flex](img/Curso_CSS_v2_3.png)
 
-_[Tamaño](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size)_
+### Flexbox - Column
 
-_[Repetir](https://developer.mozilla.org/en-US/docs/Web/CSS/background-repeat)_
+![flex](img/Curso_CSS_v2_4.png)
 
-_[Posición](https://developer.mozilla.org/en-US/docs/Web/CSS/background-position)_
+### Flexbox - Container
 
-_[Origen](https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin)_
+```css
+flex-direction: row | row-reverse | column | column-reverse
 
-_[Shorthand](https://developer.mozilla.org/en-US/docs/Web/CSS/background)_
+flex-wrap: nowrap | wrap | wrap-reverse
 
-# Pseudo-elementos
-::before / ::after
+flex-flow: flex-direction || flex-wrap -> shorthand
+```
 
-# Cursor
+### Container  (Alineamiento)
 
-# Colores
+#### Main Axis
 
-_[Colores](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)_
+```css
 
-_[RGB \, RGBA \-> Valores 0 \- 255](https://developer.mozilla.org/en-US/docs/Web/CSS/color)_
+justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
 
-_[HSL\, HSLA](https://developer.mozilla.org/en-US/docs/Web/CSS/color)_
+```
 
-_[Keyword](https://developer.mozilla.org/en-US/docs/Web/CSS/color)_
+#### Cross Axis
 
-_[Hex \(RGB\) \-> \#000000 \- \#ffffff](https://developer.mozilla.org/en-US/docs/Web/CSS/color)_
+```css
 
-_[Opacidad](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)_
+align-content: flex-start | flex-end | center | space-between | space-around | space-evenly ;  /*(wrap)*/
 
-_[Filter](https://developer.mozilla.org/en-US/docs/Web/CSS/filter)_
+align-items: flex-start | flex-end | center | baseline | stretch; /* (no-wrap) */
+```
 
-# P O S I T I O N
+### Item (flex)
 
-# Static | Relative | Absolute | Fixed | Sticky
-Top - Left - Right - Bottom
-Context
+```css
 
-# Z-index
+flex: none | flex-grow  || flex-shrink  || flex-basis  ; -> shorthand
 
-# Text Shadow
-https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow
-https://www.w3schools.com/cssref/css3_pr_text-shadow.asp
+```
 
-# Transform
+- [flex-grow](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow)
+- [flex-shrink](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink)
+- [flex-basis](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis)
 
-Translate
+> Los hijos no crecen por default, pero si se encogen para entrar. Siempre tratan de ponerse en una sola línea.
+> `flex-basis` gana a `width`.
 
-Scale
+### Item  (Alineamiento)
 
-Rotate
+```css
+align-self: auto | flex-start | flex-end | center | baseline | stretch;
 
-# F L E X B O X
+order: <número entero>
+```
 
-# Flexbox
+- [https://developer.mozilla.org/en-US/docs/Web/CSS/align-self](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self)
+- [https://developer.mozilla.org/en-US/docs/Web/CSS/order](https://developer.mozilla.org/en-US/docs/Web/CSS/order)
 
-Necesita de una caja contenedora con sus respectivos hijos\.
+## Diseño responsivo
 
-Si no tiene hijos; es decir\, otra caja\, pero tiene texto\, el texto es su hijo\.
+- [Responsive Design](https://developers.google.com/web/fundamentals/design-and-ux/responsive/)
+- [Patrones de Responsive](https://developers.google.com/web/fundamentals/design-and-ux/responsive/patterns)
+- Media Querys
+  - <https://www.w3schools.com/css/css_rwd_mediaqueries.asp>
+  - <https://www.w3schools.com/Css/css3_mediaqueries_ex.asp>
+  - <https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries>
 
-_[https://developer\.mozilla\.org/en\-US/docs/Learn/CSS/CSS\_layout/Flexbox](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)_
+## Frameworks
 
-_[https://www\.w3\.org/TR/css\-flexbox\-1/](https://www.w3.org/TR/css-flexbox-1/)_
+- [Bootstrap](http://getbootstrap.com/)
+- [Tailwindcss](https://tailwindcss.com/)
+- [Material Design](https://m3.material.io/develop/web)
+- [Foundation](https://foundation.zurb.com/)
+- [Pure.CSS](https://purecss.io/)
+- [Materialize](https://materializecss.com/)
+- [Bulma](https://bulma.io/)
 
-_display_ :  __flex | inline\-flex__
+## Preprosesadores
 
-# Flexbox - Row
-
-![](img/Curso_CSS_v2_3.png)
-
-# Flexbox - Column
-
-![](img/Curso_CSS_v2_4.png)
-
-# Flexbox - Container
-
-Flex\-direction:  _row_  |  _row\-reverse _ |  _column _ |  _column\-reverse_
-
-flex\-wrap:  _nowrap_  |  _wrap_  |  _wrap\-reverse_
-
-flex\-flow: _ flex\-direction _ || _ flex\-wrap_  \-> shorthand
-
-# Flexbox - Container  (Alineamiento)
-
-_Main Axis:_
-
-_[J](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)_  _[ustify\-content](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)_ : flex\-start | flex\-end | center | space\-between | space\-around | space\-evenly;
-
-_Cross Axis:_
-
-_[Align\-content](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)_ : flex\-start | flex\-end | center | space\-between | space\-around | space\-evenly ;  //  __\(wrap\)__
-
-_[Align\-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)_ : flex\-start | flex\-end | center | baseline | stretch; //  __\(no\-wrap\)__
-
-# Flexbox - Item (flex)
-
-Flex:  _none_  | _ flex\-grow_   || _ f_  _lex\-shrink_   || _ flex\-basis_   ;  __\-> __  _shorthand_
-
-_[Flex\-grow](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow)_
-
-_[Flex\-shrink](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink)_
-
-_[Flex\-basis](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis)_  <span style="color:#ffffff"> </span>
-
-<span style="color:#ffffff">Los hijos </span>  <span style="color:#ffffff"> _no crecen_ </span>  <span style="color:#ffffff"> por default\, pero si se encogen para entrar\. Siempre tratan de </span>  <span style="color:#ffffff">ponerse</span>  <span style="color:#ffffff"> en una sola línea\.</span>
-
-<span style="color:#ffffff">Flex\-basis gana a width\.</span>
-
-# Flexbox - Item  (Alineamiento)
-
-_[A](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self)_  _[lign\-self](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self)_ : auto | flex\-start | flex\-end | center | baseline | stretch;
-
-_[Order](https://developer.mozilla.org/en-US/docs/Web/CSS/order)_ : \<número entero>
-
-# Responsive Design
-
-# Patrones de Responsive
-
-# Media Querys
-https://www.w3schools.com/css/css_rwd_mediaqueries.asp
-https://www.w3schools.com/Css/css3_mediaqueries_ex.asp
-https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
-
-# Frameworks
-
-_[Bootstrap](http://getbootstrap.com/)_
-
-_[Foundation](https://foundation.zurb.com/)_
-
-_[Material Design Lite](https://getmdl.io/)_
-
-_[Pure\.CSS](https://purecss.io/)_
-
-_[Materialize](https://materializecss.com/)_
-
-_[Bulma](https://bulma.io/)_
-
-_[Tailwindcss](https://tailwindcss.com/)_
-
-# Preprosesadores
-
-_[SASS](http://sass-lang.com/)_
-
-_[LESS](http://lesscss.org/)_
-
-_[Stylus](http://stylus-lang.com/)_
-
-_[PostCSS](https://postcss.org/)_
-
-![](img/Curso_CSS_v2_5.png)
-
-# Bootstrap
-
-# SASS o SCSS
-
-![](img/Curso_CSS_v2_6.png)
+- [SASS](http://sass-lang.com/)
+- [LESS](http://lesscss.org/)
+- [Stylus](http://stylus-lang.com/)
+- [PostCSS](https://postcss.org/)
