@@ -48,3 +48,5 @@ Objetivo: Aprender a desarrollar un sitio web estático, aplicando la ultima gen
     3. Box sizing
     3. Background
     3. Colores
+
+[Presentación](presentacion/index.html)

@@ -4,9 +4,11 @@ title: CSS
 
 # CSS desde cero
 
-CASCADE
-STYLE
-SHEET
+## CASCADE
+
+## STYLE
+
+## SHEET
 
 ==Hoja de Estilo en Cascada: Se irá leyendo de arriba a abajo. La última propiedad siempre gana==
 
@@ -49,7 +51,7 @@ Selector de:
 - Descendiente (padre [espacio] hijo { … } )
 - De atributo
 
-_[http://apps.workflower.fi/vocabs/css/en](http://apps.workflower.fi/vocabs/css/en)_
+![voca](img/vocabulario_css.gif)
 
 ## Variables CSS
 
@@ -97,6 +99,27 @@ background-color: var( --color-primary );
   - [https://www.w3schools.com/cssref/pr_text_white-space.asp](https://www.w3schools.com/cssref/pr_text_white-space.asp)
 - Text-overflow :  clip | ellipsis | initial | inherit ; ->
 
+```css
+.titulo-sombra {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  color: #2c3e50;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+```
+
 ## Unidades de medida
 
 ### Absolutas
@@ -125,6 +148,32 @@ Viewport
 
 [https://developer.mozilla.org/en\-US/docs/Learn/CSS/Introduction\_to\_CSS/Values\_and\_units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units)
 
+### Ejemplos con tipos de medidas
+
+```css
+.caja-absoluta {
+  width: 200px;
+  height: 50mm;
+  background: lightblue;
+}
+
+.texto-relativo {
+  font-size: 1.2em; /* relativo al padre */
+  margin-bottom: 2rem; /* relativo al root */
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  font-size: 5vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #74ABE2, #5563DE);
+  color: white;
+}
+```
+
 ## [Fonts](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals )
 
 - Font-family : Define la fuente tipográfica que será aplicada al texto.
@@ -140,6 +189,41 @@ Propiedades que pueden tener
 - `font-weight` : normal | bold | lighter | bolder | 100-900;
 - [@font\-face](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)
 
+### Ejemplos con fuentes
+
+```css
+.ejemplo1 {
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.8;
+  word-spacing: 5px;
+}
+
+.cita {
+  font-style: italic;
+  font-size: 1.2rem;
+  text-align: right;
+  color: #555;
+}
+
+.resaltado {
+  font-weight: bold;
+  color: #e67e22;
+}
+```
+
 Recursos:
 
 [https://fonts.google.com](https://fonts.google.com)
@@ -154,7 +238,7 @@ El navegador contiene sus propios estilos por defecto en todos los elementos del
 
 ## Selectores
 
-### Selector de Tipo
+### Selector de *Tipo*
 
 Selector de tipo (etiqueta HTML), NO los uses a menos que sea el estilo base o de tema.
 
@@ -176,12 +260,12 @@ p {
 
 ### Selector de ID
 
-> NO los uses.
+==NO los uses==
 
 ```html
 <!-- HTML File -->
 
-<h1 id= “title”> Titulo del sitio </h1>
+<h1 id = “title”> Titulo del sitio </h1>
 
 ```
 
@@ -214,17 +298,17 @@ Siempre debes usar clases para tus estilos.
 - ID = 100
 - Class = 10
 - Type = 1
-- `!important`: /_Nunca lo uses a menos que sea de vida o muerte_/ Su valor es infinito
+- `!important`: /*Nunca lo uses a menos que sea de vida o muerte*/ Su valor es infinito
 
 [https://www.w3schools.com/css/css\_specificity.asp](https://www.w3schools.com/css/css_specificity.asp)
 
 [https://developer.mozilla.org/en\-US/docs/Web/CSS/Specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
 
-### [Selectores compuestos](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors#Combinators)
+### [Selectores compuestos](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors#combinators_and_separators)
 
 Están formados por más de una palabra.
 
-- Descendientes (_Espacio entre selectores_)
+- Descendientes (*Espacio entre selectores*)
 
 ```css
 ancestro descendientes {
@@ -240,7 +324,7 @@ padre > hijo {
 }
 ```
 
-Hermano siguiente (adyacente) (  _\+_ )
+Hermano siguiente (adyacente) (  *+* )
 
 ```css
 elemento +  hermano-siguiente {
@@ -272,6 +356,10 @@ selector, selector, .,.. {
 }
 ```
 
+Referencias:
+
+- [https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors#combinators_and_separators](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors#combinators_and_separators)
+
 ### Selectores de atributo
 
 **Sintaxis:**
@@ -300,26 +388,107 @@ a[href] {
 - Ignora mayúsculas y minúsculas (i o I )
   - `[src=“imagen” i ] { … }`
 
-Mas información
+Ejemplo
+
+```css
+/* <a> elements with a title attribute */
+a[title] {
+  color: purple;
+}
+
+/* <a> elements with an href matching "https://example.org" */
+a[href="https://example.org"]
+{
+  color: green;
+}
+
+/* <a> elements with an href containing "example" */
+a[href*="example"] {
+  font-size: 2em;
+}
+
+/* <a> elements with an href ending ".org", case-insensitive */
+a[href$=".org" i] {
+  font-style: italic;
+}
+
+/* <a> elements whose class attribute contains the word "logo" */
+a[class~="logo"] {
+  padding: 2px;
+}
+```
+
+```css
+a {
+  color: blue;
+}
+
+/* Internal links, beginning with "#" */
+a[href^="#"] {
+  background-color: gold;
+}
+
+/* Links with "example" anywhere in the URL */
+a[href*="example"] {
+  background-color: silver;
+}
+
+/* Links with "insensitive" anywhere in the URL,
+   regardless of capitalization */
+a[href*="insensitive" i] {
+  color: cyan;
+}
+
+/* Links with "cAsE" anywhere in the URL,
+with matching capitalization */
+a[href*="cAsE" s] {
+  color: pink;
+}
+
+/* Links that end in ".org" */
+a[href$=".org"] {
+  color: red;
+}
+
+/* Links that start with "https://" and end in ".org" */
+a[href^="https://"][href$=".org"]
+{
+  color: green;
+}
+```
+
+```html
+<ul>
+  <li><a href="#internal">Internal link</a></li>
+  <li><a href="http://example.com">Example link</a></li>
+  <li><a href="#InSensitive">Insensitive internal link</a></li>
+  <li><a href="http://example.org">Example org link</a></li>
+  <li><a href="https://example.org">Example https org link</a></li>
+</ul>
+```
+
+Referencias:
 
 - [https://developer.mozilla.org/en\-US/docs/Learn/CSS/Introduction\_to\_CSS/Attribute\_selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Attribute_selectors)
 - [https://developer.mozilla.org/en\-US/docs/Web/CSS/Attribute\_selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
 - [https://www.w3schools.com/css/css\_attribute\_selectors.asp](https://www.w3schools.com/css/css_attribute_selectors.asp)
 
+## Pseudo-clases
+
 ### Pseudo-clases ( `:` )
 
-Son selectores dinámicos, responden a ciertas eventos que suceden con el elemento.
+Son selectores dinámicos, responden a ciertos eventos que suceden con el elemento.
 
 Sintaxis:
 
 ```css
 selector : pseudo-class {
 
-  /Estilos/
+  /*Estilos*/
 
 }
 
-: pseudo-class { … } /*se aplica a todos los elementos*/
+: pseudo-clase { } /*se aplica a todos los elementos, no tiene nada antes de los 2 puntos*/
 
 ```
 
@@ -328,36 +497,85 @@ selector : pseudo-class {
 
 ### Tipos de Pseudo-clases
 
-- `:hover`:  _Se activa al pasar el puntero sobre el elemento_
-- `:active`:  _Cuando se da click sobre el elemento_
-- `:link`:  _Link sin visitar aún_
-- `:visited`:  _Cuando ya ha sido visitado el enlace_
-- `:target`:  _Cuando mandan a llamar al elemento_
+- `:hover`:  *Se activa al pasar el puntero sobre el elemento*
+- `:active`:  *Cuando se da click sobre el elemento*
+- `:link`:  *Link sin visitar aún*
+- `:visited`:  *Cuando ya ha sido visitado el enlace*
+- `:target`:  *Cuando mandan a llamar al elemento*
 - `:not( *selector* )`: Selecciona los elementos que NO coinciden con el selector.
   - [https://www.w3schools.com/cssref/sel\_not.asp](https://www.w3schools.com/cssref/sel_not.asp)
   - [https://developer.mozilla.org/en\-US/docs/Web/CSS/:not](https://developer.mozilla.org/en-US/docs/Web/CSS/:not)
-- `:empty`: _Te indica un elemento que está vacío, es decir, que no tiene hijos o texto_
-- `:checked`:  _Si se activo la propiedad checked (radio, checkbox, select)_
-- `:focus`:  _Se activa cuando tiene el focu el input_
-- `:enabled`:  _Se ejecuta cuando el input está disponible_
-- `:disabled`:  _Se ejecuta cuando el input está deshabilitado_
-- `:required`:  _Se activa cuando el input es requerido, pero no opcional_
-- `:optional`:  _Cualquier input, select o textarea que no tenga_  _required_
+- `:empty`: *Te indica un elemento que está vacío, es decir, que no tiene hijos o texto*
+- `:checked`:  *Si se activo la propiedad checked (radio, checkbox, select)*
+- `:focus`:  *Se activa cuando tiene el focu el input*
+- `:enabled`:  *Se ejecuta cuando el input está disponible*
+- `:disabled`:  *Se ejecuta cuando el input está deshabilitado*
+- `:required`:  *Se activa cuando el input es requerido, pero no opcional*
+- `:optional`:  *Cualquier input, select o textarea que no tenga*  *required*
 
 ### Pseudo-clases (child )
 
 - `:first-of-type`: Encuentra el primer tipo de elemento
 - `:last-of-type`: Encuentra al último tipo de elemento
-- `:nth-of-type(n)`: Encuentra al _tipo de elemento_ “n” [odd, even, x,...]
+- `:nth-of-type(n)`: Encuentra al *tipo de elemento* “n” [odd, even, x,...]
 - `:nth-last-of-tupe(n)`: Es igual a nth-of-type, solo que la cuenta comienza del final al principio
+
+```css
+article p:first-child {
+  font-size: 120%;
+  font-weight: bold;
+}
+```
+
+```html
+<article>
+  <p>
+    Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion
+    daikon amaranth tatsoi tomatillo melon azuki bean garlic.
+  </p>
+  <p>
+    Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette
+    tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato.
+    Dandelion cucumber earthnut pea peanut soko zucchini.
+  </p>
+</article>
+```
 
 ## Modelo de Caja
 
 ![caja](img/Curso_CSS_v2_2.png)
 
-## Elements
+## Elements Block vs Inline
 
-### Block vs Inline
+Un elemento de bloque (block-level element):
+-Ocupa todo el ancho disponible del contenedor.
+
+- Siempre empieza en una nueva línea.
+- Puedes definirle ancho (`width`) y alto (`height`).
+- Puede contener otros elementos de bloque o en línea.
+
+Un elemento en línea (inline):
+
+- Solo ocupa el espacio necesario para su contenido.
+- No inicia en una nueva línea (se coloca junto a otros elementos).
+- No puedes darle ancho ni alto directamente (aunque sí margin o padding lateral).
+- Normalmente se usa dentro de elementos de bloque.
+
+```css
+div {
+  background: red;
+}
+
+span{
+  background: yellow;
+}
+```
+
+```html
+<div>soy un div</div>
+
+<span>soy un span</span>
+```
 
 ### Margin
 
