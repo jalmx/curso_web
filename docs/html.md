@@ -132,7 +132,7 @@ Le dice al navegador la estructura de los elementos, su jerarquía  y organizaci
 
 <main>. . . </main> Indica una sección principal
 
-<h\{1..6\}>. . . </h\{1..6\}> : Títulos y subtítulos
+<h{1..6}>. . . </h{1..6}> : Títulos y subtítulos
 
 <header>. . . </header> : Cabecera de sección
 
