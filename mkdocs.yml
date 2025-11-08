@@ -79,5 +79,6 @@ plugins:
   - search:
       lang: es
       indexing: 'full'
+  - offline
   # - minify:
   #     minify_html: true

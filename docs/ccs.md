@@ -83,21 +83,23 @@ background-color: var( --color-primary );
 - `line-height`: espacio del interlineado
 - `word-spacing`:  separación entre palabras
 - `text-shadow`: sombreado al texto
+- `text-overflow`: esta propiedad indica como se oculta texto cuando se desbordar del contenedor.
 
 ## [Texto](https://www.w3schools.com/css/css_text.asp)
 
-- Color: red | #ff22AC | rgb(255,100,0)  | hsl(240, 100%, 25%);
+- [Color](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/color): red | #ff22AC | rgb(255,100,0)  | hsl(240, 100%, 25%);
   - [https://www.w3schools.com/colors/colors_names.asp](https://www.w3schools.com/colors/colors_names.asp)
-- Text-align : center | left | right | justify;
-- Text-decoration : none | overline | line-through | underline ;
-- Text-transform : uppercase | lowercase | capitalize;
-- Letter-spacing : (+/ - ) px | em | rem;
-- Word-spacing : (+/ - ) px | em | rem;
-- Line-height :  px | em | rem | unidad;
-- Overflow-wrap : normal | break-word ; ->
-- white -space : nowrap | wrap | pre | normal;
+- [Text-align](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-align) : center | left | right | justify;
+- [Text-decoration](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-decoration) : none | overline | line-through | underline ;
+- [Text-transform](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-transform) : uppercase | lowercase | capitalize;
+- [Letter-spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/letter-spacing) : (+/ - ) px | em | rem;
+- [Word-spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/word-spacing) : (+/ - ) px | em | rem;
+- [Line-height](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/line-height) :  px | em | rem | unidad;
+- [text-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-shadow):  offset-x | offset-y | blur-radius | color
+- [Overflow-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/overflow-wrap) : normal | break-word ;
+- [white-space](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/white-space) : nowrap | wrap | pre | normal;
   - [https://www.w3schools.com/cssref/pr_text_white-space.asp](https://www.w3schools.com/cssref/pr_text_white-space.asp)
-- Text-overflow :  clip | ellipsis | initial | inherit ; ->
+- [Text-overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-overflow) :  clip | ellipsis | initial | inherit;
 
 ```css
 .titulo-sombra {
@@ -130,8 +132,6 @@ p {
 - Pixels (px)
 - Puntos (pt)
 
-[https://developer.mozilla.org/en\-US/docs/Web/CSS/length](https://developer.mozilla.org/en-US/docs/Web/CSS/length)
-
 ### Relativas
 
 - Contenedor (%)
@@ -139,7 +139,7 @@ p {
 Tipografía
 
 - em (Contenedor)
-- rem (Root \-> html \-> body)
+- rem (Root -> html -> body)
 
 Viewport
 
@@ -147,6 +147,8 @@ Viewport
 - Alto ventana (vh)
 
 [https://developer.mozilla.org/en\-US/docs/Learn/CSS/Introduction\_to\_CSS/Values\_and\_units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units)
+
+- [https://developer.mozilla.org/en\-US/docs/Web/CSS/length](https://developer.mozilla.org/en-US/docs/Web/CSS/length)
 
 ### Ejemplos con tipos de medidas
 
@@ -183,10 +185,10 @@ Viewport
 
 Propiedades que pueden tener
 
-- `font-family` : web fonts;
-- `font-size` :  px | em | rem;
-- `font-style` : normal | italic ;
-- `font-weight` : normal | bold | lighter | bolder | 100-900;
+- [font-family](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-family) : web fonts;
+- [font-size](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-size) :  px | em | rem;
+- [font-style](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-style) : normal | italic ;
+- [font-weight](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-weight) : normal | bold | lighter | bolder | 100-900;
 - [@font\-face](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)
 
 ### Ejemplos con fuentes
@@ -236,7 +238,7 @@ El navegador contiene sus propios estilos por defecto en todos los elementos del
 
 [Normalize](https://necolas.github.io/normalize.css/)
 
-## Selectores
+## Selectores (Etiquetas -> TIPO)
 
 ### Selector de *Tipo*
 
@@ -624,18 +626,44 @@ min-height: px | em | rem | % | view | auto;
 ### [Borde](https://developer.mozilla.org/en-US/docs/Web/CSS/border)
 
 ```css
-Border-width: px | em | rem | thin | medium | thick;
+border-width: px | em | rem | thin | medium | thick;
 
-Border-style: none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset ;
+border-style: none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset ;
 
-Border-color:  <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hex-color> | <named-color> ;
+border-color:  <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hex-color> | <named-color> ;
 
-Border: <br-width> || <br-style> || <color> ; /*shorthand*/
+border: <br-width> || <br-style> || <color> ; /*shorthand*/
 ```
 
 ### [Box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
 
-### Background
+La propiedad `box-sizing` se utiliza para modificar la forma en que se calculan el ancho y alto totales de un elemento (su caja), lo que incluye el padding (relleno) y el border (borde).
+
+> El valor por defecto de `box-sizing` es `content-box`
+
+El ancho y alto que establece un elemento (`width` y `height`) solo se aplican al contenido de la caja.
+
+$$Ancho_{Total}=width+padding (izq + der)+border (izq + der)$$
+
+El valor `border-box` es el más utilizado.
+El ancho y alto que estableces (`width` y `height`) incluyen el padding y el border.
+
+$$Ancho_{Total}=width$$
+
+```css
+box-sizing: border-box | content-box;
+```
+
+
+```css
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+```
+
+### [Background](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background)
 
 - [Color](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)
 - [Imagen](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image)
@@ -645,7 +673,7 @@ Border: <br-width> || <br-style> || <color> ; /*shorthand*/
 - [Origen](https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin)
 - [Shorthand](https://developer.mozilla.org/en-US/docs/Web/CSS/background)
 
-### Pseudo-elementos
+### [Pseudo-elementos](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements)
 
 [::before](https://developer.mozilla.org/en-US/docs/Web/CSS/::before) / [::after](https://developer.mozilla.org/en-US/docs/Web/CSS/::after)
 

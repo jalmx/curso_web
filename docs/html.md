@@ -62,8 +62,8 @@ Le dice al navegador la estructura de los elementos, su jerarquía  y organizaci
 
 - **Semantics:**  allowing you to describe more precisely what your content is.
 - **Connectivity:**  allowing you to communicate with the server in new and innovative ways.
-- **Offline and storage:**  allowing webpages to store data on the client\-side locally and operate offline more efficiently.
-- **Multimedia:**  making video and audio first\-class citizens in the Open Web.
+- **Offline and storage:**  allowing webpages to store data on the client-side locally and operate offline more efficiently.
+- **Multimedia:**  making video and audio first-class citizens in the Open Web.
 - **2D/3D graphics  and effects:**  allowing a much more diverse range of presentation options.
 - **Performance and integration:**  providing greater speed optimization and better usage of computer hardware.
 - **Device access:**  allowing for the usage of various input and output devices.
@@ -103,7 +103,7 @@ Le dice al navegador la estructura de los elementos, su jerarquía  y organizaci
 - Interactividad
 - Web components
 
-[https://developer.mozilla.org/en\-US/docs/web/html/Elemen](https://developer.mozilla.org/en-US/docs/web/html/Element)
+[https://developer.mozilla.org/en-US/docs/web/html/Elemen](https://developer.mozilla.org/en-US/docs/web/html/Element)
 
 ## Etiquetas
 
@@ -116,7 +116,8 @@ Le dice al navegador la estructura de los elementos, su jerarquía  y organizaci
 ### Etiquetas de sección
 
 ```html
-<\!DOCTYPE*  > Define que es HTML5
+
+<!DOCTYPE html> Define que es HTML5
 
 <html>. . . </html> Contiene a todo el documento
 
@@ -450,14 +451,14 @@ Define con una palabra descriptiva, cuál es la función de la sección para per
   <a href=“#”>HOME</a>
 ```
 
-- `target`  <span style="color:#333333">=</span>  *“\_black”*
+- `target`  <span style="color:#333333">=</span>  *“_black”*
 - `download`  <span style="color:#333333">=</span>  *“archivo.extension”*
 - `href`  <span style="color:#333333">=</span>  *“teléfono | correo”*
 
 - `mailto:`: Enviar un correo de forma directa. `mailto:correo@dominio.org`
 - `tel:`: Llamar con solo click. `tel:+491570156`
 
-[https://developer.mozilla.org/en\-US/docs/Web/HTML/Element/a](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a)
+[https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a)
 
 ### Single pages
 
@@ -542,8 +543,8 @@ Una entidad HTML es un conjunto de caracteres ("string") que comienza con un amp
 ![entidades](img/entidades_1.png#only-light)
 ![entidades](img/entidades_2.png#only-dark)
 
-- [https://unicode\-table.com/es/html\-entities/](https://unicode-table.com/es/html-entities/)
-- [https://www.mclibre.org/consultar/htmlcss/html/html\-unicode\-simbolos.html](https://www.mclibre.org/consultar/htmlcss/html/html-unicode-simbolos.html)*
+- [https://unicode-table.com/es/html-entities/](https://unicode-table.com/es/html-entities/)
+- [https://www.mclibre.org/consultar/htmlcss/html/html-unicode-simbolos.html](https://www.mclibre.org/consultar/htmlcss/html/html-unicode-simbolos.html)*
 - [https://www.w3schools.com/charsets/ref_utf_symbols.asp](https://www.w3schools.com/charsets/ref_utf_symbols.asp)
 - [https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references](https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references)
 - [https://www.mclibre.org/consultar/htmlcss/html/html-entidades-caracter.html](https://www.mclibre.org/consultar/htmlcss/html/html-entidades-caracter.html)

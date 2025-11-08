@@ -1,165 +1,30 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo - PCBtronix</title>
+    <title>Document</title>
+
+    <style>
+        .centrar {
+            background-color: red;
+            color: white;
+            text-align: center;
+            border: 10px dotted black;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 20px yellow;
+            padding: 2rem;
+        }
+    </style>
 </head>
+
 <body>
-    <!-- Barra de Navegación -->
-    <nav>
-        <!-- Lista SIN orden para páginas -->
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="catalogo.html">Catálogo</a></li>
-            <li><a href="quienes_somos.html">Quiénes Somos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
 
-        <!-- Lista ordenada para secciones internas -->
-        <ol>
-            <li><a href="#componentes1">Componentes Básicos</a></li>
-            <li><a href="#componentes2">Microcontroladores</a></li>
-            <li><a href="#componentes3">Sensores</a></li>
-            <li><a href="#componentes4">Módulos de Comunicación</a></li>
-            <li><a href="#componentes5">Herramientas y Accesorios</a></li>
-        </ol>
-    </nav>
+    <h1>Hello, World!</h1>
+    <p class="centrar">This is a test HTML file.</p>
 
-    <!-- Título Principal -->
-    <h1>Catálogo de Tarjetas Electrónicas</h1>
 
-    <!-- Imagen Representativa -->
-    <img src="images/catalogo-tarjetas.jpg" alt="Catálogo de tarjetas electrónicas PCBtronix" width="100%">
-
-    <!-- Sección 1: Componentes Básicos -->
-    <section id="componentes1">
-        <h2>Componentes Básicos</h2>
-
-        <!-- Línea 1 de 3 imágenes -->
-        <div>
-            <img src="images/componentes/resistores.jpg" alt="Resistores de precisión" width="32%">
-            <img src="images/componentes/capacitores.jpg" alt="Capacitores electrolíticos" width="32%">
-            <img src="images/componentes/transistores.jpg" alt="Transistores NPN y PNP" width="32%">
-        </div>
-
-        <!-- Línea 2 de 3 imágenes -->
-        <div>
-            <img src="images/componentes/diodos.jpg" alt="Diodos y LEDs" width="32%">
-            <img src="images/componentes/inductores.jpg" alt="Inductores y bobinas" width="32%">
-            <img src="images/componentes/cristales.jpg" alt="Cristales osciladores" width="32%">
-        </div>
-
-        <!-- Línea 3 de 3 imágenes -->
-        <div>
-            <img src="images/componentes/reguladores.jpg" alt="Reguladores de voltaje" width="32%">
-            <img src="images/componentes/opamps.jpg" alt="Amplificadores operacionales" width="32%">
-            <img src="images/componentes/connectors.jpg" alt="Conectores y headers" width="32%">
-        </div>
-    </section>
-
-    <!-- Sección 2: Microcontroladores -->
-    <section id="componentes2">
-        <h2>Microcontroladores</h2>
-
-        <!-- Línea 1 de 3 imágenes -->
-        <div>
-            <img src="images/microcontroladores/arduino-uno.jpg" alt="Arduino UNO R3" width="32%">
-            <img src="images/microcontroladores/esp32.jpg" alt="ESP32 Dev Board" width="32%">
-            <img src="images/microcontroladores/raspberry-pi.jpg" alt="Raspberry Pi 4" width="32%">
-        </div>
-
-        <!-- Línea 2 de 3 imágenes -->
-        <div>
-            <img src="images/microcontroladores/stm32.jpg" alt="STM32 Blue Pill" width="32%">
-            <img src="images/microcontroladores/attiny85.jpg" alt="ATtiny85" width="32%">
-            <img src="images/microcontroladores/pic16f877.jpg" alt="PIC16F877" width="32%">
-        </div>
-
-        <!-- Línea 3 de 3 imágenes -->
-        <div>
-            <img src="images/microcontroladores/teensy.jpg" alt="Teensy 4.1" width="32%">
-            <img src="images/microcontroladores/nodemcu.jpg" alt="NodeMCU" width="32%">
-            <img src="images/microcontroladores/arduino-nano.jpg" alt="Arduino Nano" width="32%">
-        </div>
-    </section>
-
-    <!-- Sección 3: Sensores -->
-    <section id="componentes3">
-        <h2>Sensores</h2>
-
-        <!-- Línea 1 de 3 imágenes -->
-        <div>
-            <img src="images/sensores/temperatura.jpg" alt="Sensor de temperatura DHT22" width="32%">
-            <img src="images/sensores/humedad.jpg" alt="Sensor de humedad suelo" width="32%">
-            <img src="images/sensores/movimiento.jpg" alt="Sensor de movimiento PIR" width="32%">
-        </div>
-
-        <!-- Línea 2 de 3 imágenes -->
-        <div>
-            <img src="images/sensores/proximidad.jpg" alt="Sensor de proximidad ultrasonico" width="32%">
-            <img src="images/sensores/luz.jpg" alt="Sensor de luz LDR" width="32%">
-            <img src="images/sensores/gas.jpg" alt="Sensor de gas MQ-2" width="32%">
-        </div>
-
-        <!-- Línea 3 de 3 imágenes -->
-        <div>
-            <img src="images/sensores/acelerometro.jpg" alt="Acelerómetro MPU-6050" width="32%">
-            <img src="images/sensores/presion.jpg" alt="Sensor de presión BMP180" width="32%">
-            <img src="images/sensores/hall.jpg" alt="Sensor efecto Hall" width="32%">
-        </div>
-    </section>
-
-    <!-- Sección 4: Módulos de Comunicación -->
-    <section id="componentes4">
-        <h2>Módulos de Comunicación</h2>
-
-        <!-- Línea 1 de 3 imágenes -->
-        <div>
-            <img src="images/comunicacion/wifi-esp8266.jpg" alt="Módulo WiFi ESP8266" width="32%">
-            <img src="images/comunicacion/bluetooth-hc05.jpg" alt="Módulo Bluetooth HC-05" width="32%">
-            <img src="images/comunicacion/rf-433mhz.jpg" alt="Módulo RF 433MHz" width="32%">
-        </div>
-
-        <!-- Línea 2 de 3 imágenes -->
-        <div>
-            <img src="images/comunicacion/lora.jpg" alt="Módulo LoRa SX1278" width="32%">
-            <img src="images/comunicacion/gsm-sim800l.jpg" alt="Módulo GSM SIM800L" width="32%">
-            <img src="images/comunicacion/ethernet.jpg" alt="Módulo Ethernet W5500" width="32%">
-        </div>
-
-        <!-- Línea 3 de 3 imágenes -->
-        <div>
-            <img src="images/comunicacion/zigbee.jpg" alt="Módulo ZigBee" width="32%">
-            <img src="images/comunicacion/nrf24l01.jpg" alt="Módulo NRF24L01" width="32%">
-            <img src="images/comunicacion/ir.jpg" alt="Módulo Infrarrojo" width="32%">
-        </div>
-    </section>
-
-    <!-- Sección 5: Herramientas y Accesorios -->
-    <section id="componentes5">
-        <h2>Herramientas y Accesorios</h2>
-
-        <!-- Línea 1 de 3 imágenes -->
-        <div>
-            <img src="images/herramientas/prototipado.jpg" alt="Placas de prototipado" width="32%">
-            <img src="images/herramientas/soldadura.jpg" alt="Estación de soldadura" width="32%">
-            <img src="images/herramientas/multimetro.jpg" alt="Multímetro digital" width="32%">
-        </div>
-
-        <!-- Línea 2 de 3 imágenes -->
-        <div>
-            <img src="images/herramientas/fuente-alimentacion.jpg" alt="Fuente de alimentación" width="32%">
-            <img src="images/herramientas/osciloscopio.jpg" alt="Osciloscopio digital" width="32%">
-            <img src="images/herramientas/cautin.jpg" alt="Cautín profesional" width="32%">
-        </div>
-
-        <!-- Línea 3 de 3 imágenes -->
-        <div>
-            <img src="images/herramientas/cables.jpg" alt="Cables y conectores" width="32%">
-            <img src="images/herramientas/brochas.jpg" alt="Brochas y limpiadores" width="32%">
-            <img src="images/herramientas/organizador.jpg" alt="Organizador de componentes" width="32%">
-        </div>
-    </section>
 </body>
+
 </html>
