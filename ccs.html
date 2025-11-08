@@ -12,16 +12,16 @@
         <meta name="author" content="Alejandro Leyva">
       
       
-        <link rel="canonical" href="https://www.alejandro-leyva.com/curso_web/ccs/">
+        <link rel="canonical" href="https://www.alejandro-leyva.com/curso_web/ccs.html">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="index.html">
       
       
-        <link rel="next" href="../exercise/">
+        <link rel="next" href="exercise.html">
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
     
     
@@ -30,16 +30,18 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.66ac8b77.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
       
       
 
 
     
     
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
       
     
     
@@ -52,7 +54,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -261,7 +263,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="index.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -301,7 +303,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="./" class="md-nav__link md-nav__link--active">
+      <a href="ccs.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -483,13 +485,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#selectores_1" class="md-nav__link">
+  <a href="#selectores-etiquetas-tipo" class="md-nav__link">
     <span class="md-ellipsis">
-      Selectores
+      Selectores (Etiquetas -&gt; TIPO)
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Selectores">
+    <nav class="md-nav" aria-label="Selectores (Etiquetas -> TIPO)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -908,7 +910,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../exercise/" class="md-nav__link">
+      <a href="exercise.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -928,7 +930,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../html/" class="md-nav__link">
+      <a href="html.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1124,13 +1126,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#selectores_1" class="md-nav__link">
+  <a href="#selectores-etiquetas-tipo" class="md-nav__link">
     <span class="md-ellipsis">
-      Selectores
+      Selectores (Etiquetas -&gt; TIPO)
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Selectores">
+    <nav class="md-nav" aria-label="Selectores (Etiquetas -> TIPO)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1582,7 +1584,7 @@
 <li>Descendiente (padre [espacio] hijo { … } )</li>
 <li>De atributo</li>
 </ul>
-<p><img alt="voca" src="../img/vocabulario_css.gif" /></p>
+<p><img alt="voca" src="img/vocabulario_css.gif" /></p>
 <h2 id="variables-css">Variables CSS</h2>
 <p>Es un espacio de memoria donde almacena un valor.</p>
 <div class="highlight"><pre><span></span><code><span class="nt">--nombre-variable</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="nt">valor</span><span class="w"> </span><span class="o">;</span>
@@ -1604,21 +1606,23 @@
 <li><code>line-height</code>: espacio del interlineado</li>
 <li><code>word-spacing</code>:  separación entre palabras</li>
 <li><code>text-shadow</code>: sombreado al texto</li>
+<li><code>text-overflow</code>: esta propiedad indica como se oculta texto cuando se desbordar del contenedor.</li>
 </ul>
 <h2 id="texto"><a href="https://www.w3schools.com/css/css_text.asp">Texto</a></h2>
 <ul>
-<li>Color: red | #ff22AC | rgb(255,100,0)  | hsl(240, 100%, 25%);</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/color">Color</a>: red | #ff22AC | rgb(255,100,0)  | hsl(240, 100%, 25%);</li>
 <li><a href="https://www.w3schools.com/colors/colors_names.asp">https://www.w3schools.com/colors/colors_names.asp</a></li>
-<li>Text-align : center | left | right | justify;</li>
-<li>Text-decoration : none | overline | line-through | underline ;</li>
-<li>Text-transform : uppercase | lowercase | capitalize;</li>
-<li>Letter-spacing : (+/ - ) px | em | rem;</li>
-<li>Word-spacing : (+/ - ) px | em | rem;</li>
-<li>Line-height :  px | em | rem | unidad;</li>
-<li>Overflow-wrap : normal | break-word ; -&gt;</li>
-<li>white -space : nowrap | wrap | pre | normal;</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-align">Text-align</a> : center | left | right | justify;</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-decoration">Text-decoration</a> : none | overline | line-through | underline ;</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-transform">Text-transform</a> : uppercase | lowercase | capitalize;</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/letter-spacing">Letter-spacing</a> : (+/ - ) px | em | rem;</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/word-spacing">Word-spacing</a> : (+/ - ) px | em | rem;</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/line-height">Line-height</a> :  px | em | rem | unidad;</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-shadow">text-shadow</a>:  offset-x | offset-y | blur-radius | color</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/overflow-wrap">Overflow-wrap</a> : normal | break-word ;</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/white-space">white-space</a> : nowrap | wrap | pre | normal;</li>
 <li><a href="https://www.w3schools.com/cssref/pr_text_white-space.asp">https://www.w3schools.com/cssref/pr_text_white-space.asp</a></li>
-<li>Text-overflow :  clip | ellipsis | initial | inherit ; -&gt;</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-overflow">Text-overflow</a> :  clip | ellipsis | initial | inherit;</li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">titulo-sombra</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;Poppins&#39;</span><span class="p">,</span><span class="w"> </span><span class="kc">sans-serif</span><span class="p">;</span>
@@ -1648,7 +1652,6 @@
 <li>Pixels (px)</li>
 <li>Puntos (pt)</li>
 </ul>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length">https://developer.mozilla.org/en-US/docs/Web/CSS/length</a></p>
 <h3 id="relativas">Relativas</h3>
 <ul>
 <li>Contenedor (%)</li>
@@ -1664,6 +1667,9 @@
 <li>Alto ventana (vh)</li>
 </ul>
 <p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units">https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units</a></p>
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/length">https://developer.mozilla.org/en-US/docs/Web/CSS/length</a></li>
+</ul>
 <h3 id="ejemplos-con-tipos-de-medidas">Ejemplos con tipos de medidas</h3>
 <div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">caja-absoluta</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
@@ -1696,10 +1702,10 @@
 </ul>
 <p>Propiedades que pueden tener</p>
 <ul>
-<li><code>font-family</code> : web fonts;</li>
-<li><code>font-size</code> :  px | em | rem;</li>
-<li><code>font-style</code> : normal | italic ;</li>
-<li><code>font-weight</code> : normal | bold | lighter | bolder | 100-900;</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-family">font-family</a> : web fonts;</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-size">font-size</a> :  px | em | rem;</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-style">font-style</a> : normal | italic ;</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/font-weight">font-weight</a> : normal | bold | lighter | bolder | 100-900;</li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face">@font-face</a></li>
 </ul>
 <h3 id="ejemplos-con-fuentes">Ejemplos con fuentes</h3>
@@ -1738,9 +1744,9 @@
 <p><a href="https://fonts.google.com">https://fonts.google.com</a></p>
 <h2 id="estilos-por-defecto">Estilos por defecto</h2>
 <p>El navegador contiene sus propios estilos por defecto en todos los elementos del HTML.</p>
-<p><img alt="estilo defecto" src="../img/Curso_CSS_v2_1.png" /></p>
+<p><img alt="estilo defecto" src="img/Curso_CSS_v2_1.png" /></p>
 <p><a href="https://necolas.github.io/normalize.css/">Normalize</a></p>
-<h2 id="selectores_1">Selectores</h2>
+<h2 id="selectores-etiquetas-tipo">Selectores (Etiquetas -&gt; TIPO)</h2>
 <h3 id="selector-de-tipo">Selector de <em>Tipo</em></h3>
 <p>Selector de tipo (etiqueta HTML), NO los uses a menos que sea el estilo base o de tema.</p>
 <div class="highlight"><pre><span></span><code><span class="nt">body</span><span class="p">{</span>
@@ -1983,7 +1989,7 @@
 <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
 </code></pre></div>
 <h2 id="modelo-de-caja">Modelo de Caja</h2>
-<p><img alt="caja" src="../img/Curso_CSS_v2_2.png" /></p>
+<p><img alt="caja" src="img/Curso_CSS_v2_2.png" /></p>
 <h2 id="elements-block-vs-inline">Elements Block vs Inline</h2>
 <p>Un elemento de bloque (block-level element):
 -Ocupa todo el ancho disponible del contenedor.</p>
@@ -2045,16 +2051,33 @@
 <span class="nt">min-height</span><span class="o">:</span><span class="w"> </span><span class="nt">px</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">em</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">rem</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">view</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">auto</span><span class="o">;</span>
 </code></pre></div>
 <h3 id="borde"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border">Borde</a></h3>
-<div class="highlight"><pre><span></span><code><span class="nt">Border-width</span><span class="o">:</span><span class="w"> </span><span class="nt">px</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">em</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">rem</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">thin</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">medium</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">thick</span><span class="o">;</span>
+<div class="highlight"><pre><span></span><code><span class="nt">border-width</span><span class="o">:</span><span class="w"> </span><span class="nt">px</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">em</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">rem</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">thin</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">medium</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">thick</span><span class="o">;</span>
 
-<span class="nt">Border-style</span><span class="o">:</span><span class="w"> </span><span class="nt">none</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">hidden</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">dotted</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">dashed</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">solid</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">double</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">groove</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">ridge</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">inset</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">outset</span><span class="w"> </span><span class="o">;</span>
+<span class="nt">border-style</span><span class="o">:</span><span class="w"> </span><span class="nt">none</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">hidden</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">dotted</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">dashed</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">solid</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">double</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">groove</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">ridge</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">inset</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">outset</span><span class="w"> </span><span class="o">;</span>
 
-<span class="nt">Border-color</span><span class="o">:</span><span class="w">  </span><span class="o">&lt;</span><span class="nt">rgb</span><span class="o">()&gt;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">rgba</span><span class="o">()&gt;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">hsl</span><span class="o">()&gt;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">hsla</span><span class="o">()&gt;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">hex-color</span><span class="o">&gt;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">named-color</span><span class="o">&gt;</span><span class="w"> </span><span class="o">;</span>
+<span class="nt">border-color</span><span class="o">:</span><span class="w">  </span><span class="o">&lt;</span><span class="nt">rgb</span><span class="o">()&gt;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">rgba</span><span class="o">()&gt;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">hsl</span><span class="o">()&gt;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">hsla</span><span class="o">()&gt;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">hex-color</span><span class="o">&gt;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">named-color</span><span class="o">&gt;</span><span class="w"> </span><span class="o">;</span>
 
-<span class="nt">Border</span><span class="o">:</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">br-width</span><span class="o">&gt;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">br-style</span><span class="o">&gt;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">color</span><span class="o">&gt;</span><span class="w"> </span><span class="o">;</span><span class="w"> </span><span class="c">/*shorthand*/</span>
+<span class="nt">border</span><span class="o">:</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">br-width</span><span class="o">&gt;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">br-style</span><span class="o">&gt;</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="o">&lt;</span><span class="nt">color</span><span class="o">&gt;</span><span class="w"> </span><span class="o">;</span><span class="w"> </span><span class="c">/*shorthand*/</span>
 </code></pre></div>
 <h3 id="box-sizing"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing">Box-sizing</a></h3>
-<h3 id="background">Background</h3>
+<p>La propiedad <code>box-sizing</code> se utiliza para modificar la forma en que se calculan el ancho y alto totales de un elemento (su caja), lo que incluye el padding (relleno) y el border (borde).</p>
+<blockquote>
+<p>El valor por defecto de <code>box-sizing</code> es <code>content-box</code></p>
+</blockquote>
+<p>El ancho y alto que establece un elemento (<code>width</code> y <code>height</code>) solo se aplican al contenido de la caja.</p>
+<div class="arithmatex">\[Ancho_{Total}=width+padding (izq + der)+border (izq + der)\]</div>
+<p>El valor <code>border-box</code> es el más utilizado.
+El ancho y alto que estableces (<code>width</code> y <code>height</code>) incluyen el padding y el border.</p>
+<div class="arithmatex">\[Ancho_{Total}=width\]</div>
+<div class="highlight"><pre><span></span><code><span class="nt">box-sizing</span><span class="o">:</span><span class="w"> </span><span class="nt">border-box</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">content-box</span><span class="o">;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">*,</span>
+<span class="o">*</span><span class="p">::</span><span class="nd">before</span><span class="o">,</span>
+<span class="o">*</span><span class="p">::</span><span class="nd">after</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">box-sizing</span><span class="p">:</span><span class="w"> </span><span class="kc">border-box</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="background"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background">Background</a></h3>
 <ul>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color">Color</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-image">Imagen</a></li>
@@ -2064,7 +2087,7 @@
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin">Origen</a></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background">Shorthand</a></li>
 </ul>
-<h3 id="pseudo-elementos">Pseudo-elementos</h3>
+<h3 id="pseudo-elementos"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements">Pseudo-elementos</a></h3>
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::before">::before</a> / <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/::after">::after</a></p>
 <h2 id="cursor"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/cursor">Cursor</a></h2>
 <h2 id="colores">Colores</h2>
@@ -2114,9 +2137,9 @@
 <div class="highlight"><pre><span></span><code><span class="nt">display</span><span class="o">:</span><span class="w"> </span><span class="nt">flex</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">inline-flex</span><span class="o">;</span>
 </code></pre></div>
 <h2 id="flexbox-row">Flexbox - Row</h2>
-<p><img alt="flex" src="../img/Curso_CSS_v2_3.png" /></p>
+<p><img alt="flex" src="img/Curso_CSS_v2_3.png" /></p>
 <h3 id="flexbox-column">Flexbox - Column</h3>
-<p><img alt="flex" src="../img/Curso_CSS_v2_4.png" /></p>
+<p><img alt="flex" src="img/Curso_CSS_v2_4.png" /></p>
 <h3 id="flexbox-container">Flexbox - Container</h3>
 <div class="highlight"><pre><span></span><code><span class="nt">flex-direction</span><span class="o">:</span><span class="w"> </span><span class="nt">row</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">row-reverse</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">column</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nt">column-reverse</span>
 
@@ -2212,7 +2235,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Pie" >
         
           
-          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Anterior: Home">
+          <a href="index.html" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Home">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
@@ -2229,7 +2252,7 @@
         
         
           
-          <a href="../exercise/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Ejercicios">
+          <a href="exercise.html" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Ejercicios">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Siguiente
@@ -2325,16 +2348,16 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.footer", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": 1.0}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.footer", "content.code.copy"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": 1.0}</script>
     
     
-      <script src="../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      <script src="assets/javascripts/bundle.3220b9d7.min.js"></script>
       
-        <script src="../javascripts/mathjax.js"></script>
+        <script src="javascripts/mathjax.js"></script>
       
-        <script src="../javascripts/footer.js"></script>
+        <script src="javascripts/footer.js"></script>
       
-        <script src="../javascripts/change_height_markmap.js"></script>
+        <script src="javascripts/change_height_markmap.js"></script>
       
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
