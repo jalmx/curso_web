@@ -94,12 +94,13 @@
     </html>
     ```
 
-2. Realizar una pagina web de varias páginas, para una empresa de venta de diseño de tarjetas electrónicas, nombre "PCBtronix"
-      1. Barra de navegación en cada página, con los enlaces a cada página y sección interna (con # y ids en los títulos y subtítulos, para las secciones internas usa una lista ordenada, para enlazar las otras páginas colócalas en una lista sin orden)
-      2. index.html: Título del negocio, párrafo de descripción (2 párrafos dummys) con una imagen debajo. Sección 1: Subtitulo "Nuestros Servicios" (id="servicios"), 3 párrafos dummy. Sección 2: Lista de servicios ofrecidos (lista ordenada). Sección 3: Ventajas Competitivas (id="ventajas") agrega 3 párrafos con información(dummy). Sección 4: Ventas y beneficios. Lista de 5 ventajas (lista ordenada) y 5 beneficios (lista no ordenada) [en la lista es texto dummy].
-      3. catalogo.html: Título: "Catálogo de Tarjetas Electrónicas", agrega una imagen representativa. Sección 1 a la 5: subtitulo: "Componentes XXX", agregar 9 fotos en en cada sección, 3 fotos por linea.
-      4. contacto.html: Título: "Contáctanos". Sección 1: Información de Contacto (id="informacion"), párrafo dummy, Dirección física completa, Teléfonos de contacto, Correo electrónico, Horarios de atención.
-      5. quienes_somos.html: Título: "Conoce PCBtronix". Sección 1: Nuestra Historia (id="historia"), 2 Párrafos dummy con la información de la historia. Sección 2: "Perfiles", colocar una sección por perfil, cada perfil tendrá una nombre de la persona, una descripcion y una foto (eres libre como acomodarlo)
+2\. Realizar una pagina web de varias páginas, para una empresa de venta de diseño de tarjetas electrónicas, nombre "PCBtronix"
+
+   1. Barra de navegación en cada página, con los enlaces a cada página y sección interna (con # y ids en los títulos y subtítulos, para las secciones internas usa una lista ordenada, para enlazar las otras páginas colócalas en una lista sin orden)
+   2. index.html: Título del negocio, párrafo de descripción (2 párrafos dummys) con una imagen debajo. Sección 1: Subtitulo "Nuestros Servicios" (id="servicios"), 3 párrafos dummy. Sección 2: Lista de servicios ofrecidos (lista ordenada). Sección 3: Ventajas Competitivas (id="ventajas") agrega 3 párrafos con información(dummy). Sección 4: Ventas y beneficios. Lista de 5 ventajas (lista ordenada) y 5 beneficios (lista no ordenada) [en la lista es texto dummy].
+   3. catalogo.html: Título: "Catálogo de Tarjetas Electrónicas", agrega una imagen representativa. Sección 1 a la 5: subtitulo: "Componentes XXX", agregar 9 fotos en en cada sección, 3 fotos por linea.
+   4. contacto.html: Título: "Contáctanos". Sección 1: Información de Contacto (id="informacion"), párrafo dummy, Dirección física completa, Teléfonos de contacto, Correo electrónico, Horarios de atención.
+   5. quienes_somos.html: Título: "Conoce PCBtronix". Sección 1: Nuestra Historia (id="historia"), 2 Párrafos dummy con la información de la historia. Sección 2: "Perfiles", colocar una sección por perfil, cada perfil tendrá una nombre de la persona, una descripcion y una foto (eres libre como acomodarlo)
 
 **Estructura del proyecto**
 
@@ -473,6 +474,226 @@ pcbtronix/
 
 > Notas:<br>1. Las cosas que no son especificas tienes licencia creativa para agregar mas detalles.<br> 2. Ve a la [sección de recurso de imágenes](html.md#recursos-para-imagenes) para buscar imágenes de stock.
 
+3\. Formulario de contacto simple
+
+   1. Crea un formulario con los siguientes campos:
+     1. Nombre (input tipo texto)
+     2. Correo electrónico (input tipo email)
+     3. Mensaje (textarea)
+     4. Usa etiquetas <label> para cada campo.
+     5. Agrega un botón de envío (submit).
+
+??? example "formulario.html"
+    ```html
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <title>Formulario de contacto</title>
+    </head>
+    <body>
+
+    <h1>Formulario de contacto</h1>
+
+    <form action="#" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="correo">Correo electrónico:</label><br>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="5" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    </body>
+    </html>
+    ```
+
+4\. Formulario con audio e inputs variados
+
+   1. Crea un formulario donde el usuario pueda registrarse para escuchar un podcast.
+     1. Campo de nombre y correo.
+     2. Campo para elegir su género musical favorito (radio buttons).
+     3. Campo para subir una foto (input tipo file).
+     4. Debajo, inserta un reproductor de audio.
+
+??? example "formulario.html"
+    ```html
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <title>Registro al Podcast</title>
+    </head>
+    <body>
+
+    <h1>Registro al Podcast</h1>
+
+    <form action="#" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="correo">Correo electrónico:</label><br>
+        <input type="email" id="correo" name="correo"><br><br>
+
+        <p>Género musical favorito:</p>
+        <input type="radio" id="rock" name="genero" value="rock">
+        <label for="rock">Rock</label><br>
+
+        <input type="radio" id="pop" name="genero" value="pop">
+        <label for="pop">Pop</label><br>
+
+        <input type="radio" id="jazz" name="genero" value="jazz">
+        <label for="jazz">Jazz</label><br><br>
+
+        <label for="foto">Sube tu foto de perfil:</label><br>
+        <input type="file" id="foto" name="foto"><br><br>
+
+        <input type="submit" value="Registrarse">
+    </form>
+
+    <h2>Escucha un fragmento de nuestro podcast:</h2>
+    <audio controls>
+        <source src="podcast.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    </body>
+    </html>
+    ```
+
 ## CSS
 
-<!-- pendiente -->
+1. Título con fuentes personalizadas y transformación de texto
+     1. Crea un encabezado `<h1>` con un subtítulo `<p>`.
+     1. Usa `@font-face` para cargar una fuente personalizada (o un archivo local).
+     1. Aplica `text-transform`, `letter-spacing`, `font-family`, `font-weight` y `text-align`.
+
+??? example "formulario.html"
+    ```html
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1 - Fuentes y Transformaciones</title>
+    <style>
+    @font-face {
+    font-family: 'MiFuente';
+    src: url('MiFuente.woff2') format('woff2');
+    }
+
+    h1 {
+    font-family: 'MiFuente', Arial, sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+    color: #2c3e50;
+    }
+
+    p {
+    text-align: center;
+    font-style: italic;
+    color: #7f8c8d;
+    }
+    </style>
+    </head>
+    <body>
+
+    <h1>Diseño de Texto en CSS</h1>
+    <p>Usando fuentes personalizadas y transformaciones de texto.</p>
+
+    </body>
+    </html>
+    ```
+
+2\. Texto con sombra, decoración y espaciado
+
+   1. Crea un párrafo destacado.
+     1. Aplica color, text-shadow, text-decoration, word-spacing, y line-height.
+     2. Experimenta con diferentes valores de text-shadow para crear profundidad.
+
+??? example "formulario.html"
+    ```html
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2 - Sombras y Espaciado</title>
+    <style>
+    p {
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+    color: #34495e;
+    line-height: 1.8;
+    word-spacing: 10px;
+    text-decoration: underline dotted #2980b9;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
+    </style>
+    </head>
+    <body>
+
+    <p>El texto con sombras y espaciado crea una sensación visual más atractiva y profesional.</p>
+
+    </body>
+    </html>
+    ```
+
+3\. Diferentes estilos y pesos de fuente
+
+1. Crea tres párrafos con distintas combinaciones de:
+    1. `font-family`
+    1. `font-size`
+    1. `font-style`
+    1. `font-weight`
+    1. `color`
+    1. `text-align`
+ 2. Usa distintas familias (`serif`, `sans-serif`, `monospace`).
+
+??? example "formulario.html"
+    ```html
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 4 - Estilos Tipográficos</title>
+    <style>
+    .serif {
+    font-family: 'Times New Roman', serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #8e44ad;
+    text-align: left;
+    }
+
+    .sans {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    color: #27ae60;
+    text-align: center;
+    }
+
+    .mono {
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    color: #c0392b;
+    font-weight: 300;
+    text-align: right;
+    }
+    </style>
+    </head>
+    <body>
+
+    <p class="serif">Texto con fuente Serif: elegante y tradicional.</p>
+    <p class="sans">Texto con fuente Sans-serif: moderna y limpia.</p>
+    <p class="mono">Texto con fuente Monospace: ideal para código o terminales.</p>
+
+    </body>
+    </html>
+    ```

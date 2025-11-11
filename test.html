@@ -1,29 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Ejercicio 1 - Fuentes y Transformaciones</title>
     <style>
-        .centrar {
-            background-color: red;
-            color: white;
-            text-align: center;
-            border: 10px dotted black;
+        @font-face {
+            font-family: 'MiFuente';
+            src: url('MiFuente.woff2') format('woff2');
+        }
+
+        h1 {
+            font-family: 'MiFuente', Arial, sans-serif;
+            font-size: 2.5em;
+            font-weight: 700;
             text-transform: uppercase;
-            text-shadow: 1px 1px 20px yellow;
-            padding: 2rem;
+            text-align: center;
+            letter-spacing: 5px;
+            color: #2c3e50;
+        }
+
+        p {
+            text-align: center;
+            font-style: italic;
+            color: #7f8c8d;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Hello, World!</h1>
-    <p class="centrar">This is a test HTML file.</p>
-
+    <h1>Diseño de Texto en CSS</h1>
+    <p>Usando fuentes personalizadas y transformaciones de texto.</p>
 
 </body>
 

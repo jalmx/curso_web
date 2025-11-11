@@ -88,7 +88,7 @@ background-color: var( --color-primary );
 ## [Texto](https://www.w3schools.com/css/css_text.asp)
 
 - [Color](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/color): red | #ff22AC | rgb(255,100,0)  | hsl(240, 100%, 25%);
-  - [https://www.w3schools.com/colors/colors_names.asp](https://www.w3schools.com/colors/colors_names.asp)
+    - [https://www.w3schools.com/colors/colors_names.asp](https://www.w3schools.com/colors/colors_names.asp)
 - [Text-align](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-align) : center | left | right | justify;
 - [Text-decoration](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-decoration) : none | overline | line-through | underline ;
 - [Text-transform](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-transform) : uppercase | lowercase | capitalize;
@@ -98,7 +98,7 @@ background-color: var( --color-primary );
 - [text-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-shadow):  offset-x | offset-y | blur-radius | color
 - [Overflow-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/overflow-wrap) : normal | break-word ;
 - [white-space](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/white-space) : nowrap | wrap | pre | normal;
-  - [https://www.w3schools.com/cssref/pr_text_white-space.asp](https://www.w3schools.com/cssref/pr_text_white-space.asp)
+    - [https://www.w3schools.com/cssref/pr_text_white-space.asp](https://www.w3schools.com/cssref/pr_text_white-space.asp)
 - [Text-overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-overflow) :  clip | ellipsis | initial | inherit;
 
 ```css
@@ -146,7 +146,7 @@ Viewport
 - Ancho ventana(vw)
 - Alto ventana (vh)
 
-[https://developer.mozilla.org/en\-US/docs/Learn/CSS/Introduction\_to\_CSS/Values\_and\_units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units)
+- [https://developer.mozilla.org/en\-US/docs/Learn/CSS/Introduction\_to\_CSS/Values\_and\_units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Values_and_units)
 
 - [https://developer.mozilla.org/en\-US/docs/Web/CSS/length](https://developer.mozilla.org/en-US/docs/Web/CSS/length)
 

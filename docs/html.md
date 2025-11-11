@@ -254,7 +254,7 @@ Recursos:
 
 ![img](img/Curso%20HTML5_v2_17.png)
 
-![div <-> span](img/div-span.jpeg)
+![div <-> span](img/div-span.png)
 
 ### Atributos globales
 
@@ -529,7 +529,7 @@ Representa contenido de sí mismo. Una descripción es opcional (figcaption). To
 ```html
 <figure>
 
-  <img src=“url/img”>
+  <img src="url/img" alt="texto alternativo">
  <figcaption>Descripción de la imagen</figcaption>
 
 </figure>
