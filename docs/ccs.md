@@ -17,7 +17,7 @@ title: CSS
 En línea:
 
 ```html
-<elemento style= “estilos”>
+<elemento style= "estilos">
     Texto
 </elemento>
 
@@ -88,7 +88,7 @@ background-color: var( --color-primary );
 ## [Texto](https://www.w3schools.com/css/css_text.asp)
 
 - [Color](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/color): red | #ff22AC | rgb(255,100,0)  | hsl(240, 100%, 25%);
-    - [https://www.w3schools.com/colors/colors_names.asp](https://www.w3schools.com/colors/colors_names.asp)
+  - [https://www.w3schools.com/colors/colors_names.asp](https://www.w3schools.com/colors/colors_names.asp)
 - [Text-align](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-align) : center | left | right | justify;
 - [Text-decoration](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-decoration) : none | overline | line-through | underline ;
 - [Text-transform](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-transform) : uppercase | lowercase | capitalize;
@@ -96,9 +96,11 @@ background-color: var( --color-primary );
 - [Word-spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/word-spacing) : (+/ - ) px | em | rem;
 - [Line-height](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/line-height) :  px | em | rem | unidad;
 - [text-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-shadow):  offset-x | offset-y | blur-radius | color
+  - <https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow>
+  - <https://www.w3schools.com/cssref/css3_pr_text-shadow.asp>
 - [Overflow-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/overflow-wrap) : normal | break-word ;
 - [white-space](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/white-space) : nowrap | wrap | pre | normal;
-    - [https://www.w3schools.com/cssref/pr_text_white-space.asp](https://www.w3schools.com/cssref/pr_text_white-space.asp)
+  - [https://www.w3schools.com/cssref/pr_text_white-space.asp](https://www.w3schools.com/cssref/pr_text_white-space.asp)
 - [Text-overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-overflow) :  clip | ellipsis | initial | inherit;
 
 ```css
@@ -228,7 +230,7 @@ p {
 
 Recursos:
 
-[https://fonts.google.com](https://fonts.google.com)
+- [https://fonts.google.com](https://fonts.google.com)
 
 ## Estilos por defecto
 
@@ -267,7 +269,7 @@ p {
 ```html
 <!-- HTML File -->
 
-<h1 id = “title”> Titulo del sitio </h1>
+<h1 id = "title"> Titulo del sitio </h1>
 
 ```
 
@@ -284,7 +286,7 @@ p {
 Siempre debes usar clases para tus estilos.
 
 ```html
-  <h1 class = “title”> Titulo del sitio </h1>
+  <h1 class = "title"> Titulo del sitio </h1>
 ```
 
 ```css
@@ -378,17 +380,17 @@ a[href] {
 ```
 
 - Comienza con (^)
-  - `[title^=“palabra”] { … }`
+  - `[title^="palabra"] { … }`
 - Termina con ($)
   - `[src$=".jpg"] { … }`
 - Contiene ( * )
   - `[href*=".pdf"] { … }`
-- Comienza especificamente con (|)
-  - `[class|=“menu”] { … }`
-- Contiene especificamente la palabra (~)
-  - `[id~=“header”] { … }`
+- Comienza específicamente con (|)
+  - `[class|="menu"] { … }`
+- Contiene específicamente la palabra (~)
+  - `[id~="header"] { … }`
 - Ignora mayúsculas y minúsculas (i o I )
-  - `[src=“imagen” i ] { … }`
+  - `[src="imagen" i ] { … }`
 
 Ejemplo
 
@@ -475,9 +477,7 @@ Referencias:
 - [https://developer.mozilla.org/en\-US/docs/Web/CSS/Attribute\_selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
 - [https://www.w3schools.com/css/css\_attribute\_selectors.asp](https://www.w3schools.com/css/css_attribute_selectors.asp)
 
-## Pseudo-clases
-
-### Pseudo-clases ( `:` )
+## Pseudo-clases (`:`)
 
 Son selectores dinámicos, responden a ciertos eventos que suceden con el elemento.
 
@@ -505,21 +505,21 @@ selector : pseudo-class {
 - `:visited`:  *Cuando ya ha sido visitado el enlace*
 - `:target`:  *Cuando mandan a llamar al elemento*
 - `:not( *selector* )`: Selecciona los elementos que NO coinciden con el selector.
-  - [https://www.w3schools.com/cssref/sel\_not.asp](https://www.w3schools.com/cssref/sel_not.asp)
-  - [https://developer.mozilla.org/en\-US/docs/Web/CSS/:not](https://developer.mozilla.org/en-US/docs/Web/CSS/:not)
+    - [https://www.w3schools.com/cssref/sel\_not.asp](https://www.w3schools.com/cssref/sel_not.asp)
+    - [https://developer.mozilla.org/en\-US/docs/Web/CSS/:not](https://developer.mozilla.org/en-US/docs/Web/CSS/:not)
 - `:empty`: *Te indica un elemento que está vacío, es decir, que no tiene hijos o texto*
 - `:checked`:  *Si se activo la propiedad checked (radio, checkbox, select)*
-- `:focus`:  *Se activa cuando tiene el focu el input*
+- `:focus`:  *Se activa cuando tiene el foco el input*
 - `:enabled`:  *Se ejecuta cuando el input está disponible*
 - `:disabled`:  *Se ejecuta cuando el input está deshabilitado*
 - `:required`:  *Se activa cuando el input es requerido, pero no opcional*
 - `:optional`:  *Cualquier input, select o textarea que no tenga*  *required*
 
-### Pseudo-clases (child )
+### Pseudo-clases (child)
 
 - `:first-of-type`: Encuentra el primer tipo de elemento
 - `:last-of-type`: Encuentra al último tipo de elemento
-- `:nth-of-type(n)`: Encuentra al *tipo de elemento* “n” [odd, even, x,...]
+- `:nth-of-type(n)`: Encuentra al *tipo de elemento* "n" [odd, even, x,...]
 - `:nth-last-of-tupe(n)`: Es igual a nth-of-type, solo que la cuenta comienza del final al principio
 
 ```css
@@ -549,14 +549,14 @@ article p:first-child {
 
 ## Elements Block vs Inline
 
-Un elemento de bloque (block-level element):
--Ocupa todo el ancho disponible del contenedor.
+### Un elemento de bloque (block-level element)
 
+- Ocupa todo el ancho disponible del contenedor.
 - Siempre empieza en una nueva línea.
 - Puedes definirle ancho (`width`) y alto (`height`).
 - Puede contener otros elementos de bloque o en línea.
 
-Un elemento en línea (inline):
+### Un elemento en línea (inline)
 
 - Solo ocupa el espacio necesario para su contenido.
 - No inicia en una nueva línea (se coloca junto a otros elementos).
@@ -593,6 +593,17 @@ margin: (margin-top & margin-right & margin-bottom & margin-left); *todos*
 
 ### [Colapsado de márgenes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing)
 
+El colapso de márgenes ocurre cuando los márgenes verticales (`margin-top` y `margin-bottom`) de ciertos elementos se combinan en uno solo, en lugar de sumarse.
+
+Esto pasa principalmente entre:
+
+- Elementos bloque consecutivos (por ejemplo, dos `<p>` uno debajo del otro).
+- Un elemento padre y su hijo (cuando no hay borde, relleno ni contenido que los separe).
+- Elementos vacíos (sin contenido, borde ni padding).
+
+!!! warning
+    El colapso solo ocurre con márgenes verticales, nunca con los horizontales (`margin-left`, `margin-right`).
+
 ### Padding
 
 ```css
@@ -604,8 +615,6 @@ padding: padding-top padding-right padding-bottom padding-left;
 padding: (padding-top & padding-bottom)  (padding-right  & padding-left) ;
 padding: (padding-top & padding-right & padding-bottom & padding-left) ;
 ```
-
-### [Border-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius)
 
 ### [Ancho y Alto](https://developer.mozilla.org/en-US/docs/Web/CSS/width)
 
@@ -635,6 +644,26 @@ border-color:  <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hex-color> | <named-co
 border: <br-width> || <br-style> || <color> ; /*shorthand*/
 ```
 
+#### [Border-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius)
+
+border-radius redondea las esquinas (bordes) de un elemento HTML.
+Sirve para hacer desde botones suaves y tarjetas redondeadas hasta círculos perfectos o formas elípticas.
+
+Sintaxis:
+
+```css
+border-radius: valor;
+```
+
+```css
+border-top-left-radius: 10px;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 30px;
+border-bottom-left-radius: 40px;
+
+border-radius: 10px 20px 30px 40px; /* shorthand */
+```
+
 ### [Box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)
 
 La propiedad `box-sizing` se utiliza para modificar la forma en que se calculan el ancho y alto totales de un elemento (su caja), lo que incluye el padding (relleno) y el border (borde).
@@ -653,7 +682,6 @@ $$Ancho_{Total}=width$$
 ```css
 box-sizing: border-box | content-box;
 ```
-
 
 ```css
 *,
@@ -675,47 +703,207 @@ box-sizing: border-box | content-box;
 
 ### [Pseudo-elementos](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Pseudo-elements)
 
-[::before](https://developer.mozilla.org/en-US/docs/Web/CSS/::before) / [::after](https://developer.mozilla.org/en-US/docs/Web/CSS/::after)
+Un pseudo-elemento es una palabra clave que se agrega al selector y permite estilizar partes específicas de un elemento o incluso crear contenido virtual antes o después del elemento.
+
+!!! note
+    Te permite aplicar estilos a una parte del contenido o añadir contenido extra sin tocar el HTML.
+
+- [::before](https://developer.mozilla.org/en-US/docs/Web/CSS/::before)
+- [::after](https://developer.mozilla.org/en-US/docs/Web/CSS/::after)
+
+**Sintaxis**:
+
+```css
+selector::pseudo-elemento {
+  propiedad: valor;
+}
+```
+
+**Ejemplo:**
+
+```css
+h1::before {
+  content: "👉 ";
+}
+
+h1::after {
+  content: " 🎉";
+}
+
+```
 
 ## [Cursor](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor)
+
+La propiedad cursor cambia la forma del puntero del ratón cuando pasa por encima de un elemento.
+
+!!! note
+    Le dice al navegador qué tipo de cursor mostrar cuando el usuario coloca el puntero sobre ese elemento.
+
+Tipos de cursores:
+
+- auto
+- default
+- none
+- context-menu
+- help
+- pointer
+- progress
+- wait
+- cell
+- crosshair
+- text
+- vertical-text
+- alias
+- copy
+- move
+- no-drop
+- not-allowed
+
+Ejemplo:
+
+```css
+.button {
+  cursor: pointer;
+}
+
+.texto {
+  cursor: text;
+}
+
+.no-disponible {
+  cursor: not-allowed;
+}
+
+.mover {
+  cursor: move;
+}
+
+.ayuda {
+  cursor: help;
+}
+```
 
 ## Colores
 
 - [Colores](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
-      - [RGB , RGBA \-> Valores 0 \- 255](https://developer.mozilla.org/enUS/docs/Web/CSS/color)
-      - [HSL, HSLA](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
-      - [Keyword](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
-      - [Hex (RGB) \-> \#000000 \- \#ffffff](https://developer.mozilla.org/enUS/docs/Web/CSS/color)
+  - [RGB , RGBA \-> Valores 0 \- 255](https://developer.mozilla.org/enUS/docs/Web/CSS/color)
+  - [HSL, HSLA](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
+  - [Keyword](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
+  - [Hex (RGB) \-> \#000000 \- \#ffffff](https://developer.mozilla.org/enUS/docs/Web/CSS/color)
 - [Opacidad](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
 - [Filter](https://developer.mozilla.org/en-US/docs/Web/CSS/filter)
 
 ## [POSITION](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
 
-- Static
-- Relative
-- Absolute
-- Fixed
-- Sticky
+Tipo:
 
-### Context
+- `static` (por default): Es el valor predeterminado. El elemento sigue el flujo normal del documento. Las propiedades `top`, `right`, `bottom`, `left` no tienen efecto.
+- `relative`: El elemento permanece en el flujo, pero se puede mover respecto a su posición original. Sirve como referencia (contenedor de posicionamiento) para elementos hijos con position: `absolute`.
+- `absolute`: El elemento sale del flujo normal del documento. Se posiciona respecto al primer ancestro con position distinta de static (usualmente relative o absolute). Si no hay ancestro posicionado, se coloca respecto al `<html>` o al `viewport`.
+- `fixed`: El elemento se mantiene fijo en el viewport, aunque hagas scroll. Siempre se posiciona respecto a la ventana del navegador (no al contenedor). Muy usado para barras de navegación o botones flotantes.
+- `sticky`: Es una mezcla de relative y fixed. Se comporta como relative hasta que se alcanza un límite (scroll), luego se vuelve fixed. Ideal para encabezados que “se pegan” al hacer scroll.
 
-- Top
-- Left
-- Right
-- Bottom
+Context:
 
-### [z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)
+- `top`: Desplaza el elemento hacia abajo desde su punto de referencia.
+- `left`: Desplaza hacia la izquierda.
+- `right`: Desplaza hacia arriba.
+- `bottom`: Desplaza hacia la derecha.
+- [z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index): Controla el orden de apilamiento (quién está encima o debajo)
 
-## Text Shadow
+```css
+.elemento {
+  position: tipo;
+  top: px;
+  left: px;
+}
+```
 
-<https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow>
-<https://www.w3schools.com/cssref/css3_pr_text-shadow.asp>
+Ejemplo:
 
-## Transform
+```css
+.caja1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
 
-- Translate
-- Scale
-- Rotate
+.caja2 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10; /* Se muestra encima de caja1 */
+}
+```
+
+## [Transform](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/transform)
+
+La propiedad transform te permite aplicar transformaciones 2D o 3D a un elemento HTML, como:
+
+- Trasladar (translate)
+- Rotarlo (rotate)
+- Escalarlo (scale)
+- Inclinarlo (skew)
+
+```css
+/* sintaxis */
+.elemento {
+  transform: tipoTransformación(valor);
+}
+```
+
+Ejemplo
+
+```css
+.caja {
+  transform: translate(50px, 20px);
+}
+
+.caja {
+  transform: rotate(45deg);
+}
+
+.caja {
+  transform: scale(1.5, 0.8);
+}
+
+.caja {
+  transform: skew(20deg, 10deg);
+}
+
+.caja {
+  transform: rotateX(45deg) rotateY(30deg);
+}
+```
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ejemplo de transform</title>
+<style>
+div {
+  width: 100px;
+  height: 100px;
+  background: lightcoral;
+  margin: 40px;
+  transition: transform 0.5s ease;
+}
+
+div:hover {
+  transform: rotate(45deg) scale(1.3) translate(20px, 20px);
+}
+</style>
+</head>
+<body>
+
+<div>Pasa el mouse</div>
+
+</body>
+</html>
+```
 
 ## [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
 
@@ -727,12 +915,10 @@ Si no tiene hijos; es decir, otra caja, pero tiene texto, el texto es su hijo.
 - [https://www.w3.org/TR/css\-flexbox\-1/](https://www.w3.org/TR/css-flexbox-1/)
 
 ```css
-
 display: flex | inline-flex;
-
 ```
 
-## Flexbox - Row
+### Flexbox - Row
 
 ![flex](img/Curso_CSS_v2_3.png)
 
@@ -747,7 +933,7 @@ flex-direction: row | row-reverse | column | column-reverse
 
 flex-wrap: nowrap | wrap | wrap-reverse
 
-flex-flow: flex-direction || flex-wrap -> shorthand
+flex-flow: flex-direction || flex-wrap /* shorthand */
 ```
 
 ### Container  (Alineamiento)
@@ -784,7 +970,7 @@ flex: none | flex-grow  || flex-shrink  || flex-basis  ; -> shorthand
 > Los hijos no crecen por default, pero si se encogen para entrar. Siempre tratan de ponerse en una sola línea.
 > `flex-basis` gana a `width`.
 
-### Item  (Alineamiento)
+### Item (Alineamiento)
 
 ```css
 align-self: auto | flex-start | flex-end | center | baseline | stretch;
@@ -792,17 +978,94 @@ align-self: auto | flex-start | flex-end | center | baseline | stretch;
 order: <número entero>
 ```
 
+Referencia:
+
 - [https://developer.mozilla.org/en-US/docs/Web/CSS/align-self](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self)
 - [https://developer.mozilla.org/en-US/docs/Web/CSS/order](https://developer.mozilla.org/en-US/docs/Web/CSS/order)
 
-## Diseño responsivo
+## Media Query (Diseño responsivo)
+
+Una media query es una regla de CSS que te permite aplicar estilos solo si se cumplen ciertas condiciones, como el ancho de la pantalla, la orientación, la resolución, etc.
+
+> Es la base del responsive design (diseños que se adaptan a diferentes tamaños de pantalla: móviles, tablets, laptops, pantallas grandes).
+
+Sintaxis
+
+```css
+@media (condición) {
+  /* estilos que se aplican si se cumple la condición */
+}
+
+
+@media (max-width: 600px) {
+/*Si el ancho de la pantalla es 600px o menos, pinta el fondo del `<body>` de color azul claro”.*/
+  body {
+    background-color: lightblue;
+  }
+}
+
+@media (max-width: 768px) {
+  /*Si el ancho de la pantalla es 768px o menos, aplica los estilos de esta sección*/
+  /* estilos para pantallas pequeñas (tablets o móviles) */
+}
+
+@media (min-width: 1024px) {
+  /*Si el ancho de la pantalla es 1024px o mas, aplica los estilos de esta sección*/
+  /* estilos para pantallas grandes */
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /*Si el ancho de la pantalla es de entre mínimo 768px a máximo 1024px, aplica los estilos de esta sección*/
+  /* estilos para pantallas intermedias (tablets) */
+}
+```
+
+Ejemplo
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*comienza en azul*/
+        h1 {
+            color: blue;
+        }
+
+        /*en el rango de 700 a 1000px sera rojo*/
+        @media (min-width: 700px) and (max-width: 1000px) {
+            h1 {
+                color: red;
+            }
+        }
+        /*a partir de 1000px sera verde*/
+        @media (min-width: 1000px) {
+            h1 {
+                color: green;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Ejemplos V2</h1>
+</body>
+</html>
+```
+
+Referencias:
 
 - [Responsive Design](https://developers.google.com/web/fundamentals/design-and-ux/responsive/)
 - [Patrones de Responsive](https://developers.google.com/web/fundamentals/design-and-ux/responsive/patterns)
 - Media Querys
-  - <https://www.w3schools.com/css/css_rwd_mediaqueries.asp>
-  - <https://www.w3schools.com/Css/css3_mediaqueries_ex.asp>
-  - <https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries>
+    - <https://www.w3schools.com/css/css_rwd_mediaqueries.asp>
+    - <https://www.w3schools.com/Css/css3_mediaqueries_ex.asp>
+    - <https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries>
 
 ## Frameworks
 
