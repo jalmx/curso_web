@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*comienza en azul*/
+        h1 {
+            color: blue;
+        }
+
+        /*en el rango de 700 a 1000px sera rojo*/
+        @media (min-width: 700px) and (max-width: 1000px) {
+            h1 {
+                color: red;
+            }
+        }
+        /*a partir de 1000px sera verde*/
+        @media (min-width: 1000px) {
+            h1 {
+                color: green;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Ejemplos V2</h1>
+</body>
+</html>
