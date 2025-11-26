@@ -490,6 +490,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#reponsive-desing-media-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reponsive desing (Media queries)
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -614,6 +623,15 @@
   <a href="#crear-estilos-de-cards" class="md-nav__link">
     <span class="md-ellipsis">
       Crear estilos de Cards
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reponsive-desing-media-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reponsive desing (Media queries)
     </span>
   </a>
   
@@ -1298,7 +1316,7 @@
 <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
 </code></pre></div>
 </details>
-<p>3. Diferentes estilos y pesos de fuente</p>
+<p>3 . Diferentes estilos y pesos de fuente</p>
 <ol>
 <li>Crea tres párrafos con distintas combinaciones de:<ol>
 <li><code>font-family</code></li>
@@ -1497,6 +1515,205 @@ Recurso: <a href="https://fonts.google.com/icons">iconos de google</a></p>
 <br>Recurso: Generador de gradientes: <a href="https://cssgradient.io/">Gradient Generator</a>
 <br>Recurso: Generador de gradientes: <a href="https://uigradients.com/">Gradient Generator</a></p>
 </blockquote>
+<h3 id="reponsive-desing-media-queries">Reponsive desing (Media queries)</h3>
+<ol>
+<li>
+<p>Cambiar el color y tamaño del texto según el ancho. Usar una media query básica para modificar estilos cuando la pantalla es menor a cierto ancho.</p>
+<ul>
+<li>Crea un bloque de texto grande.</li>
+<li>Con @media (max-width: 600px) cambia el tamaño de fuente y el color.</li>
+<li>Reduce el ancho de la ventana para observar el cambio.</li>
+</ul>
+</li>
+</ol>
+<details class="example">
+<summary>Example</summary>
+<details class="example">
+<summary>index.html</summary>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;texto&quot;</span><span class="p">&gt;</span>Este texto cambiará en pantallas pequeñas.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
+</details>
+<details class="example">
+<summary>css.css</summary>
+<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">texto</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">32</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">black</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Pantallas menores a 600px */</span>
+<span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span><span class="w"> </span><span class="nt">600px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">texto</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">18</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">        </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">crimson</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+</details>
+<p>2 . Hacer que un layout de 3 columnas se vuelva 1 columna. Practica cómo hacer un grid flexible: de 3 columnas → 1 columna en móviles.</p>
+<ul>
+<li>Crea 3 cajas en un contenedor.</li>
+<li>Usa display: flex para alinearlas en fila.</li>
+<li>En pantallas pequeñas (max 768px) cámbialas a columna.</li>
+<li><em>Observa, cómo la dirección del layout completo cambia de horizontal a vertical. Cómo flex-direction te permite reorganizar contenido sin modificar el HTML.</em></li>
+</ul>
+<details class="example">
+<summary>Example</summary>
+<details class="example">
+<summary>index.html</summary>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;contenedor&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;item&quot;</span><span class="p">&gt;</span>1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;item&quot;</span><span class="p">&gt;</span>2<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;item&quot;</span><span class="p">&gt;</span>3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+</details>
+<details class="example">
+<summary>css.css</summary>
+<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">contenedor</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span>
+<span class="w">    </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">item</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="kc">steelblue</span><span class="p">;</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">white</span><span class="p">;</span>
+<span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="k">flex</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Pantallas pequeñas */</span>
+<span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span><span class="w"> </span><span class="nt">768px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">contenedor</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">flex-direction</span><span class="p">:</span><span class="w"> </span><span class="kc">column</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+</details>
+<p>3 . Imagen responsive + cambio de altura en móviles. Lograr que una imagen de fondo (background) ajuste su tamaño y cambie su altura en pantallas pequeñas.</p>
+<ul>
+<li>Crea un div con una imagen de fondo.</li>
+<li>Usa background-size: cover para que se adapte.</li>
+<li>En móviles, reduce su altura.</li>
+</ul>
+<details class="example">
+<summary>Example</summary>
+<details class="example">
+<summary>index.html</summary>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hero&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+</details>
+<details class="example">
+<summary>css.css</summary>
+<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">hero</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">400</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="k">background-image</span><span class="p">:</span><span class="w"> </span><span class="nb">url</span><span class="p">(</span><span class="s2">&quot;tu-imagen.jpg&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">background-size</span><span class="p">:</span><span class="w"> </span><span class="kc">cover</span><span class="p">;</span>
+<span class="w">    </span><span class="k">background-position</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Móviles */</span>
+<span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span><span class="w"> </span><span class="nt">480px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">hero</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+</details>
+<p>4 . Menú que pasa de horizontal a menú tipo hamburguesa. Practicar un cambio de diseño real: un menú horizontal se vuelve vertical en móvil.</p>
+<ul>
+<li>Crea un menú con ul y li.</li>
+<li>En escritorio: menú horizontal.</li>
+<li>En móvil (&lt;600px): menú vertical.</li>
+<li>No haremos el botón hamburguesa todavía, solo el cambio de formato.</li>
+</ul>
+<details class="example">
+<summary>Example</summary>
+<details class="example">
+<summary>index.html</summary>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;menu&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Inicio<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Servicios<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Contacto<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</code></pre></div>
+</details>
+<details class="example">
+<summary>css.css</summary>
+<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">menu</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">flex</span><span class="p">;</span>
+<span class="w">    </span><span class="k">gap</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="k">list-style</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span>
+<span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">menu</span><span class="w"> </span><span class="nt">li</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="kt">px</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="k">background</span><span class="p">:</span><span class="w"> </span><span class="mh">#333</span><span class="p">;</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#fff</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Móvil */</span>
+<span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span><span class="w"> </span><span class="nt">600px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">menu</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">flex-direction</span><span class="p">:</span><span class="w"> </span><span class="kc">column</span><span class="p">;</span>
+<span class="w">        </span><span class="k">align-items</span><span class="p">:</span><span class="w"> </span><span class="kc">start</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="p">.</span><span class="nc">menu</span><span class="w"> </span><span class="nt">li</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+</details>
+<p>5 . Ocultar y mostrar elementos según el dispositivo. Dominar media queries para mostrar contenido según el tamaño.</p>
+<ul>
+<li><em>Crea tres mensajes: mobile, tablet, desktop.</em></li>
+<li>Muestra SOLO uno según el ancho:<ul>
+<li>móvil: &lt; 600px</li>
+<li>tablet: 600px–900px</li>
+<li>desktop: &gt; 900px</li>
+</ul>
+</li>
+</ul>
+<details class="example">
+<summary>Example</summary>
+<details class="example">
+<summary>index.html</summary>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;mobile&quot;</span><span class="p">&gt;</span>Versión móvil<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;tablet&quot;</span><span class="p">&gt;</span>Versión tablet<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;desktop&quot;</span><span class="p">&gt;</span>Versión escritorio<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</code></pre></div>
+</details>
+<details class="example">
+<summary>css.css</summary>
+<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">mobile</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">tablet</span><span class="o">,</span><span class="w"> </span><span class="p">.</span><span class="nc">desktop</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">none</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span><span class="w"> </span><span class="nt">599px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">mobile</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">block</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">min-width</span><span class="o">:</span><span class="w"> </span><span class="nt">600px</span><span class="o">)</span><span class="w"> </span><span class="nt">and</span><span class="w"> </span><span class="o">(</span><span class="nt">max-width</span><span class="o">:</span><span class="w"> </span><span class="nt">899px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">tablet</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">block</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="p">@</span><span class="k">media</span><span class="w"> </span><span class="o">(</span><span class="nt">min-width</span><span class="o">:</span><span class="w"> </span><span class="nt">900px</span><span class="o">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="p">.</span><span class="nc">desktop</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">display</span><span class="p">:</span><span class="w"> </span><span class="kc">block</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</details>
+</details>
 <h2 id="sitio-webs-de-practica">Sitio webs de practica</h2>
 <p>Reproducir los siguientes sitios</p>
 <details class="note">
