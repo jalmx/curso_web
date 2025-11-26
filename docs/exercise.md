@@ -643,7 +643,7 @@ pcbtronix/
     </html>
     ```
 
-3\. Diferentes estilos y pesos de fuente
+3 \. Diferentes estilos y pesos de fuente
 
 1. Crea tres párrafos con distintas combinaciones de:
     1. `font-family`
@@ -837,6 +837,203 @@ Realizar todos los estilos de cards que se muestran en la imagen. Siempre debes 
 > Notas: Referncia: [Cards de bootstrap](https://getbootstrap.com/docs/5.0/components/card/)
 > <br>Recurso: Generador de gradientes: [Gradient Generator](https://cssgradient.io/)
 > <br>Recurso: Generador de gradientes: [Gradient Generator](https://uigradients.com/)
+
+### Reponsive desing (Media queries)
+
+1. Cambiar el color y tamaño del texto según el ancho. Usar una media query básica para modificar estilos cuando la pantalla es menor a cierto ancho.
+
+    - Crea un bloque de texto grande.
+    - Con @media (max-width: 600px) cambia el tamaño de fuente y el color.
+    - Reduce el ancho de la ventana para observar el cambio.
+
+
+??? example
+
+    ??? example "index.html"
+        ```html
+        <p class="texto">Este texto cambiará en pantallas pequeñas.</p>
+        ```
+
+
+    ??? example "css.css"
+        ```css
+        .texto {
+            font-size: 32px;
+            color: black;
+        }
+
+        /* Pantallas menores a 600px */
+        @media (max-width: 600px) {
+            .texto {
+                font-size: 18px;
+                color: crimson;
+            }
+        }
+        ```
+
+2 \. Hacer que un layout de 3 columnas se vuelva 1 columna. Practica cómo hacer un grid flexible: de 3 columnas → 1 columna en móviles.
+
+
+  - Crea 3 cajas en un contenedor.
+  - Usa display: flex para alinearlas en fila.
+  - En pantallas pequeñas (max 768px) cámbialas a columna.
+  - *Observa, cómo la dirección del layout completo cambia de horizontal a vertical. Cómo flex-direction te permite reorganizar contenido sin modificar el HTML.*
+
+
+??? example
+
+    ??? example "index.html"
+        ```html
+        <div class="contenedor">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+        ```
+
+
+    ??? example "css.css"
+        ```css
+        .contenedor {
+            display: flex;
+            gap: 10px;
+        }
+
+        .item {
+            background: steelblue;
+            color: white;
+            padding: 20px;
+            flex: 1;
+        }
+
+        /* Pantallas pequeñas */
+        @media (max-width: 768px) {
+            .contenedor {
+                flex-direction: column;
+            }
+        }
+        ```
+
+3 \. Imagen responsive + cambio de altura en móviles. Lograr que una imagen de fondo (background) ajuste su tamaño y cambie su altura en pantallas pequeñas.
+
+  - Crea un div con una imagen de fondo.
+  - Usa background-size: cover para que se adapte.
+  - En móviles, reduce su altura.
+
+??? example
+
+    ??? example "index.html"
+        ```html
+        <div class="hero"></div>
+        ```
+
+
+    ??? example "css.css"
+        ```css
+        .hero {
+            height: 400px;
+            background-image: url("tu-imagen.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Móviles */
+        @media (max-width: 480px) {
+            .hero {
+                height: 200px;
+            }
+        }
+        ```
+
+4 \. Menú que pasa de horizontal a menú tipo hamburguesa. Practicar un cambio de diseño real: un menú horizontal se vuelve vertical en móvil.
+
+  - Crea un menú con ul y li.
+  - En escritorio: menú horizontal.
+  - En móvil (<600px): menú vertical.
+  - No haremos el botón hamburguesa todavía, solo el cambio de formato.
+
+??? example
+
+    ??? example "index.html"
+        ```html
+        <ul class="menu">
+            <li>Inicio</li>
+            <li>Servicios</li>
+            <li>Contacto</li>
+        </ul>
+        ```
+
+
+    ??? example "css.css"
+        ```css
+        .menu {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 10px 20px;
+            background: #333;
+            color: #fff;
+        }
+
+        /* Móvil */
+        @media (max-width: 600px) {
+            .menu {
+                flex-direction: column;
+                align-items: start;
+            }
+
+            .menu li {
+                width: 100%;
+            }
+        }
+        ```
+
+5 \. Ocultar y mostrar elementos según el dispositivo. Dominar media queries para mostrar contenido según el tamaño.
+
+- *Crea tres mensajes: mobile, tablet, desktop.*
+- Muestra SOLO uno según el ancho:
+    - móvil: < 600px
+    - tablet: 600px–900px
+    - desktop: > 900px
+
+??? example
+
+    ??? example "index.html"
+        ```html
+        <p class="mobile">Versión móvil</p>
+        <p class="tablet">Versión tablet</p>
+        <p class="desktop">Versión escritorio</p>
+        ```
+
+
+    ??? example "css.css"
+        ```css
+        .mobile, .tablet, .desktop {
+            display: none;
+        }
+
+        @media (max-width: 599px) {
+            .mobile {
+                    display: block;
+            }
+        }
+
+        @media (min-width: 600px) and (max-width: 899px) {
+            .tablet {
+                display: block;
+            }
+        }
+
+        @media (min-width: 900px) {
+            .desktop {
+                display: block;
+            }
+        }
+        ```
 
 ## Sitio webs de practica
 
