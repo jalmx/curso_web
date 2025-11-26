@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 
-<html class="" lang="es"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>ElectroDesign - Soluciones Electrónicas Integrales</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ElectroDesign - Soluciones Electrónicas Integrales</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -32,198 +35,294 @@
             },
         }
     </script>
-<style>
+    <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
     </style>
 </head>
+
 <body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
-<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
-<div class="layout-container flex h-full grow flex-col">
-<div class="flex flex-1 justify-center py-5">
-<div class="layout-content-container flex w-full max-w-6xl flex-col px-4 sm:px-10">
-<!-- TopNavBar -->
-<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-b-[#233648] px-4 sm:px-10 py-3">
-<div class="flex items-center gap-4 text-gray-900 dark:text-white">
-<div class="size-6 text-primary">
-<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
-</svg>
-</div>
-<h2 class="text-gray-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">ElectroDesign</h2>
-</div>
-<div class="hidden md:flex flex-1 justify-end gap-8">
-<div class="flex items-center gap-9">
-<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal" href="#servicios">Servicios</a>
-<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal" href="#clientes">Clientes</a>
-<a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal" href="#contacto">Contacto</a>
-</div>
-<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-primary/90 text-white text-sm font-bold leading-normal tracking-[0.015em]">
-<span class="truncate">Cotizar Proyecto</span>
-</button>
-</div>
-</header>
-<!-- HeroSection -->
-<main class="flex flex-col gap-10 md:gap-20">
-<section class="mt-5 @container">
-<div class="@[480px]:p-4">
-<div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-start justify-end px-4 pb-10 @[480px]:px-10" data-alt="A person at a computer designing an electronic board" style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDR7rgzzRrAIH2VAhq8pEUbXnzzntlZcFyoGaAIeXaboXO_yJdPWLirhoKKeUBu36dtmuDeDpqEniq6vK1z5t3H8IYkSLLOXh3CNgWI1PlU-w30xkRIsGQNZ2e_W5zBaGY8TOAoQobvHWxwIL0ey3q0jEvgUKj1KKoR9I5xt1hRkwbRVLASgjl8E6altBcQW2qj_yzMG2dFQjcE81B0JNnkhueWYa2T2yQJlOGojEiVmbCT3btmENd1CDxV3Mj0c14nzRVawfW03EbC");'>
-<div class="flex flex-col gap-2 text-left">
-<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+    <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <div class="flex flex-1 justify-center py-5">
+                <div class="layout-content-container flex w-full max-w-6xl flex-col px-4 sm:px-10">
+                    <!-- TopNavBar -->
+                    <header
+                        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-b-[#233648] px-4 sm:px-10 py-3">
+                        <div class="flex items-center gap-4 text-gray-900 dark:text-white">
+                            <div class="size-6 text-primary">
+                                <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </div>
+                            <h2
+                                class="text-gray-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">
+                                ElectroDesign</h2>
+                        </div>
+                        <div class="hidden md:flex flex-1 justify-end gap-8">
+                            <div class="flex items-center gap-9">
+                                <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal"
+                                    href="#servicios">Servicios</a>
+                                <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal"
+                                    href="#clientes">Clientes</a>
+                                <a class="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary text-sm font-medium leading-normal"
+                                    href="#contacto">Contacto</a>
+                            </div>
+                            <button
+                                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-primary/90 text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                                <span class="truncate">Cotizar Proyecto</span>
+                            </button>
+                        </div>
+                    </header>
+                    <!-- HeroSection -->
+                    <main class="flex flex-col gap-10 md:gap-20">
+                        <section class="mt-5 @container">
+                            <div class="@[480px]:p-4">
+                                <div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-lg items-start justify-end px-4 pb-10 @[480px]:px-10"
+                                    data-alt="A person at a computer designing an electronic board"
+                                    style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDR7rgzzRrAIH2VAhq8pEUbXnzzntlZcFyoGaAIeXaboXO_yJdPWLirhoKKeUBu36dtmuDeDpqEniq6vK1z5t3H8IYkSLLOXh3CNgWI1PlU-w30xkRIsGQNZ2e_W5zBaGY8TOAoQobvHWxwIL0ey3q0jEvgUKj1KKoR9I5xt1hRkwbRVLASgjl8E6altBcQW2qj_yzMG2dFQjcE81B0JNnkhueWYa2T2yQJlOGojEiVmbCT3btmENd1CDxV3Mj0c14nzRVawfW03EbC");'>
+                                    <div class="flex flex-col gap-2 text-left">
+                                        <h1
+                                            class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
                                             Soluciones Electrónicas Integrales a tu Medida
                                         </h1>
-<h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
-                                            Ofrecemos diseño de vanguardia, asesoramiento experto y venta de componentes de alta calidad para llevar tus proyectos al siguiente nivel.
+                                        <h2
+                                            class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                                            Ofrecemos diseño de vanguardia, asesoramiento experto y venta de componentes
+                                            de alta calidad para llevar tus proyectos al siguiente nivel.
                                         </h2>
-</div>
-<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary hover:bg-primary/90 text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
-<span class="truncate">Ver Servicios</span>
-</button>
-</div>
-</div>
-</section>
-<!-- FeatureSection -->
-<section class="flex flex-col gap-10 px-4 py-10 @container" id="servicios">
-<div class="flex flex-col gap-4">
-<h1 class="text-gray-900 dark:text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
+                                    </div>
+                                    <button
+                                        class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary hover:bg-primary/90 text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]">
+                                        <span class="truncate">Ver Servicios</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- FeatureSection -->
+                        <section class="flex flex-col gap-10 px-4 py-10 @container" id="servicios">
+                            <div class="flex flex-col gap-4">
+                                <h1
+                                    class="text-gray-900 dark:text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]">
                                     Nuestros Servicios
                                 </h1>
-<p class="text-gray-600 dark:text-gray-300 text-base font-normal leading-normal max-w-[720px]">Cubrimos todo el ciclo de vida de tu producto, desde la concepción hasta la producción.</p>
-</div>
-<div class="grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-4 p-0">
-<div class="flex flex-1 gap-3 rounded-lg border border-gray-200 dark:border-[#324d67] bg-white dark:bg-[#192633] p-4 flex-col">
-<div class="text-primary text-3xl material-symbols-outlined">memory</div>
-<div class="flex flex-col gap-1">
-<h2 class="text-gray-900 dark:text-white text-base font-bold leading-tight">Diseño Electrónico</h2>
-<p class="text-gray-500 dark:text-[#92adc9] text-sm font-normal leading-normal">Creamos circuitos innovadores y eficientes para tus necesidades específicas.</p>
-</div>
-</div>
-<div class="flex flex-1 gap-3 rounded-lg border border-gray-200 dark:border-[#324d67] bg-white dark:bg-[#192633] p-4 flex-col">
-<div class="text-primary text-3xl material-symbols-outlined">developer_board</div>
-<div class="flex flex-col gap-1">
-<h2 class="text-gray-900 dark:text-white text-base font-bold leading-tight">Diseño de PCB</h2>
-<p class="text-gray-500 dark:text-[#92adc9] text-sm font-normal leading-normal">Diseñamos placas de circuito impreso optimizadas para rendimiento y fabricación.</p>
-</div>
-</div>
-<div class="flex flex-1 gap-3 rounded-lg border border-gray-200 dark:border-[#324d67] bg-white dark:bg-[#192633] p-4 flex-col">
-<div class="text-primary text-3xl material-symbols-outlined">support_agent</div>
-<div class="flex flex-col gap-1">
-<h2 class="text-gray-900 dark:text-white text-base font-bold leading-tight">Asesoramiento Técnico</h2>
-<p class="text-gray-500 dark:text-[#92adc9] text-sm font-normal leading-normal">Te guiamos con nuestra experiencia para asegurar el éxito de tu proyecto.</p>
-</div>
-</div>
-<div class="flex flex-1 gap-3 rounded-lg border border-gray-200 dark:border-[#324d67] bg-white dark:bg-[#192633] p-4 flex-col">
-<div class="text-primary text-3xl material-symbols-outlined">view_in_ar</div>
-<div class="flex flex-col gap-1">
-<h2 class="text-gray-900 dark:text-white text-base font-bold leading-tight">Venta de Componentes</h2>
-<p class="text-gray-500 dark:text-[#92adc9] text-sm font-normal leading-normal">Accede a un amplio catálogo de componentes electrónicos de alta calidad.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Testimonials Section -->
-<section class="flex flex-col gap-8 px-4 py-10" id="clientes">
-<h2 class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] text-center">Lo que dicen nuestros clientes</h2>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<div class="flex flex-col items-center text-center p-6 rounded-lg bg-white dark:bg-[#192633] border border-gray-200 dark:border-[#324d67]">
-<img alt="Foto de cliente satisfecho" class="w-20 h-20 rounded-full mb-4 object-cover" data-alt="Photo of a satisfied male customer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwkvGB2FstFtQh9obcOU3YKUx5ijc6Y90DgdAspPwNq8RrbE3JAChBFyUru18GZ7pTrEbTUU1dqcsCAZo93FzG4ziP9C8pm3HZnEPvo9J2XshqchUNfnYQ6CReBdrYbLn7BGjtg9NGpwESnJbbzWx0icq_dUGB6T01rOohTaodTyoEVxPMwQCswKgrw0BkbDkS_k3HmBMNkOv5zTF8JK7Is5eV4aib8-hgsno3H_CWSRoifoerOtXJnrdv3Ivb3YmR11wyqY-kodqq"/>
-<p class="text-gray-600 dark:text-gray-300 italic">"El equipo de ElectroDesign transformó nuestra idea en un producto funcional en tiempo récord. Su asesoramiento fue clave para el éxito."</p>
-<h3 class="mt-4 font-bold text-gray-900 dark:text-white">Juan Pérez</h3>
-<span class="text-sm text-gray-500 dark:text-[#92adc9]">CEO, InnovaTech</span>
-</div>
-<div class="flex flex-col items-center text-center p-6 rounded-lg bg-white dark:bg-[#192633] border border-gray-200 dark:border-[#324d67]">
-<img alt="Foto de clienta satisfecha" class="w-20 h-20 rounded-full mb-4 object-cover" data-alt="Photo of a satisfied female customer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD25FRCJ_TGpWVl-_jMfh37AEgFlE8zl1qm2v4zyXN6vKUY0fI0Mr657SpNNB_MDGt8lXqK0O5C-gZps650iYsLaK5S6XA2bwLu6oGDnNNbTrVGQNr_MQUt0UXoAYnSoXuO34uEi1oI9osA_OsLAQFH2fI1kAwOeKZfKdLF3GjtPUEMlwBPq5WbY_2IMcpohe9NPg8sQakl2uqYh1WHGQnw5ZufMLun_zKtU36PJQspGHFoNMcdcFIuhOjhnkU5Uoj3Mflgo-MfMNYR"/>
-<p class="text-gray-600 dark:text-gray-300 italic">"La calidad de los componentes y la rapidez en la entrega son insuperables. Son nuestro proveedor de confianza."</p>
-<h3 class="mt-4 font-bold text-gray-900 dark:text-white">Ana García</h3>
-<span class="text-sm text-gray-500 dark:text-[#92adc9]">Directora de I+D, Soluciones Futuras</span>
-</div>
-<div class="flex flex-col items-center text-center p-6 rounded-lg bg-white dark:bg-[#192633] border border-gray-200 dark:border-[#324d67]">
-<img alt="Foto de cliente satisfecho" class="w-20 h-20 rounded-full mb-4 object-cover" data-alt="Photo of another satisfied male customer" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6MdH_jSvRUGrkf3y1_ssuX6qt-qllgvNuWeOIgdLUs3mL0fABuFnCpZmr7LFfmJfIXD0_oiwcT5RwVJ6VxoZdD4DUZ4U5dLlzpDcjOC0y3R49OefBmuSJB-gt_YTfAfX9SPU7WyPBmGsW-GR8s5DTfMbTnAjYyrTJZoS3nnOZqneQSu8zmp8oq-iRRq8691wCJB4WsinfPt-jBWWj697Oh327giwd70jq8x7wbvzjbufdSUwc_PJVZ40ZhIQwfQgafAJGdIQ9FSRo"/>
-<p class="text-gray-600 dark:text-gray-300 italic">"Desde el diseño del PCB hasta la selección de componentes, su equipo demostró un profesionalismo y conocimiento excepcionales."</p>
-<h3 class="mt-4 font-bold text-gray-900 dark:text-white">Carlos Rodríguez</h3>
-<span class="text-sm text-gray-500 dark:text-[#92adc9]">Ingeniero Jefe, Gadget Co.</span>
-</div>
-</div>
-</section>
-<!-- Contact Section -->
-<section class="flex flex-col gap-8 px-4 py-10" id="contacto">
-<h2 class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] text-center">Hablemos de tu Proyecto</h2>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-12 p-8 rounded-lg bg-white dark:bg-[#192633] border border-gray-200 dark:border-[#324d67]">
-<div class="flex flex-col gap-6">
-<h3 class="text-xl font-bold text-gray-900 dark:text-white">Envíanos un mensaje</h3>
-<form class="flex flex-col gap-4">
-<input class="w-full bg-gray-100 dark:bg-background-dark border-gray-300 dark:border-[#324d67] rounded-md focus:ring-primary focus:border-primary" placeholder="Nombre" type="text"/>
-<input class="w-full bg-gray-100 dark:bg-background-dark border-gray-300 dark:border-[#324d67] rounded-md focus:ring-primary focus:border-primary" placeholder="Email" type="email"/>
-<input class="w-full bg-gray-100 dark:bg-background-dark border-gray-300 dark:border-[#324d67] rounded-md focus:ring-primary focus:border-primary" placeholder="Asunto" type="text"/>
-<textarea class="w-full bg-gray-100 dark:bg-background-dark border-gray-300 dark:border-[#324d67] rounded-md focus:ring-primary focus:border-primary" placeholder="Tu mensaje" rows="4"></textarea>
-<button class="w-full flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary hover:bg-primary/90 text-white text-base font-bold leading-normal tracking-[0.015em]" type="submit">
-<span class="truncate">Enviar Mensaje</span>
-</button>
-</form>
-</div>
-<div class="flex flex-col gap-6">
-<h3 class="text-xl font-bold text-gray-900 dark:text-white">Información de Contacto</h3>
-<div class="flex flex-col gap-4">
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary">location_on</span>
-<p class="text-gray-600 dark:text-gray-300">Av. de la Tecnología 123, Parque Tecnológico, 28001 Madrid, España</p>
-</div>
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary">phone</span>
-<p class="text-gray-600 dark:text-gray-300">+34 912 345 678</p>
-</div>
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary">email</span>
-<p class="text-gray-600 dark:text-gray-300">contacto@electrodesign.com</p>
-</div>
-</div>
-<div class="w-full h-64 rounded-lg overflow-hidden mt-4">
-<img class="w-full h-full object-cover" data-alt="Map showing the location of the office" data-location="Madrid, Spain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjyOVywhMzh51geo9QEyhw_ZRB_DxTadvWfPdPBQEof7E2AR5JuPpdRAPB0HuW3dUU1adbKySWJSMOymKh1JV4uh7GZyp0QrYNNDXaJTByB9kXC4T0WXdu4tqtYCGknExwbnDhKllDUUDrGmHtyzc1XAJpfUVFQxWbCCbyBOPzfBvYDE-oTVCnOG4hVnRhg-B_NmzFMsOp8BNXQWbgVh6qCywrmPhrEHfZAeheill8PA67grM_fX2Tdr7c0mNciJi2o3JMmgkur4Qt"/>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="mt-20 border-t border-gray-200 dark:border-[#233648] py-10 px-4">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-<div class="flex flex-col gap-4">
-<div class="flex items-center gap-2">
-<div class="size-6 text-primary">
-<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path></svg>
-</div>
-<h2 class="text-gray-900 dark:text-white text-lg font-bold">ElectroDesign</h2>
-</div>
-<p class="text-sm text-gray-500 dark:text-gray-400">Tu socio en innovación electrónica.</p>
-</div>
-<div class="flex flex-col gap-3">
-<h3 class="font-bold text-gray-900 dark:text-white">Navegación</h3>
-<a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" href="#servicios">Servicios</a>
-<a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" href="#clientes">Clientes</a>
-<a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" href="#contacto">Contacto</a>
-</div>
-<div class="flex flex-col gap-3">
-<h3 class="font-bold text-gray-900 dark:text-white">Legal</h3>
-<a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" href="#">Política de Privacidad</a>
-<a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" href="#">Términos y Condiciones</a>
-</div>
-<div class="flex flex-col gap-3">
-<h3 class="font-bold text-gray-900 dark:text-white">Síguenos</h3>
-<div class="flex gap-4">
-<!-- Placeholder icons for social media -->
-<a class="text-gray-500 dark:text-gray-400 hover:text-primary" href="#">
-<svg fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect height="12" width="4" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-</a>
-</div>
-</div>
-</div>
-<div class="mt-8 text-center text-sm text-gray-500 dark:text-gray-400 border-t border-gray-200 dark:border-[#233648] pt-6">
+                                <p
+                                    class="text-gray-600 dark:text-gray-300 text-base font-normal leading-normal max-w-[720px]">
+                                    Cubrimos todo el ciclo de vida de tu producto, desde la concepción hasta la
+                                    producción.</p>
+                            </div>
+                            <div class="grid grid-cols-[repeat(auto-fit,minmax(220px,1fr))] gap-4 p-0">
+                                <div
+                                    class="flex flex-1 gap-3 rounded-lg border border-gray-200 dark:border-[#324d67] bg-white dark:bg-[#192633] p-4 flex-col">
+                                    <div class="text-primary text-3xl material-symbols-outlined">memory</div>
+                                    <div class="flex flex-col gap-1">
+                                        <h2 class="text-gray-900 dark:text-white text-base font-bold leading-tight">
+                                            Diseño Electrónico</h2>
+                                        <p class="text-gray-500 dark:text-[#92adc9] text-sm font-normal leading-normal">
+                                            Creamos circuitos innovadores y eficientes para tus necesidades específicas.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex flex-1 gap-3 rounded-lg border border-gray-200 dark:border-[#324d67] bg-white dark:bg-[#192633] p-4 flex-col">
+                                    <div class="text-primary text-3xl material-symbols-outlined">developer_board</div>
+                                    <div class="flex flex-col gap-1">
+                                        <h2 class="text-gray-900 dark:text-white text-base font-bold leading-tight">
+                                            Diseño de PCB</h2>
+                                        <p class="text-gray-500 dark:text-[#92adc9] text-sm font-normal leading-normal">
+                                            Diseñamos placas de circuito impreso optimizadas para rendimiento y
+                                            fabricación.</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex flex-1 gap-3 rounded-lg border border-gray-200 dark:border-[#324d67] bg-white dark:bg-[#192633] p-4 flex-col">
+                                    <div class="text-primary text-3xl material-symbols-outlined">support_agent</div>
+                                    <div class="flex flex-col gap-1">
+                                        <h2 class="text-gray-900 dark:text-white text-base font-bold leading-tight">
+                                            Asesoramiento Técnico</h2>
+                                        <p class="text-gray-500 dark:text-[#92adc9] text-sm font-normal leading-normal">
+                                            Te guiamos con nuestra experiencia para asegurar el éxito de tu proyecto.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex flex-1 gap-3 rounded-lg border border-gray-200 dark:border-[#324d67] bg-white dark:bg-[#192633] p-4 flex-col">
+                                    <div class="text-primary text-3xl material-symbols-outlined">view_in_ar</div>
+                                    <div class="flex flex-col gap-1">
+                                        <h2 class="text-gray-900 dark:text-white text-base font-bold leading-tight">
+                                            Venta de Componentes</h2>
+                                        <p class="text-gray-500 dark:text-[#92adc9] text-sm font-normal leading-normal">
+                                            Accede a un amplio catálogo de componentes electrónicos de alta calidad.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Testimonials Section -->
+                        <section class="flex flex-col gap-8 px-4 py-10" id="clientes">
+                            <h2
+                                class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] text-center">
+                                Lo que dicen nuestros clientes</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                <div
+                                    class="flex flex-col items-center text-center p-6 rounded-lg bg-white dark:bg-[#192633] border border-gray-200 dark:border-[#324d67]">
+                                    <img alt="Foto de cliente satisfecho"
+                                        class="w-20 h-20 rounded-full mb-4 object-cover"
+                                        data-alt="Photo of a satisfied male customer"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwkvGB2FstFtQh9obcOU3YKUx5ijc6Y90DgdAspPwNq8RrbE3JAChBFyUru18GZ7pTrEbTUU1dqcsCAZo93FzG4ziP9C8pm3HZnEPvo9J2XshqchUNfnYQ6CReBdrYbLn7BGjtg9NGpwESnJbbzWx0icq_dUGB6T01rOohTaodTyoEVxPMwQCswKgrw0BkbDkS_k3HmBMNkOv5zTF8JK7Is5eV4aib8-hgsno3H_CWSRoifoerOtXJnrdv3Ivb3YmR11wyqY-kodqq" />
+                                    <p class="text-gray-600 dark:text-gray-300 italic">"El equipo de ElectroDesign
+                                        transformó nuestra idea en un producto funcional en tiempo récord. Su
+                                        asesoramiento fue clave para el éxito."</p>
+                                    <h3 class="mt-4 font-bold text-gray-900 dark:text-white">Juan Pérez</h3>
+                                    <span class="text-sm text-gray-500 dark:text-[#92adc9]">CEO, InnovaTech</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center text-center p-6 rounded-lg bg-white dark:bg-[#192633] border border-gray-200 dark:border-[#324d67]">
+                                    <img alt="Foto de clienta satisfecha"
+                                        class="w-20 h-20 rounded-full mb-4 object-cover"
+                                        data-alt="Photo of a satisfied female customer"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD25FRCJ_TGpWVl-_jMfh37AEgFlE8zl1qm2v4zyXN6vKUY0fI0Mr657SpNNB_MDGt8lXqK0O5C-gZps650iYsLaK5S6XA2bwLu6oGDnNNbTrVGQNr_MQUt0UXoAYnSoXuO34uEi1oI9osA_OsLAQFH2fI1kAwOeKZfKdLF3GjtPUEMlwBPq5WbY_2IMcpohe9NPg8sQakl2uqYh1WHGQnw5ZufMLun_zKtU36PJQspGHFoNMcdcFIuhOjhnkU5Uoj3Mflgo-MfMNYR" />
+                                    <p class="text-gray-600 dark:text-gray-300 italic">"La calidad de los componentes y
+                                        la rapidez en la entrega son insuperables. Son nuestro proveedor de confianza."
+                                    </p>
+                                    <h3 class="mt-4 font-bold text-gray-900 dark:text-white">Ana García</h3>
+                                    <span class="text-sm text-gray-500 dark:text-[#92adc9]">Directora de I+D, Soluciones
+                                        Futuras</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center text-center p-6 rounded-lg bg-white dark:bg-[#192633] border border-gray-200 dark:border-[#324d67]">
+                                    <img alt="Foto de cliente satisfecho"
+                                        class="w-20 h-20 rounded-full mb-4 object-cover"
+                                        data-alt="Photo of another satisfied male customer"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6MdH_jSvRUGrkf3y1_ssuX6qt-qllgvNuWeOIgdLUs3mL0fABuFnCpZmr7LFfmJfIXD0_oiwcT5RwVJ6VxoZdD4DUZ4U5dLlzpDcjOC0y3R49OefBmuSJB-gt_YTfAfX9SPU7WyPBmGsW-GR8s5DTfMbTnAjYyrTJZoS3nnOZqneQSu8zmp8oq-iRRq8691wCJB4WsinfPt-jBWWj697Oh327giwd70jq8x7wbvzjbufdSUwc_PJVZ40ZhIQwfQgafAJGdIQ9FSRo" />
+                                    <p class="text-gray-600 dark:text-gray-300 italic">"Desde el diseño del PCB hasta la
+                                        selección de componentes, su equipo demostró un profesionalismo y conocimiento
+                                        excepcionales."</p>
+                                    <h3 class="mt-4 font-bold text-gray-900 dark:text-white">Carlos Rodríguez</h3>
+                                    <span class="text-sm text-gray-500 dark:text-[#92adc9]">Ingeniero Jefe, Gadget
+                                        Co.</span>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Contact Section -->
+                        <section class="flex flex-col gap-8 px-4 py-10" id="contacto">
+                            <h2
+                                class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] text-center">
+                                Hablemos de tu Proyecto</h2>
+                            <div
+                                class="grid grid-cols-1 md:grid-cols-2 gap-12 p-8 rounded-lg bg-white dark:bg-[#192633] border border-gray-200 dark:border-[#324d67]">
+                                <div class="flex flex-col gap-6">
+                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Envíanos un mensaje</h3>
+                                    <form class="flex flex-col gap-4">
+                                        <input
+                                            class="w-full bg-gray-100 dark:bg-background-dark border-gray-300 dark:border-[#324d67] rounded-md focus:ring-primary focus:border-primary"
+                                            placeholder="Nombre" type="text" />
+                                        <input
+                                            class="w-full bg-gray-100 dark:bg-background-dark border-gray-300 dark:border-[#324d67] rounded-md focus:ring-primary focus:border-primary"
+                                            placeholder="Email" type="email" />
+                                        <input
+                                            class="w-full bg-gray-100 dark:bg-background-dark border-gray-300 dark:border-[#324d67] rounded-md focus:ring-primary focus:border-primary"
+                                            placeholder="Asunto" type="text" />
+                                        <textarea
+                                            class="w-full bg-gray-100 dark:bg-background-dark border-gray-300 dark:border-[#324d67] rounded-md focus:ring-primary focus:border-primary"
+                                            placeholder="Tu mensaje" rows="4"></textarea>
+                                        <button
+                                            class="w-full flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary hover:bg-primary/90 text-white text-base font-bold leading-normal tracking-[0.015em]"
+                                            type="submit">
+                                            <span class="truncate">Enviar Mensaje</span>
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="flex flex-col gap-6">
+                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white">Información de Contacto
+                                    </h3>
+                                    <div class="flex flex-col gap-4">
+                                        <div class="flex items-center gap-4">
+                                            <span class="material-symbols-outlined text-primary">location_on</span>
+                                            <p class="text-gray-600 dark:text-gray-300">Av. de la Tecnología 123, Parque
+                                                Tecnológico, 28001 Madrid, España</p>
+                                        </div>
+                                        <div class="flex items-center gap-4">
+                                            <span class="material-symbols-outlined text-primary">phone</span>
+                                            <p class="text-gray-600 dark:text-gray-300">+34 912 345 678</p>
+                                        </div>
+                                        <div class="flex items-center gap-4">
+                                            <span class="material-symbols-outlined text-primary">email</span>
+                                            <p class="text-gray-600 dark:text-gray-300">contacto@electrodesign.com</p>
+                                        </div>
+                                    </div>
+                                    <div class="w-full h-64 rounded-lg overflow-hidden mt-4">
+                                        <img class="w-full h-full object-cover"
+                                            data-alt="Map showing the location of the office"
+                                            data-location="Madrid, Spain"
+                                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjyOVywhMzh51geo9QEyhw_ZRB_DxTadvWfPdPBQEof7E2AR5JuPpdRAPB0HuW3dUU1adbKySWJSMOymKh1JV4uh7GZyp0QrYNNDXaJTByB9kXC4T0WXdu4tqtYCGknExwbnDhKllDUUDrGmHtyzc1XAJpfUVFQxWbCCbyBOPzfBvYDE-oTVCnOG4hVnRhg-B_NmzFMsOp8BNXQWbgVh6qCywrmPhrEHfZAeheill8PA67grM_fX2Tdr7c0mNciJi2o3JMmgkur4Qt" />
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </main>
+                    <!-- Footer -->
+                    <footer class="mt-20 border-t border-gray-200 dark:border-[#233648] py-10 px-4">
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                            <div class="flex flex-col gap-4">
+                                <div class="flex items-center gap-2">
+                                    <div class="size-6 text-primary">
+                                        <svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"
+                                                fill="currentColor"></path>
+                                        </svg>
+                                    </div>
+                                    <h2 class="text-gray-900 dark:text-white text-lg font-bold">ElectroDesign</h2>
+                                </div>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">Tu socio en innovación electrónica.
+                                </p>
+                            </div>
+                            <div class="flex flex-col gap-3">
+                                <h3 class="font-bold text-gray-900 dark:text-white">Navegación</h3>
+                                <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary"
+                                    href="#servicios">Servicios</a>
+                                <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary"
+                                    href="#clientes">Clientes</a>
+                                <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary"
+                                    href="#contacto">Contacto</a>
+                            </div>
+                            <div class="flex flex-col gap-3">
+                                <h3 class="font-bold text-gray-900 dark:text-white">Legal</h3>
+                                <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" href="#">Política
+                                    de Privacidad</a>
+                                <a class="text-sm text-gray-500 dark:text-gray-400 hover:text-primary" href="#">Términos
+                                    y Condiciones</a>
+                            </div>
+                            <div class="flex flex-col gap-3">
+                                <h3 class="font-bold text-gray-900 dark:text-white">Síguenos</h3>
+                                <div class="flex gap-4">
+                                    <!-- Placeholder icons for social media -->
+                                    <a class="text-gray-500 dark:text-gray-400 hover:text-primary" href="#">
+                                        <svg fill="none" height="24" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                            </path>
+                                            <rect height="12" width="4" x="2" y="9"></rect>
+                                            <circle cx="4" cy="4" r="2"></circle>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="mt-8 text-center text-sm text-gray-500 dark:text-gray-400 border-t border-gray-200 dark:border-[#233648] pt-6">
                             © 2024 ElectroDesign. Todos los derechos reservados.
                         </div>
-</footer>
-</div>
-</div>
-</div>
-</div>
-</body></html>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

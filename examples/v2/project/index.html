@@ -4,133 +4,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electronics Masterclass</title>
-    <link rel="stylesheet" href="style.css">
+    <title>ElectroDesign</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/bootstrap-icons.css">
+    <link rel="stylesheet" href="style/css.css">
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="navbar">
-        <div class="container">
-            <div class="logo">⚙️ Electronics Masterclass</div>
-            <nav class="nav-links">
-                <a href="#">Course Details</a>
-                <a href="#">Testimonials</a>
-                <a href="#">About</a>
-                <button class="btn-primary small">Book Now</button>
-            </nav>
+
+    <nav class="nav">
+        <div class="logo">
+            <img src="imgs/logo.png" class="logo__img" alt="logo">
+            <h3>ElectroDesign</h3>
+        </div>
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#">Servicios</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Clientes</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Contactos</a></li>
+            <li class="menu__item"><a class="menu__link button" href="#">Cotizar proyecto</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <div class="header__title">Soluciones Electrónicas Integrales a tu Medida</div>
+        <p class="header__text">Ofrecemos diseño de vanguardia, asesoramiento experto y venta de componentes de alta
+            calidad para llevar tus proyectos al siguiente nivel.</p>
+        <div class="">
+            <a class="button" href="#">Ver servicios</a>
         </div>
     </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Master Modern Electronics & PCB Design</h1>
-            <p>Unlock your potential with our hands-on course designed for aspiring engineers and hobbyists.</p>
-            <button class="btn-primary">Enroll Today</button>
-        </div>
-    </section>
-
-    <!-- What You’ll Learn -->
-    <section class="learn">
-        <h2>What You’ll Learn</h2>
-        <div class="learn-flex">
-            <div class="card">
-                <div class="icon">⚡</div>
-                <h3>Circuit Theory</h3>
-                <p>Understand the core principles of analog and digital circuits.</p>
-            </div>
-            <div class="card">
-                <div class="icon">🧩</div>
-                <h3>PCB Design</h3>
-                <p>Learn to design and manufacture your own professional-grade PCBs.</p>
-            </div>
-            <div class="card">
-                <div class="icon">🔧</div>
-                <h3>Microcontrollers</h3>
-                <p>Program and interface with popular microcontrollers like Arduino.</p>
-            </div>
-            <div class="card">
-                <div class="icon">🔥</div>
-                <h3>Soldering Techniques</h3>
-                <p>Master the art of soldering for robust and reliable connections.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <h2>Hear From Our Students</h2>
-        <p class="subtitle">Our students have gone on to achieve great things. Here’s what they have to say about their
-            experience.</p>
-        <div class="testimonial-flex">
-            <div class="testimonial">
-                <h4>John Doe</h4>
-                <p class="role">Hardware Engineer</p>
-                <blockquote>“This course was a game-changer. I went from a hobbyist to designing complex PCBs for my own
-                    products. The hands-on approach is fantastic.”</blockquote>
-            </div>
-            <div class="testimonial">
-                <h4>Jane Smith</h4>
-                <p class="role">IoT Developer</p>
-                <blockquote>“The instructor’s expertise is evident in every lesson. I finally understood concepts that
-                    were a mystery to me before. Highly recommended!”</blockquote>
-            </div>
-            <div class="testimonial">
-                <h4>Mike Johnson</h4>
-                <p class="role">Maker & Entrepreneur</p>
-                <blockquote>“I was able to prototype my startup idea thanks to the skills I learned here. The section on
-                    microcontrollers was invaluable.”</blockquote>
-            </div>
-        </div>
-    </section>
-
-    <!-- Instructor -->
-    <section class="instructor">
-        <h2>Meet Your Instructor</h2>
-        <div class="instructor-card">
-            <img src="https://via.placeholder.com/120" alt="Instructor photo" class="avatar">
+    <main>
+        <section class="services">
             <div>
-                <h3>Alex Riley</h3>
-                <p>With over 15 years of experience in the electronics industry, Alex has a passion for demystifying
-                    complex topics. As a senior hardware engineer at a leading tech firm, Alex brings real-world
-                    expertise and a commitment to helping students succeed in the exciting field of electronics.</p>
-                <div class="socials">
-                    <a href="#">🔗</a>
-                    <a href="#">💼</a>
-                </div>
+                <h2 class="services__title">Nuestros Servicios</h2>
+                <p class="services__description">Cubrimos todo el ciclo de la vida de tu producto, desde la concepción
+                    hasta la producción.</p>
+                <div class="service__text"></div>
             </div>
-        </div>
-    </section>
+            <section class="cards">
+                <article class="card">
+                    <i class="bi bi-cpu"></i>
+                    <header class="card__title">
+                        Diseño Electrónico</header>
+                    <p class="card__text">Creamos circuitos innovadores y eficientes para tus necesidades específicas.
+                    </p>
+                </article>
+                <article class="card">
+                    <i class="bi bi-grid-1x2-fill"></i>
+                    <header class="card__title">Diseño de PCB</header>
+                    <p class="card__text">Diseñamos placas de circuito impreso optimizadas para rendimiento y
+                        fabricación.
+                    </p>
+                </article>
+                <article class="card">
+                    <i class="bi bi-person-workspace"></i>
+                    <header class="card__title">Asesoramiento Técnico</header>
+                    <p class="card__text">Te guiamos con nuestra experiencia para asegurar el éxito de tu proyecto.</p>
+                </article>
+                <article class="card">
+                    <i class="bi bi-robot"></i>
+                    <header class="card__title">Venta de Componentes</header>
+                    <p class="card__text">Accede a un amplio catálogo de componentes electrónicos de alta calidad.</p>
+                </article>
+            </section>
 
-    <!-- Footer -->
+        </section>
+        <!--
+        <section class="client">
+            <h2 class="client__title">Lo que dicen nuestros clientes</h2>
+            <section class="client__cards">
+                <article class="card2">
+                    <img src="" alt="">
+                    <p class="card2__info">"El equipo de ElectroDesign transformó nuestra idea en un producto funcional
+                        en tiempo récord. Su asesoramiento fue clave para el éxito."</p>
+                    <footer><span class="card2__name">Juan Pérez</span><span class="card2__profile">CEO,
+                            InnovaTech</span></footer>
+                </article>
+                <article class="card2">
+                    <img src="" alt="">
+                    <p class="card2__info">"La calidad de los componentes y la rapidez en la entrega son insuperables.
+                        Son nuestro proveedor de confianza."</p>
+                    <footer><span class="card2__name">Ana García</span>Directora de I+D, Soluciones Futuras<span
+                            class="card2__profile"></span></footer>
+                </article>
+                <article class="card2">
+                    <img src="" alt="">
+                    <p class="card2__info">"Desde el diseño del PCB hasta la selección de componentes, su equipo
+                        demostró un profesionalismo y conocimiento excepcionales."</p>
+                    <footer><span class="card2__name">Carlos Rodríguez</span><span class="card2__profile">Ingeniero
+                            Jefe, Gadget Co.</span></footer>
+                </article>
+            </section>
+        </section> -->
+
+        <section class="contact">
+            <h2 class="contact__title">Hablemos de tu proyecto</h2>
+            <section class="contact__container">
+                <div class="form">
+                    <h2 class="contact__title">Enviar mensaje</h2>
+                    <form class="contact__form">
+                        <!-- <label for="name">Nombre:</label> -->
+                        <input class="form__input" type="text" id="name" name="name" placeholder="Nombre" required>
+                        <!-- <label for="email">Correo:</label> -->
+                        <input class="form__input" type="email" id="email" name="email" placeholder="Email" required>
+                        <input class="form__input" type="text" id="name" name="name" placeholder="Asunto" required>
+                        <!-- <label for="message">Tu mensaje</label> -->
+
+                        <textarea class="form__input textarea" id="message" name="message" placeholder="Tu mensaje"
+                            rows="8" required></textarea>
+
+                        <input type="submit" value="Enviar Mensaje" class="button">
+                    </form>
+                </div>
+                <div class="info">
+                    <h2 class="contact__title">Información de Contacto</h2>
+                    <div class="info__container">
+                        <i class="bi bi-pin-map-fill"></i>
+                        <div class="info__text"></i> Av. de la Tecnología 123, Parque</div>
+                    </div>
+                    <div class="info__container">
+                        <i class="bi bi-pin-map-fill"></i>
+                        <div class="info__text"> Tecnológico, 28001 Coatzacoalcos, Veracruz, Mexico</div>
+                    </div>
+
+                    <div class="info__container">
+                        <i class="bi bi-telephone-fill"></i>
+                        <div class="info__text"> +52 921 345 678</div>
+                    </div>
+
+                    <div class="info__container">
+                        <i class="bi bi-envelope-fill"></i>
+                        <div class="info__text"> contacto@mail.com</div>
+                    </div>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1386.8451815640947!2d-94.42553197362753!3d18.139468937920586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85e982588fffffff%3A0x12a620cf1087c4de!2sCBTIS%20n%C2%B085!5e0!3m2!1sen!2smx!4v1762985460409!5m2!1sen!2smx"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+
+        </section>
+    </main>
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-col">
-                <h4>⚙️ Electronics Masterclass</h4>
-                <p>Your journey to becoming an electronics expert starts here.</p>
-            </div>
-            <div class="footer-col">
-                <h4>LINKS</h4>
-                <a href="#">Course Details</a>
-                <a href="#">Testimonials</a>
-                <a href="#">About</a>
-                <a href="#">FAQ</a>
-            </div>
-            <div class="footer-col">
-                <h4>LEGAL</h4>
-                <a href="#">Terms of Service</a>
-                <a href="#">Privacy Policy</a>
-            </div>
-            <div class="footer-col">
-                <h4>CONTACT</h4>
-                <p>contact@electronics.com</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            © 2024 Electronics Masterclass. All rights reserved.
-        </div>
+        <section class="footer__section">
+            <h2 class="footer__title">Navegación</h2>
+            <ul>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Clientes</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </section>
+        <section class="footer__section">
+            <h2 class="footer__title">Legal</h2>
+            <ul>
+                <li><a href="#"></a>Política de privacidad</li>
+                <li><a href="#"></a>Términos y condiciones</li>
+            </ul>
+        </section>
+        <section class="footer__section">
+            <h2 class="footer__title">Síguenos</h2>
+            <ul>
+                <li><i class="bi bi-facebook"></i></li>
+                <li><i class="bi bi-twitter"></i></li>
+                <li><i class="bi bi-youtube"></i></li>
+            </ul>
+        </section>
     </footer>
+    <div>
+        <hr>
+        <h3>© 2024 ElectroDesign. Todos los derechos reservados.</h3>
+    </div>
 </body>
 
 </html>

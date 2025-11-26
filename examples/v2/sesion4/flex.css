@@ -1,0 +1,60 @@
+body{
+ background-color: #eee;
+}
+
+.container{
+    display:flex;
+    height: 100vh;
+    flex-direction: row;
+}
+
+.item{
+    height: 100px;
+    /* width: 100px;
+    /* margin: 1rem; */
+    /* border-radius: 50%; */
+    background-color: palevioletred;
+    border: 2px solid green;
+    color: white;
+    display: flex;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(1){
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: 100px;
+}
+
+@media (max-width: 600px) {
+/*Si el ancho de la pantalla es 600px o menos, pinta el fondo del `<body>` de color azul claro”.*/
+  body {
+    background-color: lightblue;
+  }
+}
+
+@media (max-width: 768px) {
+  /*Si el ancho de la pantalla es 768px o menos, aplica los estilos de esta sección*/
+  /* estilos para pantallas pequeñas (tablets o móviles) */
+  body {
+    background-color: lightgreen;
+  }
+}
+
+@media (min-width: 1024px) {
+  /*Si el ancho de la pantalla es 1024px o mas, aplica los estilos de esta sección*/
+  /* estilos para pantallas grandes */
+  body {
+    background-color: lightcoral;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /*Si el ancho de la pantalla es de entre mínimo 768px a máximo 1024px, aplica los estilos de esta sección*/
+  /* estilos para pantallas intermedias (tablets) */
+  body {
+    background-color: lightyellow;
+  }
+}

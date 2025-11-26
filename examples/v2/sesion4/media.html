@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <style>
+        /*comienza en azul*/
+        h1 {
+            color: blue;
+        }
+
+        body {
+            background-color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            height: 100vh;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            --color: #0a2540;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            min-width: 300px;
+            min-height: 300px;
+            max-width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.8rem;
+        }
+
+        .bi {
+            color: var(--color);
+            font-size: 4rem;
+        }
+
+        .card__icon {
+            padding-bottom: 1rem;
+        }
+
+        .card__title {
+            color: var(--color);
+            font-size: 1.5rem;
+        }
+
+        .card__text {
+            color: var(--color);
+            font-size: 1rem;
+            text-align: center;
+            letter-spacing: 0.5px;
+            word-spacing: 1px;
+            line-height: 1.5;
+            padding: 0 0.6rem;
+        }
+
+        .card:hover {
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease-in-out;
+        }
+
+        /*en el rango de 700 a 1000px sera rojo*/
+        @media (min-width: 700px) and (max-width: 1000px) {
+            h1 {
+                color: red;
+            }
+        }
+
+        /*a partir de 1000px sera verde*/
+        @media (min-width: 1000px) {
+            h1 {
+                color: green;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="card">
+        <div class="card__icon">
+            <i class="bi bi-cpu"></i>
+        </div>
+        <h3 class="card__title">Teoria del IC</h3>
+        <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+    </section>
+    <section class="card">
+        <div class="card__icon">
+            <i class="bi bi-cpu"></i>
+        </div>
+        <h3 class="card__title">Teoria del IC</h3>
+        <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+    </section>
+    <section class="card">
+        <div class="card__icon">
+            <i class="bi bi-cpu"></i>
+        </div>
+        <h3 class="card__title">Teoria del IC</h3>
+        <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+    </section>
+    <section class="card">
+        <div class="card__icon">
+            <i class="bi bi-cpu"></i>
+        </div>
+        <h3 class="card__title">Teoria del IC</h3>
+        <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+    </section>
+    <section class="card">
+        <div class="card__icon">
+            <i class="bi bi-cpu"></i>
+        </div>
+        <h3 class="card__title">Teoria del IC</h3>
+        <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+    </section>
+    <section class="card">
+        <div class="card__icon">
+            <i class="bi bi-cpu"></i>
+        </div>
+        <h3 class="card__title">Teoria del IC</h3>
+        <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+    </section>
+</body>
+
+</html>
