@@ -1,0 +1,183 @@
+.titulo {
+    color: blue;
+    background-color: yellowgreen;
+}
+
+.titulo:hover {
+    color: salmon;
+    background-color: darkcyan;
+    padding: 4rem;
+    margin: auto;
+}
+
+input {
+    border: 2px solid red;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+input:focus {
+    border: 2px solid yellow;
+    background-color: lightyellow;
+    font-size: 2rem;
+}
+
+input[type="checkbox"] {
+    width: 2rem;
+    height: 2rem;
+    accent-color: green;
+}
+
+input[type="checkbox"]:checked {
+    accent-color: purple;
+}
+
+p:empty {
+    outline: 4px dashed red;
+    padding: 1rem;
+    background-color: lightgray;
+}
+
+p {
+    background-color: lightpink;
+    padding: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p:first-of-type {
+    font-weight: bold;
+    padding: 0;
+}
+
+p:last-of-type {
+    font-style: italic;
+    background-color: lightblue;
+}
+
+/* comentario */
+.contenedor:nth-of-type(even) {
+    background-color: peru;
+}
+
+.contenedor:nth-of-type(odd) {
+    background-color: tomato;
+}
+
+ul li:first-child {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h2 {
+    background-color: red;
+    margin: auto;
+    text-align: center;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    padding: 55px;
+    border: 5px solid yellowgreen;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+span {
+    background-color: lightseagreen;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    padding-right: 50px;
+    padding-left: 200px;
+    margin: auto;
+    border: 3px dashed green;
+}
+
+section {
+    border-width: 10px;
+    border-color: blue;
+    border-style: dotted;
+}
+
+article {
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    margin: auto;
+    border-radius: 50%;
+}
+
+article:hover {
+    background-color: lightgreen;
+    box-shadow: 0 0 10px 15px gray;
+}
+
+.banner {
+    width: 100%;
+    height: 300px;
+    background-image: url('https://images.unsplash.com/photo-1761839257349-037aea1d94de?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(2px) sepia(80%);
+}
+
+.titulo::before {
+    content: "🎅🏻 hola";
+}
+
+.titulo::after {
+    content: "👽";
+}
+
+p {
+    cursor: help;
+}
+
+li {
+    cursor: progress
+}
+
+span {
+    cursor: wait;
+}
+
+article {
+    cursor: crosshair;
+}
+
+header {
+    cursor: cell;
+}
+
+article {
+    opacity: 0.1;
+}
+
+article:hover {
+    opacity: .8;
+    width: 250px;
+    height: 250px;
+}
+
+span {
+    display: block;
+}
+
+section {
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+.desaparece {
+    display: none;
+}
+
+body {
+    position: relative;
+}
+
+.led {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}

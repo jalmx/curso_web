@@ -471,7 +471,6 @@ pcbtronix/
     </html>
     ```
 
-
 > Notas:<br>1. Las cosas que no son especificas tienes licencia creativa para agregar mas detalles.<br> 2. Ve a la [sección de recurso de imágenes](html.md#recursos-para-imagenes) para buscar imágenes de stock.
 
 3\. Formulario de contacto simple
@@ -653,7 +652,7 @@ pcbtronix/
     1. `font-weight`
     1. `color`
     1. `text-align`
- 2. Usa distintas familias (`serif`, `sans-serif`, `monospace`).
+2. Usa distintas familias (`serif`, `sans-serif`, `monospace`).
 
 ??? example "formulario.html"
     ```html
@@ -697,3 +696,160 @@ pcbtronix/
     </body>
     </html>
     ```
+
+### Position
+
+??? example "Guía de referencia"
+    ![position](img/widgets/position.png)
+
+1. Cómo `position relative` no saca al elemento del flujo, pero te permite moverlo respecto a su posición normal.
+
+Instrucciones:
+
+- Crea un `<div>` de 150×150 px con color de fondo (cualquiera).
+  - Asigna position: relative.
+  - Aplica propiedades de desplazamiento como:
+    - `top: 20px;`
+    - `left: 30px;`
+
+??? example "index.html"
+    ```html
+    <div class="caja">Caja</div>
+    ```
+
+
+    ??? example "css.css"
+        ```css
+        .caja {
+            width: 150px;
+            height: 150px;
+            background: coral;
+            position: relative;
+            top: 20px;
+            left: 30px;
+        }
+        ```
+
+2\. Usar `position: absolute` dentro de un contenedor. Un elemento con `position absolute` se posiciona respecto a su contenedor más cercano con `position: relative`.
+
+Instrucciones:
+
+- Crea un `<div>` grande llamado .contenedor.
+- Dale width, height y un fondo para verlo (por ejemplo lightgray).
+- Dentro del contenedor, crea otro <div> llamado .absoluto.
+- Al contenedor aplícale position: relative.
+- Al `div` interno aplícale:
+    - `position: absolute;`
+    - `bottom: 10px;`
+    - `right: 10px;`
+- Observa que el elemento hijo:
+    - Se pega a la esquina inferior derecha del contenedor.
+    - No se posiciona respecto al body.
+
+??? example
+
+    ??? example "index.html"
+        ```html
+        <div class="contenedor">
+          <div class="absoluto">Soy absoluto</div>
+        </div>
+
+        ```
+
+
+    ??? example "css.css"
+        ```css
+        .contenedor {
+          width: 300px;
+          height: 200px;
+          background: lightgray;
+          position: relative;
+        }
+
+        .absoluto {
+          position: absolute;
+          bottom: 10px;
+          right: 10px;
+          background: tomato;
+          padding: 10px;
+        }
+        ```
+
+3 \. Crear una barra fija con `position: fixed`. Los elementos con `position: fixed` se fijan a la ventana, no al documento.
+
+- Crea un `<header>` con clase `.barra`.
+- Rellénalo con cualquier texto para simular un menú.
+- Aplica `position: fixed`;.
+- Posiciónalo con:
+    - top: 0;
+    - left: 0;
+- Dale `width: 100%` para que ocupe todo el ancho.
+- Agrega bastante texto al documento para poder hacer scroll.
+- Observa que:
+    - El header **siempre permanece visible**, aunque te desplaces.
+
+
+??? example
+
+    ??? example "index.html"
+        ```html
+        <div class="contenedor">
+          <div class="absoluto">Soy absoluto</div>
+        </div>
+        ```
+
+
+    ??? example "css.css"
+        ```css
+        .contenedor {
+            width: 300px;
+            height: 200px;
+            background: lightgray;
+            position: relative;
+            }
+
+        .absoluto {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: tomato;
+            padding: 10px;
+        }
+        ```
+
+## Widgets
+
+### Crear estilos de botones
+
+Realizar todos los estilos de botones que se muestran en la imagen. Siempre debes usar `clases`. Puedes elegir el color que desees de base, lo que se muestra es una referencia.
+
+![botones](img/widgets/botones.png)
+
+> Notas: <br>Recurso: [iconos de bootstrap](https://icons.getbootstrap.com) <br>
+> Recurso: [iconos de google](https://fonts.google.com/icons)
+
+### Crear estilos de Cards
+
+Realizar todos los estilos de cards que se muestran en la imagen. Siempre debes usar `clases`. Para los gradientes puedes usar la herramienta que prefieras o hay recursos que te comparto.
+
+![cards](img/widgets/cards.png)
+
+> Notas: Referncia: [Cards de bootstrap](https://getbootstrap.com/docs/5.0/components/card/)
+> <br>Recurso: Generador de gradientes: [Gradient Generator](https://cssgradient.io/)
+> <br>Recurso: Generador de gradientes: [Gradient Generator](https://uigradients.com/)
+
+## Sitio webs de practica
+
+Reproducir los siguientes sitios
+
+??? note "Mock-up"
+    ![mockup](https://raw.githubusercontent.com/jalmx/html-class/refs/heads/master/mockup/mockup_.png)
+
+??? note "CV"
+    ![cv](img/sites/cv_template.jpg)
+
+??? note "Sitio de los tigres"
+    ![https://raw.githubusercontent.com/jalmx89/Dummy-templates/master/view/tigerZooWeb.png](https://raw.githubusercontent.com/jalmx89/Dummy-templates/master/view/tigerZooWeb.png)
+
+??? note "Consultoría"
+    ![consultoria](img/sites/site2.png)
