@@ -1,5 +1,0 @@
-# Projects
-
-## Project 1
-
-![]
