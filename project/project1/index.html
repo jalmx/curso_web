@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroDesign</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style/bootstrap-icons.css">
+    <link rel="stylesheet" href="style/css.css">
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="logo">
+            <img src="imgs/logo.png" class="logo__img" alt="logo">
+            <h3>ElectroDesign</h3>
+        </div>
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#">Servicios</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Clientes</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Contactos</a></li>
+            <li class="menu__item"><a class="menu__link button" href="#">Cotizar proyecto</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <div class="header__title">Soluciones Electrónicas Integrales a tu Medida</div>
+        <p class="header__text">Ofrecemos diseño de vanguardia, asesoramiento experto y venta de componentes de alta
+            calidad para llevar tus proyectos al siguiente nivel.</p>
+        <div class="">
+            <a class="button" href="#">Ver servicios</a>
+        </div>
+    </header>
+    <main>
+        <section class="services">
+            <div>
+                <h2 class="services__title">Nuestros Servicios</h2>
+                <p class="services__description">Cubrimos todo el ciclo de la vida de tu producto, desde la concepción
+                    hasta la producción.</p>
+                <div class="service__text"></div>
+            </div>
+            <section class="cards">
+                <article class="card">
+                    <i class="bi bi-cpu"></i>
+                    <header class="card__title">
+                        Diseño Electrónico</header>
+                    <p class="card__text">Creamos circuitos innovadores y eficientes para tus necesidades específicas.
+                    </p>
+                </article>
+                <article class="card">
+                    <i class="bi bi-grid-1x2-fill"></i>
+                    <header class="card__title">Diseño de PCB</header>
+                    <p class="card__text">Diseñamos placas de circuito impreso optimizadas para rendimiento y
+                        fabricación.
+                    </p>
+                </article>
+                <article class="card">
+                    <i class="bi bi-person-workspace"></i>
+                    <header class="card__title">Asesoramiento Técnico</header>
+                    <p class="card__text">Te guiamos con nuestra experiencia para asegurar el éxito de tu proyecto.</p>
+                </article>
+                <article class="card">
+                    <i class="bi bi-robot"></i>
+                    <header class="card__title">Venta de Componentes</header>
+                    <p class="card__text">Accede a un amplio catálogo de componentes electrónicos de alta calidad.</p>
+                </article>
+            </section>
+
+        </section>
+        <!--
+        <section class="client">
+            <h2 class="client__title">Lo que dicen nuestros clientes</h2>
+            <section class="client__cards">
+                <article class="card2">
+                    <img src="" alt="">
+                    <p class="card2__info">"El equipo de ElectroDesign transformó nuestra idea en un producto funcional
+                        en tiempo récord. Su asesoramiento fue clave para el éxito."</p>
+                    <footer><span class="card2__name">Juan Pérez</span><span class="card2__profile">CEO,
+                            InnovaTech</span></footer>
+                </article>
+                <article class="card2">
+                    <img src="" alt="">
+                    <p class="card2__info">"La calidad de los componentes y la rapidez en la entrega son insuperables.
+                        Son nuestro proveedor de confianza."</p>
+                    <footer><span class="card2__name">Ana García</span>Directora de I+D, Soluciones Futuras<span
+                            class="card2__profile"></span></footer>
+                </article>
+                <article class="card2">
+                    <img src="" alt="">
+                    <p class="card2__info">"Desde el diseño del PCB hasta la selección de componentes, su equipo
+                        demostró un profesionalismo y conocimiento excepcionales."</p>
+                    <footer><span class="card2__name">Carlos Rodríguez</span><span class="card2__profile">Ingeniero
+                            Jefe, Gadget Co.</span></footer>
+                </article>
+            </section>
+        </section> -->
+
+        <section class="contact">
+            <h2 class="contact__title">Hablemos de tu proyecto</h2>
+            <section class="contact__container">
+                <div class="form">
+                    <h2 class="contact__title">Enviar mensaje</h2>
+                    <form class="contact__form">
+                        <!-- <label for="name">Nombre:</label> -->
+                        <input class="form__input" type="text" id="name" name="name" placeholder="Nombre" required>
+                        <!-- <label for="email">Correo:</label> -->
+                        <input class="form__input" type="email" id="email" name="email" placeholder="Email" required>
+                        <input class="form__input" type="text" id="name" name="name" placeholder="Asunto" required>
+                        <!-- <label for="message">Tu mensaje</label> -->
+
+                        <textarea class="form__input textarea" id="message" name="message" placeholder="Tu mensaje"
+                            rows="8" required></textarea>
+
+                        <input type="submit" value="Enviar Mensaje" class="button">
+                    </form>
+                </div>
+                <div class="info">
+                    <h2 class="contact__title">Información de Contacto</h2>
+                    <div class="info__container">
+                        <i class="bi bi-pin-map-fill"></i>
+                        <div class="info__text"></i> Av. de la Tecnología 123, Parque Tecnológico, 28001 Coatzacoalcos, Veracruz, Mexico</div>
+                    </div>
+
+                    <div class="info__container">
+                        <i class="bi bi-telephone-fill"></i>
+                        <div class="info__text"> +52 921 345 678</div>
+                    </div>
+
+                    <div class="info__container">
+                        <i class="bi bi-envelope-fill"></i>
+                        <div class="info__text"> contacto@electrodesign.com</div>
+                    </div>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1386.8451815640947!2d-94.42553197362753!3d18.139468937920586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85e982588fffffff%3A0x12a620cf1087c4de!2sCBTIS%20n%C2%B085!5e0!3m2!1sen!2smx!4v1762985460409!5m2!1sen!2smx"
+                
+                        class="map" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer__section">
+            <h2 class="footer__title">Navegación</h2>
+            <ul class="footer__list">
+                <li class="footer__item"><a class="footer__link" href="#">Servicios</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Clientes</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Contacto</a></li>
+            </ul>
+        </section>
+        <section class="footer__section">
+            <h2 class="footer__title">Legal</h2>
+            <ul class="footer__list">
+                <li class="footer__item"><a class="footer__link" href="#">Política de privacidad</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Términos y condiciones</a></li>
+            </ul>
+        </section>
+        <section class="footer__section">
+            <h2 class="footer__title">Síguenos</h2>
+            <ul class="footer__list footer__networks">
+                <li class="footer__item"><a href="#"><i class="footer__icon bi bi-facebook"></i></a></li>
+                <li class="footer__item"><a href="#"><i class="footer__icon bi bi-twitter"></i></a></li>
+                <li class="footer__item"><a href="#"><i class="footer__icon bi bi-youtube"></i></a></li>
+            </ul>
+        </section>
+    </footer>
+    <div class="footer__copy">
+        <h3>&#169; 2024 ElectroDesign. Todos los derechos reservados.</h3>
+    </div>
+</body>
+
+</html>
