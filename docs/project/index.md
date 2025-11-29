@@ -24,7 +24,7 @@
     └── css.css
 ```
 
-Descarga proyecto: [project.zip](project.zip)
+Descarga proyecto: [project1.zip](project1.zip)
 
 ### Código
 
