@@ -20,7 +20,6 @@ body {
     background-color: var(--background);
     max-width: 1200px;
     margin: auto;
-
 }
 
 .nav {
@@ -53,7 +52,6 @@ nav::after {
     height: 3rem;
     justify-content: center;
     align-items: center;
-
 }
 
 .logo__img {
